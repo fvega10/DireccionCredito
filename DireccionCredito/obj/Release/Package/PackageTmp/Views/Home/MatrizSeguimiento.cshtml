@@ -1,0 +1,332 @@
+﻿
+
+@{
+    //catalogo de oficinas
+    List<DireccionCredito.Models.Repositorio_AgenciasBNCR> Oficinas = ViewBag.Agencias;
+
+
+}
+
+
+@{
+    Layout = null;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+}
+
+
+@Styles.Render("~/Content/css_Secciones")
+@Scripts.Render("~/bundles/scriptsSecciones")
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="icon" href="~/Content/imagenes/icoBn1.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width" />
+    <title>Matriz Seguimiento</title>
+</head>
+<body>
+
+
+
+
+
+
+
+    <!--#region TOP PAGINA BANNER Y MENU-->
+    <!--inicio nav-->
+    <!-- menu minimizar -->
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+    <!--  fin menu minimizar -->
+    <!--***Menu principal***-->
+    <div class="site-navbar-wrap">
+        <div class="site-navbar-top">
+            <div class="container py-1">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <a href="https://twitter.com/bnmascerca" class="p-2 pl-0"><span class="icon-twitter"></span></a>
+                        <a href="https://www.facebook.com/bnmascerca/" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                        <a href="https://cr.linkedin.com/company/banco-nacional" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
+                        <a href="https://www.instagram.com/bnmascerca/?hl=es-la" class="p-2 pl-0"><span class="icon-instagram"></span></a>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex ml-auto">
+                            <a href="#" class="d-flex align-items-center ml-auto mr-4">
+                                <span class="icon-phone mr-2"></span>
+                                <span class="d-none d-md-inline-block">+506 2212 2000</span>
+                            </a>
+                            <a href="mailto:consultascreditoretail@bncr.fi.cr" class="d-flex align-items-center">
+                                <span class="icon-envelope mr-2"></span>
+                                <span class="d-none d-md-inline-block">consultascreditoretail@bncr.fi.cr</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-navbar">
+            <div class="container">
+                <div class="row align-items-center" style="height:50px;">
+                    <div class="col-2">
+                        <h2 class="site-logo"><a href="~/Home/Inicio"><img src="../../Content/Calendario/Imagenes/ICO.png" class="img-fluid" style="height:45px;"></a></h2>
+                    </div>
+                    <div class="col-10">
+                        <nav class="site-navigation text-right" role="navigation">
+                            <div class="container">
+                                <div class="d-inline-block d-lg-none ml-md-0 mr-auto "><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+                                <ul class="site-menu js-clone-nav d-none d-lg-block">
+
+                                    <li><a href="~/Home/Inicio">SITIO</a></li>
+
+                                    <li class="has-children">
+                                        <a href="#!">SERVICIOS</a>
+                                        <ul class="dropdown arrow-top">
+                                            <li><a href="~/Home/Buscador">Motor Búsqueda</a></li>
+                                            <li><a href="http://dsn820bda01:81/sipcoweb/">SipcoWeb</a></li>
+                                            <li><a href="~/Home/Estadisticas">Estadísticas</a></li>
+                                            <li><a href="http://bnportal/sites/comercial/CIPAC/CIPAC_Tramite.zip">BD Sipco</a></li>
+                                            <li><a href="~/Home/MatrizSeguimiento"><i class="fas fa-calculator"></i> Matriz Seguimiento</a></li>
+                                        </ul>
+
+
+                                    </li>
+
+                                    <li class="has-children">
+                                        <a href="#!">INFÓRMESE</a>
+                                        <ul class="dropdown arrow-top">
+                                            <li><a href="~/Home/Noticias">Noticias</a></li>
+                                            <li><a href="~/Home/ErrorAcceso">Guía de Uso</a></li>
+                                            <li><a href="~/Home/PreguntasFrecuentes">Preguntas Frecuentes</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="https://universidad.bncr.fi.cr/login/index.php">CAPACITACIONES</a></li>
+                                    <li><a href="~/Home/Calendario">CALENDARIO</a></li>
+                                    <li><a href="~/Home/ErrorAcceso">CONTACTO</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END menu principal-->
+    <!-- Banner Titulo -->
+    <div class="container-fluid d-flex align-items-end" style="background-image: url(../../Content/PreguntasFrecuentes/banner.jpg);background-size:cover;height:250px;background-position:0% 20%" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container text-white mb-4">
+            <span class="sub-text" style="font-family:'Segoe UI';font-size:20px;">Direccion de Riesgos Crédito</span>
+            <h1 class="wow flipInX" style="font-family:'Segoe UI';font-size:50px;" data-wow-delay="0.5s">    <strong>Matriz Seguimiento</strong></h1>
+        </div>
+    </div>
+    <!-- .Divisor verde -->
+    <!--#endregion-->
+
+
+
+
+
+
+
+
+
+    @using (Ajax.BeginForm("GestionClienteMatrizSeguimiento", new AjaxOptions
+    {
+        HttpMethod = "POST",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "Formulario",
+        LoadingElementId = "PopUp",
+        OnSuccess = "DesactivarCamposBusqueda"
+
+
+    }))
+    {
+        <div class="container">
+
+            <div class="card card-primary mt-5" style="height:125px;">
+                <div class="card-header border-0" style="background: linear-gradient(140deg, rgba(19,61,141,1) 0%, rgba(89,118,93,0.4806297387969628) 44%, rgba(176,189,32,0.6098432219430302) 99%);height:45px;">
+                    <div class="card-title text-white"> <i class="fab fa-searchengin"></i> Consultar Inicial</div>
+                </div>
+
+
+                <div class="row ml-1">
+                    <!-- inicio columna 7 -->
+                    <div class="col-12">
+                        <!-- /.card-header -->
+                        <form>
+                            <!-- form start -->
+
+                            <div class="card-body">
+                                <div class="form-group row">
+                                    <span class="col-2 text-black-50 mt-2 ">Cédula Jurídica</span>
+                                    <div class="col-2">
+                                        <div class="input-group input-group-sm mt-2">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fab fa-orcid"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" name="Txt_Cedula" id="Txt_Cedula" minlength="4" data-error="Indique Identificacion" autocomplete="off" attrname="Txt_Cedula" required="" pattern="[0-9]{1}-[0-9]{3}-[0-9]{6}" title="Formato ID 3-101-123456">
+                                            <div class="input-group input-group-sm mt-2">
+                                                <div class="help-block with-errors" style="color:red"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <span class="col-sm-2 text-black-50 mt-2 text-center">Seleccione Oficina </span>
+                                    <div class="col-sm-3">
+                                        <div class="input-group input-group-sm mt-2">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="far fa-building"></i></span>
+                                            </div>
+                                            <select class="form-control" id="IdOficina" name="IdOficina" required>
+                                                <option value="">Seleccione una Opción</option>
+
+                                                @foreach (var item in Oficinas)
+                                                {
+                                                    <option value="@item.Oficina_Codigo">@item.Oficina_Codigo @item.Oficina_Descripcion </option>
+                                                }
+
+
+
+                                            </select>
+                                            <div class="input-group input-group-sm mt-2">
+                                                <div class="help-block with-errors" style="color:red"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 ml-3">
+                                        <button type="submit" class="btn btn-sm text-white rounded" id="Btn_Submit" style="background-color:rgba(19,61,141,1)"><i class="fas fa-search"></i> Buscar</button>
+                                    </div><!--FIn Col 5-->
+
+                                </div><!-- inicio columna 5 -->
+
+                            </div><!-- fin TARJETA -->
+                        </form><!-- fin Formulario -->
+
+                    </div><!-- fin col-7 #1 -->
+
+                </div><!--FIn ROW-->
+            </div>
+        </div>
+    }
+
+
+
+
+
+    <!-- Mostrar Formulario -->
+    <div class="container-fluid" id="Formulario"> </div>
+
+
+
+
+
+
+    <!--POP UP OCULTAR -->
+    <div id="PopUp" class="modal"
+         style="display:none;
+                    background-color: Black;
+                    filter: alpha(opacity=60);
+                    opacity: 0.6;
+                     z-index:10000;    ">
+
+        <div class="justify-content-center align-content-center d-flex">
+            <img src="~/Content/pattern_dot.png" />
+            <img src="~/Content/Loading2.gif" style="
+                 width: 150px;
+                    height: 150px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin-top: -75px;
+                    margin-left: -75px;" />
+
+            <span class=" h4 text-white-50 text-center mt-1"
+                  style=" position: absolute;
+                    top: 70%;
+                    left: 48%;
+                    margin-top: -75px;
+                    margin-left: -75px;
+                      ">
+                Procesando Información...
+            </span>
+        </div>
+    </div>
+
+
+
+
+
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <!-- Footer -->
+    <div class="mt-5 pt-3 pb-1 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xs-12 about-company">
+                    <h2>Contáctenos</h2>
+                    <p class="pr-5 text-white-50">Por favor refiera cualquier consulta, duda o problema de la página al siguiente correo: &nbsp;&nbsp;<a href="mailto:jmolinaz@bncr.fi.cr"><i class="fas fa-envelope-open-text"></i></a></p>
+                    <img src="~/Content/imagenes/Inicio/Logo-azu-BN.png" height="70" alt="Alternate Text" />
+                </div>
+                <div class="col-lg-3 col-xs-12 links">
+                    <h4 class="mt-lg-0 mt-sm-3">Navegación</h4>
+                    <ul class="m-0 p-0">
+                        <li class="mt-3"><a href="~/Home/Inicio"><i class="fas fa-link"></i>&nbsp;&nbsp;Sitio</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Servicios</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Noticias</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Sobre Nosotros</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-xs-12 location">
+                    <h4 class="mt-lg-0 mt-sm-3">Ubicación</h4>
+                    <p><i class="fas fa-map-marked-alt mr-3"></i>San Jose, La Uruca, Edificio Cipac</p>
+
+                    <p class="mt-3"><i class="fa fa-phone mr-3"></i>(+506) 2212-2000</p>
+                    <p class="mb-0"><i class="far fa-envelope mr-3"></i>ConsultasCreditoRetail@bncr.fi.cr</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col copyright text-center">
+                    <p class="footer-copyright text-center py-3">
+                        Copyright © 2020 All rights reserved |
+                        <a href="#">Dirección de Crédito Desarrollo y Personas</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Footer -->
+
+</body>
+</html>
+
+
+
+<!-- //para vistas parciales-->
+<script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")"></script>
+
+
+
+
+
+<script>
+    //desactivar al hacer la busqueda
+    function DesactivarCamposBusqueda() {
+        $("#Txt_Cedula").attr("disabled", true);
+        $("#IdOficina").attr("disabled", true);        
+        $("#Btn_Submit").attr("disabled", true);
+        
+    }
+
+</script>

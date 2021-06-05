@@ -1,0 +1,1057 @@
+﻿@{
+    Layout = null;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+}
+
+<!DOCTYPE html>
+
+<html>
+
+@Styles.Render("~/Content/css_Secciones")
+@Scripts.Render("~/bundles/scriptsSecciones")
+
+<head>
+
+    <!--estilo del collapse-->
+    <style>
+        .accordion_container {
+            width: auto;
+        }
+
+        .accordion_head {
+            background-color: #133D8D;  /*Fondo de barra   */
+            color: white;
+            cursor: pointer;
+            font-family: arial;
+            font-size: 14px;
+            margin: 0 0 1px 0;
+            padding: 7px 11px;
+            font-weight: bold;
+        }
+
+        .accordion_body {
+            background-color:white;
+        }
+
+            .accordion_body p {
+                padding: 18px 5px;
+                margin: 0px;
+            }
+
+        .plusminus {
+            float: right;
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="~/Content/imagenes/icoBn1.png" type="image/x-icon">
+    <title>Preguntas Frecuentes</title>
+</head>
+<body>
+
+
+
+    <!--#region Nav Principal-->
+    <!--inicio nav-->
+    <!-- menu minimizar -->
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+    <!--  fin menu minimizar -->
+    <!--***Menu principal***-->
+    <div class="site-navbar-wrap">
+        <div class="site-navbar-top">
+            <div class="container py-1">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <a href="https://twitter.com/bnmascerca" class="p-2 pl-0"><span class="icon-twitter"></span></a>
+                        <a href="https://www.facebook.com/bnmascerca/" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                        <a href="https://cr.linkedin.com/company/banco-nacional" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
+                        <a href="https://www.instagram.com/bnmascerca/?hl=es-la" class="p-2 pl-0"><span class="icon-instagram"></span></a>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex ml-auto">
+                            <a href="#" class="d-flex align-items-center ml-auto mr-4">
+                                <span class="icon-phone mr-2"></span>
+                                <span class="d-none d-md-inline-block">+506 2212 2000</span>
+                            </a>
+                            <a href="mailto:consultascreditoretail@bncr.fi.cr" class="d-flex align-items-center">
+                                <span class="icon-envelope mr-2"></span>
+                                <span class="d-none d-md-inline-block">consultascreditoretail@bncr.fi.cr</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-navbar">
+            <div class="container">
+                <div class="row align-items-center" style="height:50px;">
+                    <div class="col-2">
+                        <h2 class="site-logo"><a href="~/Home/Inicio"><img src="../../Content/Calendario/Imagenes/ICO.png" class="img-fluid" style="height:45px;"></a></h2>
+                    </div>
+                    <div class="col-10">
+                        <nav class="site-navigation text-right" role="navigation">
+                            <div class="container">
+                                <div class="d-inline-block d-lg-none ml-md-0 mr-auto "><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+                                <ul class="site-menu js-clone-nav d-none d-lg-block">
+
+                                    <li><a href="~/Home/Inicio">SITIO</a></li>
+
+                                    <li class="has-children">
+                                        <a href="#!">SERVICIOS</a>
+                                        <ul class="dropdown arrow-top">
+                                            <li><a href="~/Home/Buscador">Motor Búsqueda</a></li>
+                                            <li><a href="http://dsn820bda01:81/sipcoweb/">SipcoWeb</a></li>
+                                            <li><a href="~/Home/Estadisticas">Estadísticas</a></li>
+                                            <li><a href="http://bnportal/sites/comercial/CIPAC/CIPAC_Tramite.zip">BD Sipco</a></li>
+                                            <li><a href="~/Home/MatrizSeguimiento"><i class="fas fa-calculator"></i> Matriz Seguimiento</a></li>
+                                        </ul>
+
+
+                                    </li>
+
+                                    <li class="has-children">
+                                        <a href="#!">INFÓRMESE</a>
+                                        <ul class="dropdown arrow-top">
+                                            <li><a href="~/Home/Noticias">Noticias</a></li>
+                                            <li><a href="~/Home/ErrorAcceso">Guía de Uso</a></li>
+                                            <li><a href="~/Home/PreguntasFrecuentes">Preguntas Frecuentes</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="https://universidad.bncr.fi.cr/login/index.php">CAPACITACIONES</a></li>
+                                    <li><a href="~/Home/Calendario">CALENDARIO</a></li>
+                                    <li><a href="~/Home/ErrorAcceso">CONTACTO</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END menu principal-->
+    <!--#endregion-->
+    <!-- Banner Titulo -->
+    <div class="container-fluid d-flex align-items-end" style="background-image: url(../../Content/PreguntasFrecuentes/banner.jpg);background-size:cover;height:300px;" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container text-white mb-4">
+            <span class="sub-text" style="font-family:'Segoe UI';font-size:24px;">Consultas Realizadas a la Dirección</span>
+            <h1 class="wow flipInX" style="font-family:'Segoe UI';font-size:64px;" data-wow-delay="0.5s">    <strong>Preguntas Frecuentes</strong></h1>
+        </div>
+    </div>
+
+
+
+    <!-- .Divisor -->
+
+    <div class="container-fluid slider-1" style="background-color:#B0BD20;">
+        <div class="row">
+            <br />
+        </div>
+    </div>
+
+
+
+
+
+    <!--STAR el titulo de las Noticias-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 my-5 py-3 z-depth-2" style="width">
+                <!--Section: Content-->
+                <section class="text-center dark-grey-text">
+
+                    <div class="row">
+                        <div class="col-md-5 mx-auto">
+                            <div class="view  pb-2">
+                                <img src="~/Content/PreguntasFrecuentes/faq.gif" class="img-fluid" alt="smaple image" style="width:150px;height:150px;">
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="font-weight-bold mb-2 pb-2">Preguntas Frecuentes <i class="fas fa-question"></i></h3>
+                </section>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="col-12 d-flex justify-content-center mt-2 mb-3">
+            <hr class="container" />
+        </div>
+    </div>
+
+    <div class="container">
+        <h5 class="mb-4">Productos de crédito</h5>
+
+        <div class="row">
+            <div class="col">
+                <div class="accordion_container">
+
+                    <div class="accordion_head text-justify">1. ¿Existe alguna restricción en Consumo Cuota Única para el porcentaje de financiamiento destinado a gastos personales?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>Según indica la Dirección de Productos de Crédito,  el producto de Cuota Única consumo no limita el monto para destinar a gastos personales.  </p>
+                    </div>
+
+
+                    <div class="accordion_head text-justify">2. ¿Es necesario aportar un fiador, para trámites de BN Vehículos con garantía prendaria?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+
+                            <a href="~/Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_5.png">
+                                <img src="~/Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_5.png" class="mt-3 mb-1" />
+                            </a>
+                            <br /><text class="font-italic" style="font-size:small">Fuente: NO15GR02 Normativa Garantías y Valoración de Bienes</text><br />
+                            <br />
+                            La Dirección de Productos de Crédito indica: Aplica lo que dispone la ficha de producto de BN Vehículos y detalla únicamente prenda. Lo indicado en la Normativa de Garantías es para otros productos crediticios, que en caso de requerirse la fianza se indica en la ficha de producto si la  hay.
+                        </p>
+                    </div>
+
+
+                    <div class="accordion_head text-justify">3. ¿Puede un cliente con histórico de pago diferente a AAA, AA, A optar por un Bn Rapidito?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            <a href="~/Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_6.jpg">
+                                <img src="~/Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_6.jpg" class="mt-3 mb-1" />
+                            </a>
+
+                            <br /><text class="font-italic" style="font-size:small">Fuente: Ficha de BN Soluciones.</text><br /><br />
+
+                            <text class="text-justify" style="color:black">  En este caso se trata como un cliente nuevo según la definición que indica la Normativa de Generalidades. Para el caso de crédito Rapiditos se debe considerar las condiciones que se solicita  para cliente nuevo.</text>
+
+
+                            <a href="~/Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_6_1.png">
+                                <img src="~/Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_6_1.png" class="mt-3 mb-1" />
+                            </a>
+                            <br /><text class="font-italic" style="font-size:small">Fuente: NO09GR02 Normativa Generalidades Crediticias.</text><br /><br />
+                        </p>
+                    </div>
+
+
+                    <div class="accordion_head text-justify">4. ¿Existe alguna restricción en cuanto a la medida de los terrenos a financiar?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+
+                            <a href="~/Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_23.png">
+                                <img src="~/Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_23.png" class="mt-3 mb-1" style="width:900px;" />
+                            </a>
+                            <br /><text class="font-italic" style="font-size:small">Fuente: Ficha de producto: BN Vivienda</text><br />
+                            <br />
+                            <a href="http://bnportal/sites/procesos/_layouts/15/WopiFrame.aspx?sourcedoc=/sites/procesos/Planificacion_SGC/FP01-PR021GR02%20BN%20Vivienda.docx&action=default&DefaultItemOpen=1">Link</a>
+
+
+                        </p>
+                    </div>
+
+
+                    <div class="accordion_head text-justify">5. ¿Es posible el resarcimiento de capital invertido en el producto de vivienda? Esto porque el producto de vivienda dentro de los usos finales no referencia a resarcir capital invertido y a nivel normativo no se observa limitación. ?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <p class="mt-3">
+                            <text class="font-weight-bold">
+                                Dirección de Cobranzas Trámites Especiales indica:
+                            </text><br /><br />
+                            El resarcimiento de capital se puede aplicar prácticamente para la mayoría de las actividades. En las únicas donde no puede aplicarse es en aquellas que literalmente se limiten; esto en el tanto se cuente con la documentación formal y suficiente que sustente el planteamiento.
+                            Es importante aplicar el origen de recursos por la ley 8204 que fueron utilizados en esa compra. Si fue capital propio o fue producto de un préstamo de un tercero y si fuera este último igual ubicar el origen del origen.
+                            En las fichas de producto difícilmente vamos a encontrar un uso final que diga resarcimiento, siendo que al final nos interesa conocer el fin de la inversión.
+                            <br /><br />
+                            En cuanto al uso del pagaré para remodelaciones, ¿si se trata de un cliente Nuevo con Score de originación Aprobado,<br /> no aplican las consideraciones a), b) y c)?
+                            <br />
+                            <a href="~/Content/PreguntasFrecuentes/Imagenes/6.png">
+                                <img src="~/Content/PreguntasFrecuentes/Imagenes/6.png" class="mt-3 mb-1" style="width:600px;height:550px;" />
+                            </a>
+                            <br /><text class="font-italic" style="font-size:small">Fuente: Procedimiento PR04RP01 Atención, Recepción y trámite de solicitudes de crédito en Redes de Oficinas</text><br />
+                            <br />
+                            Respuesta: No aplican
+                            <br />
+                            <br />
+
+                        </p>
+                    </div>
+
+
+                    <div class="accordion_head text-justify">6. En la oficina tenemos un cliente que ya posee fincas sembradas de palma aceitera y le venden una finca vecina a la de él, la cual está sembrada de palma y está en producción. ¿Podemos financiar la compra de esta finca?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+
+                        <div class="row">
+                            <div class="col-7 mt-4">
+                                <p>
+                                    El plan de inversión de compra en efecto está cerrado totalmente, así las cosas, el planteamiento que se anota al menos a hoy está imposibilitado.
+                                    <br />
+                                    <a href="~/Content/PreguntasFrecuentes/Imagenes/7.png">
+                                        <img src="~/Content/PreguntasFrecuentes/Imagenes/7.png" class="mt-3 mb-1" />
+                                    </a>
+                                    <br />
+                                    <br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion_head text-justify">7. ¿Qué es un crédito gestionado?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <br />
+                        <p>Es un crédito analizado por modelos matemáticos que no solicita requisitos adicionales, cliente únicamente presenta identificación.  </p>
+                        <br />
+                    </div>
+
+
+
+                    <div class="accordion_head text-justify">8.	En un caso condiciones de Feria, ¿es posible otorgar tasas de ventanilla y brindarle al cliente las demás condiciones?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <br />
+                        <p>Si es posible.  </p>
+                        <br />
+                    </div>
+
+
+                    <div class="accordion_head text-justify">9.	Tengo un cliente que cumple con las condiciones de alto perfil, pero el resultado del Score es aprobado con Sobre Tasa. <br />¿Se le podría dar con las condiciones de ALTO PERFIL? <span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <br />
+                        <p>No se puede tramitar si el resultado del score es sobretasa ya que la tasa de la campaña es mucho más baja que la sobretasa.  </p>
+                        <br />
+                    </div>
+
+
+                    <div class="accordion_head text-justify">10.	El programa de rapiditos indica que a un cliente CO-A se puede aprobar hasta la suma de ₡15 millones, sin embargo, si en la columna Límite Restringido del score, dice “SI”. ¿Cuál sería el monto que se puede aprobar? ¿Serían 7,5 millones o esto no impide que se pueda aprobar hasta 15 millones? <span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <br />
+                        <p>La aplicabilidad del score va en el tanto la solicitud este dentro de los rangos de evaluación de dicha herramienta, si el valor es superado lo que aplica es tomar el resultado como no concluyente y proceder a un análisis tradicional, por ejemplo, vivienda, donde el score es concluyente hasta las solicitudes de 40 millones, para monto superiores no es concluyente.</p>
+                        <br />
+                    </div>
+
+
+                    <div class="accordion_head text-justify">11.	¿En BN Soluciones se puede otorgar con pagaré firmado por el Deudor en Planes de Inversión Cancelación de Pasivos? esto en virtud, que la Ficha básicamente en cancelación de pasivos solamente hace mención de BN Cuota Única y que debe ser con garantía Hipotecaria o Back to Back.  <span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <br />
+                        <p>
+                            El programa de cuota única está estrechamente relacionado a una condición de tasa más favorable que la tasa estándar de consumo en general, donde dicha tasa va acompañada de una serie de características en el perfilamiento del cliente, así como las condiciones aplicables.
+                            Dicho lo anterior, lo que expones en principio se entiende que no se está accediendo a la condición de tasa, por tanto, el planteamiento sería un crédito de consumo corriente donde dentro de su plan de inversión seria la cancelación de un pasivo. Dicha propuesta si es viable.
+                        </p>
+                        <br />
+                    </div>
+
+
+
+                    <div class="accordion_head text-justify">
+                        12.  Revisando la ficha del producto de BN Soluciones observo que el cliente nuevo debe tener el SCORE como <u> aprobado </u>y ya no se habla de la opción de <u>SOBRETASA</u>, revisando en la Ficha de tasas de Finanzas tampoco se indica la tasa para ese producto. Quería saber si tenemos comunicación oficial para dejar o continuar colocando ese producto con la tasa del 33%, ya que MPC indica una tasa superior.
+                        <span class="plusminus">+</span>
+                    </div>
+                    <div class="accordion_body" style="display: none;">
+                        <br />
+                        <p class="text-justify">
+                            El programa de cuota única está estrechamente relacionado a una condición de tasa más favorable que la tasa estándar de consumo en general, donde dicha tasa va acompañada de una serie de características en el perfilamiento del cliente, así como las condiciones aplicables.
+                            Dicho lo anterior, lo que expones en principio se entiende que no se está accediendo a la condición de tasa, por tanto, el planteamiento sería un crédito de consumo corriente donde dentro de su plan de inversión seria la cancelación de un pasivo. Dicha propuesta si es viable.
+
+                        </p>
+
+                        <p class="text-center">
+                            <a href="~/Content/PreguntasFrecuentes/Imagenes/12.PNG">
+                                <img src="~/Content/PreguntasFrecuentes/Imagenes/12.png" class="mt-3 mb-1" style="width:700px;" />
+                            </a>
+                        </p>
+
+                        <p class="text-justify">
+                            Para efectos de la ficha del producto, aprobado y aprobado con sobre tasa, se da por entendido que “Aprobó el Score de Originación”. Para efectos de finanzas, la tasa seria a hoy la del 33% que se muestra.
+                        </p>
+
+
+                        <p class="text-center">
+                            <a href="~/Content/PreguntasFrecuentes/Imagenes/12_1.PNG">
+                                <img src="~/Content/PreguntasFrecuentes/Imagenes/12_1.png" class="mt-3 mb-1" style="width:400px;" />
+                            </a>
+                        </p>
+
+
+                        <br />
+                    </div>
+
+
+
+
+
+
+                    <div class="accordion_head text-justify">13.  Una cliente asalariada del sector privado, requiere un crédito de salud, pero al hacerle el score el resultado es aceptado con sobretasa. ¿En ese caso hay forma de darle la tasa de salud?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <br />
+                        <p>
+                            Las subclases de salud educación y crédito verde sin fiador solo aplica la tasa que está en la web de finanzas, no aplica la sobretasa para estas subclases.
+                        </p>
+                        <br />
+                    </div>
+
+
+                    <div class="accordion_head text-justify">14.  ¿Es requisito para los BN Rapiditos que los clientes tengas 6 meses de laborar con el mismo patrono?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <br />
+                        <p class="text-justify">
+                            Esta indicación se encontraba en la Guía Comercial, misma que ya fue eliminada por tanto no aplica dicha indicación, por lo tanto, el análisis va de la mano con la continuidad laboral según la norma.
+                            La restricción de los 6 meses fue netamente comercial, ya que nunca estuvo en normativa, la póliza de desempleo aplica a partir de los 6 meses de continuidad laboral con un mismo patrono. Si el cliente no tiene ese tiempo no le cubre la póliza, hasta que lo cumpla; pero el crédito se puede dar sin la póliza, ya que a hoy la póliza no es requisito del crédito, es un producto adicional que se da con el crédito si se cumplen los requisitos, pero no lo restringe.
+                        </p>
+                        <br />
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center mt-4">
+            <hr class="container" />
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <h5 class="mb-4 mt-3">Consulta de sección de ingeniería</h5>
+        <div class="row">
+            <div class="col">
+                <div class="accordion_container">
+
+                    <div class="accordion_head">
+                        1.	¿En caso de remodelación de vivienda con permisos, planos, presupuesto, entre otros; y con la garantía de pagaré firmado por deudor, ¿es necesario tramitar un avalúo o se puede gestionar mediante inspección?<span class="plusminus">+</span>
+                    </div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            Deben solicitar un cronograma de desembolsos y una vez dado el crédito solicitan un giro normal por la línea 22 File On. Esto tiene un costo de 3 horas profesionales más kilometraje y el 1.5% del monto destinado de construcción.
+                        </p>
+                        <br />
+                        <br />
+                    </div>
+
+
+                    <div class="accordion_head">2.	En el certificado catastral ¿Cuáles son las inconsistencias registrales a las que se da trámite?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>Solo la 5 y 9. Todas las demás inconsistencias no serán tramitadas y debe indicarse al deudor que resuelva el trámite previamente y una vez corregido presente nuevamente la documentación.</p>
+                        <p class="text-center">
+                            <a href="~/Content/PreguntasFrecuentes/Imagenes/2_Ingenieria.PNG">
+                                <img src="~/Content/PreguntasFrecuentes/Imagenes/2_Ingenieria.PNG" style="height:300px;" class="mt-3 mb-3" />
+                            </a>
+                        </p>
+                    </div>
+
+
+                    <div class="accordion_head">3.	¿Qué proceso se debe seguir cuando un cliente desea una revaloración del peritaje en los casos en que no esté de acuerdo con el resultado de este y cuánto dura Sección de Ingeniería en resolver el reclamo del cliente?<span class="plusminus">+</span>                    </div>
+                    <div class="accordion_body" style="display: none;">
+
+                        <div class="row">
+                            <div class="col-12 mt-4 mb-2">
+                                <p class="text-justify">
+                                    Una vez que el perito hizo la valoración, en caso de que los clientes tengan dudas con respecto al resultado deben presentar una reclamo en la oficina correspondiente, dicho reclamo debe ser elevado a los supervisores de originación, quien debe valorar si eleva el caso a sección de ingeniería (estos tienen un tiempo de respuesta de 15 días para dar la resolución correspondiente a la oficina y que esta comunique al cliente), caso contrario y de no elevar el reclamo a sección de ingeniería, el supervisor de originación le informaría a la oficina para que esta le notifique al cliente.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center mt-4">
+            <hr class="container" />
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <h5 class="mb-4 mt-3">Consulta a Procedimientos</h5>
+        <div class="row">
+            <div class="col">
+                <div class="accordion_container">
+
+                    <div class="accordion_head">1.	¿Se debe adjuntar el documento de oferta a todo crédito masivo? ¿Se debe entregar en forma física? ¿Es el mismo formato para créditos empresariales?<span class="plusminus">+</span>                    </div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            <span style="color:#B0BD20">»</span> a.	Se debe proporcionar el RE02-PR121RP01 Oferta de Crédito para todos los créditos empresariales; para los demás casos se debe entregar este registro (RE02-PR121RP01) solo cuando se negocie individualmente la tasa de interés, comisiones u otro.
+                            <br /><br /><span style="color:#B0BD20">»</span> b.	El procedimiento deja abierta la opción para que el registro se entregue al cliente en su dirección electrónica, en cuyo caso no habría consumo de papel.
+                            <br /><br /><span style="color:#B0BD20">»</span> c.	Se utiliza el mismo formato.
+                        </p>
+                        <br />
+                    </div>
+
+                    <div class="accordion_head">2.	¿Es posible cerrar el plan de inversión de la cancelación de una TC con un estudio del CIC?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>Correcto, favor ver en el módulo correspondiente el cuadro que refiere a los diferentes medios de verificación según el plan de inversión.</p>
+                    </div>
+
+
+
+                    <div class="accordion_head text-justify">3.	Respecto a la verificación de los planes de inversión cuando se cancelan deudas a terceros. ¿Se puede dar por realizada con solo la emisión del cheque de gerencia o deposito a la cuenta del acreedor (entes supervisados) o se debe de cumplir con lo indicado en el punto 6 del PR305RP01 vigente? Mi duda es porque la emisión del cheque de gerencia es únicamente parte del proceso o instrucciones del desembolso y no me asegura que se cancele la deuda hasta que el cliente realice el trámite respectivo.<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>En vista de que pueden existir saldos al descubierto debe cumplir con lo indicado en el cuadro. </p>
+
+
+                        <p class="text-center">
+                            <a href="~/Content/PreguntasFrecuentes/Imagenes/20.PNG">
+                                <img src="~/Content/PreguntasFrecuentes/Imagenes/20.png" class="mt-3 mb-1" style="width:800px;" />
+                            </a>
+                        </p>
+
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center  mt-4">
+            <hr class="container" />
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <h5 class="mb-4 mt-3">Consultas operativas</h5>
+        <div class="row">
+            <div class="col">
+                <div class="accordion_container">
+
+                    <div class="accordion_head">1.	¿En dónde se revisa la base de datos de defraudaciones?<span class="plusminus">+</span>                    </div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            Es posible consultarlo en el SIP.
+                        </p>
+                    </div>
+
+
+                    <div class="accordion_head">2.	¿Por cuál línea se tramita un BN Liquidez con garantía Back to Back?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            Si el caso es 100% Back to Back, lo pueden tramitar por MPC, si prefieren hacerlo por file on, el ejecutivo crea la remisión 3, está la atiende el aprobador y una vez que realice el trámite pasa la remisión 36, en esta se crea la operación y contrato. Posterior a que el cliente firme, la oficina remite la remisión 70 que es la alerta para formalización.
+                            <br /><br />
+                            Un crédito BN Liquidez no se tramita por medio de Siacc sino de SFB.
+                            <br /><br />
+                            El proceso de formalización y desembolso se tramita por medio del supervisor de operaciones de la Zona.
+                        </p>
+                        <br />
+                    </div>
+
+
+
+
+                    <div class="accordion_head">3.	Cuando un cliente, tiene información financiera de otros trámites de crédito, las cuales se utilizan para un análisis de crédito nuevo y se exportan digitalmente. ¿Qué detalle se debe indicar en los documentos exportados?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <div class="row">
+                            <div class="col-12 mt-4 mb-2">
+                                <p class="text-justify">
+                                    <text class="font-italic" style="font-size:medium">“Copia extraída del expediente de crédito ######”</text>
+                                    o bien le pueden hacer un link a ese expediente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion_head">4.	¿Cómo se realiza el cálculo de giros de cuota para créditos de construcción?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+
+
+                        <p class="mt-1">
+                            Del monto del crédito se rebajan:
+
+
+
+                            <br /><br />  <span style="color:#B0BD20" class="ml-4">»</span>	Los gastos de trámite y formalización si aplican.
+                            <br /><br />  <span style="color:#B0BD20" class="ml-4">»</span>Se rebajan otros pagos: compra de lote, cancelación de pasivos, etc. Si aplican
+                            <br /><br />  <span style="color:#B0BD20" class="ml-4">»</span>Se deduce el 1.5% de comisión de inspección.
+                            <br /><br />  <span style="color:#B0BD20" class="ml-4">»</span>Remanente: Es el monto de crédito destinado para construcción. Se gira según porcentaje recomendado por el perito.
+
+
+
+                            <br /><br /> Hay que considerar que las oficinas deberán indicar en la caratula únicamente el porcentaje de desembolso recomendado por el perito, para que el tramitador de crédito realice el cálculo anterior.
+
+                        </p>
+                    </div>
+
+
+
+
+                    <div class="accordion_head">5.	¿Quién determina cuál método utilizar para el cálculo de TC en la capacidad de pago?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <div class="row">
+                            <div class="col-12 mt-4 mb-2">
+                                <p class="text-justify">
+                                    Es el tomador de riesgo es quien elige cuál es el escenario más conveniente para el trámite en particular, no hay una jerarquía en las opciones y todas son válidas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion_head">6.	¿Se pueden considerar deudas irregulares en el memo financiero?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <div class="row">
+                            <div class="col-12 mt-4 mb-2">
+                                <p class="text-justify">
+                                    MCP si tiene la opción de capturar deudas irregulares.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="accordion_head">7.	¿Es posible realizar el análisis de capacidad de pago de un cliente que desarrolla actividad cíclica mediante memo financiero, esto para un crédito de consumo?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <div class="row">
+                            <div class="col-12 mt-4 mb-2">
+                                <p class="text-justify">
+                                    Para utilizar MCP-A en análisis de actividades mercantiles, la actividad debe proveer flujos de efectivo regulares en tiempo y monto.
+                                    Siendo que analizar actividades con flujos irregulares y promediar sus partidas en el MCP-A conlleva a un error en la interpretación de los registros al asumir una situación que no es real.
+                                    Para actividades con comportamientos irregulares se debe utilizar la herramienta que está construida para tal fin, ósea el MCP-B.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion_head">8.	¿Cómo se procede con el análisis de ingresos de un alcalde cuyo nombramiento es por 4 años?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+
+
+                        <p class="mt-1">
+                            En caso de presentarse un solicitante, llámese alcalde, Diputado o funcionario sujeto al periodo gubernamental de 4 años, lo que corresponde sería realizar <u>un análisis integral del caso por parte del tomador de riesgo.</u>
+
+                            <br /> Ante ello, se podrirán presentar distintos escenarios.
+
+                            <br /><br />  <span style="color:#B0BD20" class="ml-4">»</span>	Justificar que el cliente tiene otros ingresos, que le permitan cumplir con el compromiso financiero del crédito a otorgar una vez culminada su gestión gubernamental.
+                            <br /><br />  <span style="color:#B0BD20" class="ml-4">»</span>	Evidenciar que el cliente pueda tener un puesto “Congelado” a la espera de retomarse, una vez culminada su gestión gubernamental.
+                            <br /><br />  <span style="color:#B0BD20" class="ml-4">»</span>	Ajustar el plazo del crédito al periodo restante de su gestión gubernamental, en caso de no poder justificar una fuente de ingreso posterior al periodo de su puesto de gobierno.
+
+                        </p>
+                    </div>
+
+
+                    <div class="accordion_head">
+                        9.  Ley 8968 de protección de datos. Cuando se realiza la consulta en el Cedid el sistema le envía al cliente un mensaje de texto con el consentimiento para que sea firmado, esto que dice  RV: Copia de documento - Consentimiento informado Ley 8968  es la copia del consentimiento que firmo el cliente. ¿Qué pasa si los clientes no quieren firma el documento? ya que dice que autoriza a utilizar la información financiera no sólo al Banco Nacional sino a un montón de entidades más.
+                        <span class="plusminus">+</span>
+                    </div>
+                    <div class="accordion_body" style="display: none;">
+                        <div class="row">
+                            <div class="col-12 mt-4 mb-2">
+                                <p class="text-justify">
+                                    Ese proceso lo hace el proveedor de la información y no el banco, pero si el cliente no autoriza no se podría contar con un requisito del banco como lo es el estudio de protectora y al faltar un requisito el caso no puede continuar, salvo que se trate de un cliente A donde ese requisito se exime.
+                                    Por otro lado, no es necesario que el cliente se apersone a las instalaciones de crédito, basta con que el cliente al momento que le llegue el mensaje siga la instrucción y autorice por medio electrónico el uso de su información. Para ello credid tiene una plataforma que facilita el tema y está en línea.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="accordion_head">
+                        10.	¿Puede un título valor del BNCR respaldar más de un crédito bajo la modalidad back to back?
+                        <span class="plusminus">+</span>
+                    </div>
+                    <div class="accordion_body" style="display: none;">
+                        <div class="row">
+                            <div class="col-12 mt-4 mb-2">
+                                <p class="text-justify">
+                                    Según el D.J / 381-2015 no existe limitación o prohibición para que un CDP garantice dos o más operaciones crediticias, siempre y cuando el monto del CDP sea suficiente para cubrir los montos adeudados.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="accordion_head">
+                        11.	Se aprueba una línea de capital de trabajo a un plazo “X”. ¿Cada vez que se solicita un desembolso de línea de capital de trabajo se mide capacidad de pago? Sabiendo que inicialmente se le midió de acuerdo al monto total y plazo de la línea.
+                        <span class="plusminus">+</span>
+                    </div>
+                    <div class="accordion_body" style="display: none;">
+                        <div class="row">
+                            <div class="col-12 mt-4 mb-2">
+                                <p class="text-justify">
+                                    Las LC para efectos prácticos funcionan muy similar a las TC; originalmente se aprueba una LC donde median todos los elementos propios de un análisis de crédito (dentro de esto Capacidad de Pago).
+                                    Posteriormente para cada desembolso no aplica un análisis de crédito como el original, sino más bien una revisión de condiciones, entre ellas que cuente con seguros al día, que tenga el ultimo seguimiento al día en caso de aplicar, que cuente con el CIC autorizado, por citar algunos… pero no una nueva evaluación de CP.
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion_head">
+                        12.	¿Qué pasa a nivel de sistema (MPC) cuando un plan de inversión se incumplió, se rechaza? La consulta es porque va a salir siempre el pendiente en el seguimiento.
+                        <span class="plusminus">+</span>
+                    </div>
+                    <div class="accordion_body" style="display: none;">
+                        <div class="row">
+                            <div class="col-12 mt-4 mb-2">
+                                <p class="text-justify">
+                                    Lo que recomendamos es cerrar el plan de inversión de forma convencional y dejar en el expediente digital la evidencia del proceso de incumplimiento que se ejecutó con el cliente según el procedimiento (aumento de tasa, cobro, etc).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="accordion_head">
+                        13.	¿Por qué hay casos que están atendiendo en la línea especializada, pero se ven reflejados en la herramienta Power BI y se los están asignando a la zona en modo de sistema?. No se puede observar cuando un caso es trabajado por esta línea, ya que aparece cómo pendiente de la zona y el compañero encargado pierde tiempo revisando algo que ya está en proceso de análisis o bien ya se encuentra aprobado.
+                        <span class="plusminus">+</span>
+                    </div>
+                    <div class="accordion_body" style="display: none;">
+                        <div class="row">
+                            <div class="col-12 mt-4 mb-2">
+                                <p class="text-justify">
+                                    Los casos que serán aprobados por el equipo de Líneas Especializadas tienen un tipo de remisión especifica al momento de crear el caso a nivel de RENMA.
+                                    Ahora los casos que se anotan, tienen el tipo de remisión que orienta el caso a ser atendido por el encargado de crédito de la oficina, si luego de la revisión se concluye que la solicitud debe ser atendida por la LE, entonces lo que procede es rechazar la remisión para que el usuario cree una nueva de forma correcta.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="accordion_head">
+                        14.	¿Puede ser sujeto de crédito un cliente que se encuentre con incapacidad indefinida? Y al cuál las aseguradoras han respondido que no se puede asegurar.
+                        <span class="plusminus">+</span>
+                    </div>
+                    <div class="accordion_body" style="display: none;">
+                        <div class="row">
+                            <div class="col-12 mt-4 mb-2">
+                                <p class="text-justify">
+                                    Un cliente que tenga una incapacidad independientemente del tiempo de ésta, será sujeto de crédito, caso contrario el banco estaría haciendo una discriminación por una condición de salud. Con respecto al tema del seguro, igual la norma de seguros anota lo que se puede hacer ante casos donde el cliente por algún motivo no puede ser asegurado.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion_head">
+                        15.	¿En dónde se pueden encontrar las métricas actuales de las Salidas No Conformes?
+                        <span class="plusminus">+</span>
+                    </div>
+                    <div class="accordion_body" style="display: none;">
+                        <div class="row">
+                            <div class="col-12 mt-4 mb-2">
+                                <p class="text-justify">
+                                    En el mapa de procesos:
+                                </p>
+
+                                <p class="text-center">
+                                    <a href="~/Content/PreguntasFrecuentes/Imagenes/21.PNG">
+                                        <img src="~/Content/PreguntasFrecuentes/Imagenes/21.png" class="mt-3 mb-1" style="width:800px;" />
+                                    </a>
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="accordion_head">
+                        16.	Cuando un crédito se encuentra en la etapa de aprobación, ¿existe dentro de ese tiempo un lapso para que el ejecutivo realice correcciones al caso o un espacio para argumentar o defender las observaciones o en su defecto debe devolverse el caso?
+                        <span class="plusminus">+</span>
+                    </div>
+                    <div class="accordion_body" style="display: none;">
+                        <div class="row">
+                            <div class="col-12 mt-4 mb-2">
+                                <p class="text-justify">
+                                    La recomendación es que cuando el encargado revisa un caso y encuentra omisiones o necesidad de ampliaciones claras, el caso sea devuelto inmediatamente para que los tiempos sean trasladados de área, y que el proceso de crédito pueda tener claridad donde están segregados esos tiempos.
+                                    Ahora bien, si el encargado toma la decisión de dar un “chance” al ejecutivo y no devolverle el caso, ese tiempo lo asume el encargado, tiempo que finalmente no está dentro del alcance encargado; esta práctica no es la recomendada, pero si conocemos que es común en varias oficinas. Producto de esta práctica, es que posiblemente los encargados dan chance hasta el umbral pero al no tener respuesta lo devuelven porque finalmente a ellos se les agoto su tiempo de espera.
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center mt-4">
+            <hr class="container" />
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <h5 class="mb-4 mt-3">Consultas de Notariado</h5>
+        <div class="row">
+            <div class="col">
+                <div class="accordion_container">
+
+                    <div class="accordion_head">1. ¿Se debe inscribir una servidumbre que esté ligada a calle pública?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            Los despachos han anotado que el hecho que una servidumbre conste en un lindero y no esté inscrita, técnicamente esa figura no constituye acceso legal.
+                            En un lindero no se delimitan los detalles, ancho, rumbo, entre otros que se pueden observar en la propia inscripción de la servidumbre.
+                            Por lo anterior SI es necesaria la inscripción.
+
+                            <br /><br />
+                            <a href="~/Content/PreguntasFrecuentes/Imagenes/18.png">
+                                <img src="~/Content/PreguntasFrecuentes/Imagenes/18.png" />
+                            </a>
+
+
+                        </p>
+                    </div>
+
+
+                    <div class="accordion_head">2.	¿Es posible el resarcimiento de capital invertido en el producto de vivienda? Esto porque el producto de vivienda dentro de los usos finales no referencia a resarcir capital invertido y a nivel normativo no se observa limitación. <span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            El resarcimiento de capital se puede aplicar prácticamente para la mayoría de las actividades. En las únicas donde no puede aplicarse es en aquellas que literalmente se limiten; esto en el tanto se cuente con la documentación formal y suficiente que sustente el planteamiento.
+                            Es importante aplicar el origen de recursos por la ley 8204 que fueron utilizados en esa compra. Si fue capital propio o fue producto de un préstamo de un tercero y si fuera este último igual ubicar el origen del origen.
+                            En las fichas de producto difícilmente vamos a encontrar un uso final que diga resarcimiento, siendo que al final nos interesa conocer el fin de la inversión.
+
+                        </p>
+                    </div>
+
+
+
+                    <div class="accordion_head">3. ¿Cuándo se requiere el acuerdo de asamblea de accionistas? <span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            Se requiere cuando:
+                            <br /><br />  <span style="color:#B0BD20" class="ml-4">»</span>	a.	El crédito es solicitado a título personal del representante legal y el bien a dar en garantía está a nombre de la sociedad que representa.
+                            <br /><br />  <span style="color:#B0BD20" class="ml-4">»</span>	b.	Cuando el poder por sí mismo tiene la limitación de que el apoderado requiera para ciertos actos el acuerdo de la Asamblea de Accionistas.
+                        </p>
+                    </div>
+
+
+
+                    <div class="accordion_head">4.	¿Cuándo se requiere el acuerdo de junta directiva?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <p class="text-justify">
+                            A efectos de cumplir con lo dispuesto en el artículo 32 ter del Código de Comercio, se solicitará el acuerdo de Junta Directiva cuando tengamos:
+
+                            <br /><br />  <span style="color:#B0BD20" class="ml-4">»</span>	1.	Adquisición – venta – Hipoteca –Prenda de activos.
+
+                            <br /><br />  <span style="color:#B0BD20" class="ml-4">»</span>	2.	Aplica a todas las organizaciones reguladas por el Código de comercio, las más comunes son Sociedad Anónima y Sociedad de Responsabilidad limitada.
+                            <br />
+
+                        </p>
+                    </div>
+
+
+
+                    <div class="accordion_head">5.	¿Cuándo se requiere la declaración jurada?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            <br />
+                            A efectos de cumplir con lo dispuesto en el artículo 15 ter de la ley 7786:
+
+                            <br /><br />  <span style="color:#B0BD20" class="ml-4">»</span>1.	En todo acto en que medie pago entre partes.
+
+                            <br /><br />  <span style="color:#B0BD20" class="ml-4">»</span>2.	Que el aporte sea superior a los $10.000.00
+
+                            <br /><br />  <span style="color:#B0BD20" class="ml-4">»</span>3.	Se debe otorgar en escritura pública.
+
+                            <br /><br />  <span style="color:#B0BD20" class="ml-4">»</span>4.	Cancelar las especies fiscales
+
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center mt-4">
+            <hr class="container" />
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="container">
+        <h5 class="mb-4 mt-3">Consultas de Seguros</h5>
+        <div class="row">
+            <div class="col">
+                <div class="accordion_container">
+
+                    <div class="accordion_head">1.	9.	¿Aplica póliza de desempleo para trabajadores por tiempo definido?<span class="plusminus">+</span>                    </div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            Indemnizaciones BN Corredora indica que los contratos a plazo fijo o plazo determinado son excluyentes del seguro.
+                        </p>
+                    </div>
+
+
+                    <div class="accordion_head">2.	¿La póliza de vida también se aplica a los desembolsos de línea?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            En efecto aplica también.
+                        </p>
+                    </div>
+
+                    <div class="accordion_head">3. ¿Cuándo aplica la póliza de desempleo?<span class="plusminus">+</span></div>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            Cuando se da un despido con responsabilidad patronal.
+                        </p>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col-12 d-flex justify-content-center mt-4">
+            <hr class="container" />
+        </div>
+    </div>
+
+
+    <br /><br />
+
+
+    <!-- Footer -->
+    <div class="mt-5 pt-3 pb-1 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xs-12 about-company">
+                    <h2>Contáctenos</h2>
+                    <p class="pr-5 text-white-50">Por favor refiera cualquier consulta, duda o problema de la página al siguiente correo: &nbsp;&nbsp;<a href="mailto:jmolinaz@bncr.fi.cr"><i class="fas fa-envelope-open-text"></i></a></p>
+                    <img src="~/Content/imagenes/Inicio/Logo-azu-BN.png" height="70" alt="Alternate Text" />
+                </div>
+                <div class="col-lg-3 col-xs-12 links">
+                    <h4 class="mt-lg-0 mt-sm-3">Navegación</h4>
+                    <ul class="m-0 p-0">
+                        <li class="mt-3"><a href="~/Home/Inicio"><i class="fas fa-link"></i>&nbsp;&nbsp;Sitio</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Servicios</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Noticias</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Sobre Nosotros</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-xs-12 location">
+                    <h4 class="mt-lg-0 mt-sm-3">Ubicación</h4>
+                    <p><i class="fas fa-map-marked-alt mr-3"></i>San Jose, La Uruca, Edificio Cipac</p>
+
+                    <p class="mt-3"><i class="fa fa-phone mr-3"></i>(+506) 2212-2000</p>
+                    <p class="mb-0"><i class="far fa-envelope mr-3"></i>ConsultasCreditoRetail@bncr.fi.cr</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col copyright text-center">
+                    <p class="footer-copyright text-center py-3">
+                        Copyright © 2020 All rights reserved |
+                        <a href="#">Dirección de Crédito Desarrollo y Personas</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Footer -->
+    <!--iniciar animaciones de MDBootrapt-->
+    <script>
+        $(document).ready(function () {
+            new WOW().init();
+        });
+
+
+
+        $(document).ready(function () {
+            //toggle the component with class accordion_body
+            $(".accordion_head").click(function () {
+                if ($('.accordion_body').is(':visible')) {
+                    $(".accordion_body").slideUp(300);
+                    $(".plusminus").text('+');
+                }
+                if ($(this).next(".accordion_body").is(':visible')) {
+                    $(this).next(".accordion_body").slideUp(300);
+                    $(this).children(".plusminus").text('+');
+                } else {
+                    $(this).next(".accordion_body").slideDown(300);
+                    $(this).children(".plusminus").text('-');
+                }
+            });
+        });
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

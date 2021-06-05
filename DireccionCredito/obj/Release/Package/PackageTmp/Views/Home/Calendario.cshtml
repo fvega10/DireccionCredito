@@ -1,0 +1,873 @@
+﻿
+@{
+    Layout = null;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+}
+
+<!DOCTYPE html>
+
+<html>
+
+@Styles.Render("~/Content/css_Secciones")
+@Scripts.Render("~/bundles/scriptsSecciones")
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="~/Content/imagenes/icoBn1.png" type="image/x-icon">
+    <title>Calendario</title>
+</head>
+<body>
+
+
+    <!--inicio nav-->
+    <!-- menu minimizar -->
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+    <!--  fin menu minimizar -->
+    
+    
+    <!--***Menu principal***-->
+    <div class="site-navbar-wrap">
+        <div class="site-navbar-top">
+            <div class="container py-1">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <a href="https://twitter.com/bnmascerca" class="p-2 pl-0"><span class="icon-twitter"></span></a>
+                        <a href="https://www.facebook.com/bnmascerca/" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                        <a href="https://cr.linkedin.com/company/banco-nacional" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
+                        <a href="https://www.instagram.com/bnmascerca/?hl=es-la" class="p-2 pl-0"><span class="icon-instagram"></span></a>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex ml-auto">
+                            <a href="#" class="d-flex align-items-center ml-auto mr-4">
+                                <span class="icon-phone mr-2"></span>
+                                <span class="d-none d-md-inline-block">+506 2212 2000</span>
+                            </a>
+                            <a href="mailto:consultascreditoretail@bncr.fi.cr" class="d-flex align-items-center">
+                                <span class="icon-envelope mr-2"></span>
+                                <span class="d-none d-md-inline-block">consultascreditoretail@bncr.fi.cr</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-navbar">
+            <div class="container">
+                <div class="row align-items-center" style="height:50px;">
+                    <div class="col-2">
+                        <h2 class="site-logo"><a href="~/Home/Inicio"><img src="../../Content/Calendario/Imagenes/ICO.png" class="img-fluid" style="height:45px;"></a></h2>
+                    </div>
+                    <div class="col-10">
+                        <nav class="site-navigation text-right" role="navigation">
+                            <div class="container">
+                                <div class="d-inline-block d-lg-none ml-md-0 mr-auto "><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+                                <ul class="site-menu js-clone-nav d-none d-lg-block">
+
+                                    <li><a href="~/Home/Inicio">SITIO</a></li>
+
+                                    <li class="has-children">
+                                        <a href="#!">SERVICIOS</a>
+                                        <ul class="dropdown arrow-top">
+                                            <li><a href="~/Home/Buscador">Motor Búsqueda</a></li>
+                                            <li><a href="http://dsn820bda01:81/sipcoweb/">SipcoWeb</a></li>
+                                            <li><a href="~/Home/Estadisticas">Estadísticas</a></li>
+                                            <li><a href="http://bnportal/sites/comercial/CIPAC/CIPAC_Tramite.zip">BD Sipco</a></li>
+                                            <li><a href="~/Home/MatrizSeguimiento"><i class="fas fa-calculator"></i> Matriz Seguimiento</a></li>
+                                        </ul>
+
+
+                                    </li>
+
+                                    <li class="has-children">
+                                        <a href="#!">INFÓRMESE</a>
+                                        <ul class="dropdown arrow-top">
+                                            <li><a href="~/Home/Noticias">Noticias</a></li>
+                                            <li><a href="~/Home/ErrorAcceso">Guía de Uso</a></li>
+                                            <li><a href="~/Home/PreguntasFrecuentes">Preguntas Frecuentes</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="https://universidad.bncr.fi.cr/login/index.php">CAPACITACIONES</a></li>
+                                    <li><a href="~/Home/Calendario">CALENDARIO</a></li>
+                                    <li><a href="~/Home/ErrorAcceso">CONTACTO</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END menu principal-->
+
+
+
+    <div class="site-blocks-cover inner-page" style="background-image: url(../../Content/Calendario/Imagenes/11.png)" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row align-items-center  mb-4">
+                <div class="col-md-7">
+                    <span class="sub-text"><br /><br /><br /><br /><br /><br />Consulta de Eventos</span>
+                    <h1 class="wow flipInX" data-wow-delay="0.5s">    <strong>Calendario</strong></h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- .Divisor -->
+
+    <div class="container-fluid slider-1" style="background-color:#B0BD20;">
+        <div class="row">
+            <br />
+        </div>
+
+    </div>
+
+
+
+
+
+    <!--inicia el titulo de las capacitaciones-->
+
+    <div class="container my-5 py-5 z-depth-1">
+
+
+        <!--Section: Content-->
+        <section class="text-center px-md-5 mx-md-5 dark-grey-text">
+
+
+
+            <h3 class="font-weight-bold mb-4 pb-2">Próximos eventos del año</h3>
+            <p class="text-center mx-auto mb-2 pb-2">Consulte la informacion más actualizada de las próximas capacitaciones y reuniones con las oficinas de la red BNCR.</p>
+            <i class="fas fa-caret-down wow animated slideOutDown infinite" style="font-size:30px;color:#B0BD20;"></i>
+
+        </section>
+        <!--Section: Content-->
+
+
+    </div>
+
+
+
+    <!-- Evento febrero-->
+
+    <div class="container mt-5" style="@ViewBag.FEBRERO">
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+            <br /><br />
+            <!-- Grid row -->
+            <div class="row align-items-center">
+                <!-- Grid column -->
+                <div class="col-lg-5 col-xl-4">
+                    <!-- Featured image -->
+                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4 mr-3">
+                        <img class="img-fluid" src="~/Content/Calendario/Imagenes/reunion.jpg" alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-lg-7 col-xl-8">
+                    <!-- Post data -->
+                    <p>
+                        <a class="font-weight-bold" style="font-size:20px;">FEBRERO</a>&nbsp;<i class="fas fa-angle-double-right" style="color:#B0BD20"></i> &nbsp;21/02/2020
+                        <input type="hidden" id="Febrero" value="2020/02/21" />
+                        <img src="~/Content/Calendario/Imagenes/Vigente.png" class="float-right wow animated zoomInDown" style="height:40px;@ViewBag.FEBRERO" />
+                    </p>
+                    <!-- Read more button -->
+                    <!-- Post title -->
+                    <h4 class="font-weight-bold mb-3"><strong>Temas Varios</strong></h4>
+                    <!-- Excerpt -->
+                    <p class="dark-grey-text">
+                        -Tema de innovación<br />
+                        -rendición de cuentas- Avance en los proyectos.<br />
+                        -Insumos Recolectados (consultas de las Zonas copiadas a Crédito Retail)<br />
+                        -Consultas Operativas (compartirlas en los Talleres que se abarcaran)<br />
+                        -Recopilación de ideas-sugerencias por correo electronico.<br />
+                        -Información adicional que se obtendra de los Talleres)<br />
+                        -Problematicas que aquejan a la red de oficinas.<br />
+                        -Noticias recientes,  datos estadisticos, tips de crédito.<br />
+                        -Material de cambios normativos<br />
+                        -Salidas no conformes.<br />
+                        -Lectura e interpretación del CREDID.
+                    </p>
+                    <a href="mailto:consultascreditoretail@bncr.fi.cr?subject=¡Confirmar%20de%20Asistencia%20al%20Evento%20Febrero%20Crédito%20Retail!&body=Se%20Confirma%20Asistencia%20el%20a%20la%20Capacitacion%20-%20Evento:" class="btn btn-primary btn-md mx-0 btn-rounded @ViewBag.FEBREROBTN">Confirmar Asistencia</a>
+                    <a class="btn btn-primary btn-md mx-0 btn-rounded disabled ml-3">Resumen</a>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <hr class="">
+        </section>
+        <!--Section: Content-->
+    </div>
+
+    <!--evento Marzo-->
+
+    <div class="container mt-1" style="@ViewBag.MARZO">
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+            <br /><br />
+            <!-- Grid row -->
+            <div class="row align-items-center">
+                <!-- Grid column -->
+                <div class="col-lg-5 col-xl-4">
+                    <!-- Featured image -->
+                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4 mr-3">
+                        <img class="img-fluid" src="~/Content/Calendario/Imagenes/reunion.jpg" alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-lg-7 col-xl-8">
+                    <!-- Post data -->
+                    <p>
+                        <a class="font-weight-bold" style="font-size:20px;">MARZO</a>&nbsp;<i class="fas fa-angle-double-right" style="color:#B0BD20"></i> &nbsp;   13/03/2020
+                        <img src="~/Content/Calendario/Imagenes/Vigente.png" class="float-right wow animated zoomInDown" style="height:40px;@ViewBag.MARZO" />
+                    </p>
+                    <!-- Read more button -->
+                    <!-- Post title -->
+                    <h4 class="font-weight-bold mb-3"><strong>Temas Varios</strong></h4>
+                    <!-- Excerpt -->
+                    <p class="dark-grey-text">
+                        -Temas de Innovación<br />
+                        -Rendición de cuentas- Avance en los proyectos.<br />
+                        -Insumos Recolectados (consultas de las Zonas copiadas a Crédito Retail)<br />
+                        -Consultas Operativas (compartirlas en los Talleres que se abarcaran)<br />
+                        -Recopilación de ideas-sugerencias por correo electronico.<br />
+                        -Información adicional que se obtendra de los Talleres)<br />
+                        -Problematicas que aquejan a la red de oficinas.<br />
+                        -Noticias recientes,  datos estadisticos, tips de crédito.<br />
+                        -Material de cambios normativos.<br />
+                        -Salidas no conformes.<br />
+                        -Banca Digital.
+
+                    </p>
+                    <a href="mailto:consultascreditoretail@bncr.fi.cr?subject=¡Confirmar%20de%20Asistencia%20al%20Evento%20Marzo%20Crédito%20Retail!&body=Se%20Confirma%20Asistencia%20el%20a%20la%20Capacitacion%20-%20Evento:" class="btn btn-primary btn-md mx-0 btn-rounded @ViewBag.MARZOBTN">Confirmar Asistencia</a>
+                    <a class="btn btn-primary btn-md mx-0 btn-rounded disabled ml-3">Resumen</a>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <hr class="">
+        </section>
+        <!--Section: Content-->
+    </div>
+
+    <!--evento Abril-->
+
+    <div class="container mt-1" style="@ViewBag.ABRIL">
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+            <br /><br />
+            <!-- Grid row -->
+            <div class="row align-items-center">
+                <!-- Grid column -->
+                <div class="col-lg-5 col-xl-4">
+                    <!-- Featured image -->
+                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4 mr-3">
+                        <img class="img-fluid" src="~/Content/Calendario/Imagenes/reunion.jpg" alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-lg-7 col-xl-8">
+                    <!-- Post data -->
+                    <p>
+                        <a class="font-weight-bold" style="font-size:20px;">ABRIL</a>&nbsp;<i class="fas fa-angle-double-right" style="color:#B0BD20"></i> &nbsp;   17/04/2020
+                        <img src="~/Content/Calendario/Imagenes/Vigente.png" class="float-right wow animated zoomInDown" style="height:40px;@ViewBag.ABRIL" />
+                    </p>
+                    <!-- Read more button -->
+                    <!-- Post title -->
+                    <h4 class="font-weight-bold mb-3"><strong>Temas Varios</strong></h4>
+                    <!-- Excerpt -->
+                    <p class="dark-grey-text">
+                        -Temas de Innovación.<br />
+                        -Rendición de cuentas- Avance en los proyectos.<br />
+                        -Insumos Recolectados (consultas de las Zonas copiadas a Crédito Retail)<br />
+                        -Consultas Operativas (compartirlas en los Talleres que se abarcaran)<br />
+                        -Recopilación de ideas-sugerencias por correo electronico.<br />
+                        -Información adicional que se obtendra de los Talleres)<br />
+                        -Problematicas que aquejan a la red de oficinas.<br />
+                        -Noticias recientes,  datos estadisticos, tips de crédito.<br />
+                        -Material de cambios normativos.<br />
+                        -Salidas no conformes.<br />
+                        -Preguntas frecuentes financiamiento extranjeros y back to back.
+
+                    </p>
+                    <a href="mailto:consultascreditoretail@bncr.fi.cr?subject=¡Confirmar%20de%20Asistencia%20al%20Evento%20Abril%20Crédito%20Retail!&body=Se%20Confirma%20Asistencia%20el%20a%20la%20Capacitacion%20-%20Evento:" class="btn btn-primary btn-md mx-0 btn-rounded @ViewBag.ABRILBTN">Confirmar Asistencia</a>
+                    <a class="btn btn-primary btn-md mx-0 btn-rounded disabled ml-3">Resumen</a>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <hr class="">
+        </section>
+        <!--Section: Content-->
+    </div>
+
+    <!--evento Mayo-->
+
+    <div class="container mt-5" style="@ViewBag.MAYO">
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+            <br /><br />
+            <!-- Grid row -->
+            <div class="row align-items-center">
+                <!-- Grid column -->
+                <div class="col-lg-5 col-xl-4">
+                    <!-- Featured image -->
+                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4 mr-3">
+                        <img class="img-fluid" src="~/Content/Calendario/Imagenes/reunion.jpg" alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-lg-7 col-xl-8">
+                    <!-- Post data -->
+                    <p>
+                        <a class="font-weight-bold" style="font-size:20px;">MAYO</a>&nbsp;<i class="fas fa-angle-double-right" style="color:#B0BD20"></i> &nbsp;   15/05/2020
+                        <img src="~/Content/Calendario/Imagenes/Vigente.png" class="float-right wow animated zoomInDown" style="height:40px;@ViewBag.MAYO" />
+                    </p>
+                    <!-- Read more button -->
+                    <!-- Post title -->
+                    <h4 class="font-weight-bold mb-3"><strong>Temas Varios</strong></h4>
+                    <!-- Excerpt -->
+                    <p class="dark-grey-text">
+                        -Temas de Innovación<br />
+                        -Rendición de cuentas- Avance en los proyectos<br />
+                        -Insumos Recolectados (consultas de las Zonas copiadas a Crédito Retail)<br />
+                        -Consultas Operativas (compartirlas en los Talleres que se abarcaran)<br />
+                        -Recopilación de ideas-sugerencias por correo electronico<br />
+                        -Información adicional que se obtendra de los Talleres)<br />
+                        -Problematicas que aquejan a la red de oficinas.
+                        -Noticias recientes,  datos estadisticos, tips de crédito.<br />
+                        -Material de cambios normativos.<br />
+                        -Salidas no conformes.<br />
+                        -Capacidad de pago en N2 y perfiles de cliente para optar por fiador.
+
+                    </p>
+                    <a href="mailto:consultascreditoretail@bncr.fi.cr?subject=¡Confirmar%20de%20Asistencia%20al%20Evento%20Mayo%20Crédito%20Retail!&body=Se%20Confirma%20Asistencia%20el%20a%20la%20Capacitacion%20-%20Evento:" class="btn btn-primary btn-md mx-0 btn-rounded @ViewBag.MAYOBTN">Confirmar Asistencia</a>
+                    <a class="btn btn-primary btn-md mx-0 btn-rounded disabled ml-3">Resumen</a>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <hr class="">
+        </section>
+        <!--Section: Content-->
+    </div>
+
+    <!--evento Junio-->
+
+    <div class="container mt-5" style="@ViewBag.JUNIO">
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+            <br /><br />
+            <!-- Grid row -->
+            <div class="row align-items-center">
+                <!-- Grid column -->
+                <div class="col-lg-5 col-xl-4">
+                    <!-- Featured image -->
+                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4 mr-3">
+                        <img class="img-fluid" src="~/Content/Calendario/Imagenes/reunion.jpg" alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-lg-7 col-xl-8">
+                    <!-- Post data -->
+                    <p>
+                        <a class="font-weight-bold" style="font-size:20px;">JUNIO</a>&nbsp;<i class="fas fa-angle-double-right" style="color:#B0BD20"></i> &nbsp;   12/06/2020
+                        <img src="~/Content/Calendario/Imagenes/Vigente.png" class="float-right wow animated zoomInDown" style="height:40px;@ViewBag.JUNIO" />
+                    </p>
+                    <!-- Read more button -->
+                    <!-- Post title -->
+                    <h4 class="font-weight-bold mb-3"><strong>Temas Varios</strong></h4>
+                    <!-- Excerpt -->
+                    <p class="dark-grey-text">
+                        -Temas de Innovación.<br />
+                        -Rendición de cuentas- Avance en los proyectos.<br />
+                        -Insumos Recolectados (consultas de las Zonas copiadas a Crédito Retail)<br />
+                        -Consultas Operativas (compartirlas en los Talleres que se abarcaran)<br />
+                        -Recopilación de ideas-sugerencias por correo electronico.<br />
+                        -Información adicional que se obtendra de los Talleres)<br />
+                        -Problematicas que aquejan a la red de oficinas.<br />
+                        -Noticias recientes,  datos estadisticos, tips de crédito.<br />
+                        -material de cambios normativos.<br />
+                        -Salidas no conformes.<br />
+                        -Garantias de Tarjetas de Crédito.
+
+                    </p>
+                    <a href="mailto:consultascreditoretail@bncr.fi.cr?subject=¡Confirmar%20de%20Asistencia%20al%20Evento%20Junio%20Crédito%20Retail!&body=Se%20Confirma%20Asistencia%20el%20a%20la%20Capacitacion%20-%20Evento:" class="btn btn-primary btn-md mx-0 btn-rounded @ViewBag.JUNIOBTN">Confirmar Asistencia</a>
+                    <a class="btn btn-primary btn-md mx-0 btn-rounded disabled ml-3">Resumen</a>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <hr class="">
+        </section>
+        <!--Section: Content-->
+    </div>
+
+    <!--evento JULIO-->
+
+    <div class="container mt-5" style="@ViewBag.JULIO">
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+            <br /><br />
+            <!-- Grid row -->
+            <div class="row align-items-center">
+                <!-- Grid column -->
+                <div class="col-lg-5 col-xl-4">
+                    <!-- Featured image -->
+                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4 mr-3">
+                        <img class="img-fluid" src="~/Content/Calendario/Imagenes/reunion.jpg" alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-lg-7 col-xl-8">
+                    <!-- Post data -->
+                    <p>
+                        <a class="font-weight-bold" style="font-size:20px;">JULIO</a>&nbsp;<i class="fas fa-angle-double-right" style="color:#B0BD20"></i> &nbsp;   17/07/2020
+                        <img src="~/Content/Calendario/Imagenes/Vigente.png" class="float-right wow animated zoomInDown" style="height:40px;@ViewBag.JULIO" />
+                    </p>
+                    <!-- Read more button -->
+                    <!-- Post title -->
+                    <h4 class="font-weight-bold mb-3"><strong>Temas Varios</strong></h4>
+                    <!-- Excerpt -->
+                    <p class="dark-grey-text">
+                        -Temas de Innovación<br />
+                        -Rendición de cuentas- Avance en los proyectos<br />
+                        -Insumos Recolectados (consultas de las Zonas copiadas a Crédito Retail)<br />
+                        -Consultas Operativas (compartirlas en los Talleres que se abarcaran)<br />
+                        -Recopilación de ideas-sugerencias por correo electronico.
+                        -Información adicional que se obtendra de los Talleres)<br />
+                        -Problematicas que aquejan a la red de oficinas.<br />
+                        -Noticias recientes,  datos estadisticos, tips de crédito.<br />
+                        -material de cambios normativos.<br />
+                        -Salidas no conformes.<br />
+                        -Generador o no de moneda extranjera. (Invitado Especial)"
+
+                    </p>
+                    <a href="mailto:consultascreditoretail@bncr.fi.cr?subject=¡Confirmar%20de%20Asistencia%20al%20Evento%20Julio%20Crédito%20Retail!&body=Se%20Confirma%20Asistencia%20el%20a%20la%20Capacitacion%20-%20Evento:" class="btn btn-primary btn-md mx-0 btn-rounded ;@ViewBag.JULIOBTN">Confirmar Asistencia</a>
+                    <a class="btn btn-primary btn-md mx-0 btn-rounded disabled ml-3">Resumen</a>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <hr class="">
+        </section>
+        <!--Section: Content-->
+    </div>
+
+    <!--evento AGOSTO-->
+
+    <div class="container mt-5" style="@ViewBag.AGOSTO">
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+            <br /><br />
+            <!-- Grid row -->
+            <div class="row align-items-center">
+                <!-- Grid column -->
+                <div class="col-lg-5 col-xl-4">
+                    <!-- Featured image -->
+                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4 mr-3">
+                        <img class="img-fluid" src="~/Content/Calendario/Imagenes/reunion.jpg" alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-lg-7 col-xl-8">
+                    <!-- Post data -->
+                    <p>
+                        <a class="font-weight-bold" style="font-size:20px;">AGOSTO</a>&nbsp;<i class="fas fa-angle-double-right" style="color:#B0BD20"></i> &nbsp;   14/08/2020
+                        <img src="~/Content/Calendario/Imagenes/Vigente.png" class="float-right wow animated zoomInDown" style="height:40px;@ViewBag.AGOSTO" />
+                    </p>
+                    <!-- Read more button -->
+                    <!-- Post title -->
+                    <h4 class="font-weight-bold mb-3"><strong>Temas Varios</strong></h4>
+                    <!-- Excerpt -->
+                    <p class="dark-grey-text">
+                        -Temas de Innovación.<br />
+                        -Rendición de cuentas- Avance en los proyectos.<br />
+                        -Insumos Recolectados (consultas de las Zonas copiadas a Crédito Retail)<br />
+                        -Consultas Operativas (compartirlas en los Talleres que se abarcaran)<br />
+                        -Recopilación de ideas-sugerencias por correo electronico.<br />
+                        -Información adicional que se obtendra de los Talleres)<br />
+                        -Problematicas que aquejan a la red de oficinas.<br />
+                        -Noticias recientes,  datos estadisticos, tips de crédito.<br />
+                        -Material de cambios normativos.<br />
+                        -Salidas no conformes.<br />
+                        -Guia de permisos por actividad comercial.
+
+                    </p>
+                    <a href="mailto:consultascreditoretail@bncr.fi.cr?subject=¡Confirmar%20de%20Asistencia%20al%20Evento%20Agosto%20Crédito%20Retail!&body=Se%20Confirma%20Asistencia%20el%20a%20la%20Capacitacion%20-%20Evento:" class="btn btn-primary btn-md mx-0 btn-rounded @ViewBag.AGOSTOBTN">Confirmar Asistencia</a>
+                    <a class="btn btn-primary btn-md mx-0 btn-rounded disabled ml-3">Resumen</a>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <hr class="">
+        </section>
+        <!--Section: Content-->
+    </div>
+
+
+
+    <!--evento AGOSTO #2-->
+    <div class="container mt-5" style="@ViewBag.AGOSTO">
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+            <br /><br />
+            <!-- Grid row -->
+            <div class="row align-items-center">
+                <!-- Grid column -->
+                <div class="col-lg-5 col-xl-4">
+                    <!-- Featured image -->
+                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4 mr-3">
+                        <img class="img-fluid" src="~/Content/Calendario/Imagenes/charla.jpg" alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-lg-7 col-xl-8">
+                    <!-- Post data -->
+                    <p>
+                        <a class="font-weight-bold" style="font-size:20px;">AGOSTO</a>&nbsp;<i class="fas fa-angle-double-right" style="color:#B0BD20">
+                        </i> &nbsp;   Consultar Fechas
+                        <img src="~/Content/Calendario/Imagenes/Vigente.png" class="float-right wow animated zoomInDown" style="height:40px;@ViewBag.AGOSTO" />
+                    </p>
+                    <!-- Read more button -->
+                    <!-- Post title -->
+                    <h4 class="font-weight-bold mb-3"><strong>Charla Diagnóstico de crédito</strong></h4>
+                    <!-- Excerpt -->
+                    <p class="dark-grey-text">
+                        <i class="fas fa-caret-right" style="color:#B0BD20"></i>Fecha #1: Martes <b>04/08/2020</b> de 7:00 a.m. a 8:00 a.m.
+                    </p>
+                    <p class="dark-grey-text">
+                        <i class="fas fa-caret-right" style="color:#B0BD20"></i>Fecha #2: Martes <b>04/08/2020</b> de 8:20 a.m. a 9:20 a.m.<br />
+                    </p>
+                    <p class="dark-grey-text">
+                        <span class="mb-5"><i class="fas fa-caret-right" style="color:#B0BD20"></i>Fecha #3: Miércoles <b>05/08/2020</b> de 8:20 a.m. a 9:20 a.m.</span>
+                    </p>
+
+                    <a href="mailto:consultascreditoretail@bncr.fi.cr?subject=¡Confirmación%20de%20Asistencia%20a%20la%20charla%20Agosto%20Crédito%20Retail!&body=Se%20Confirma%20Asistencia%20a%20la%20Charla,%20Favor%20Inidique%20Fecha:" class="btn btn-primary btn-md mx-0 btn-rounded @ViewBag.AGOSTOBTN">Confirmar Asistencia</a>
+                    <a class="btn btn-primary btn-md mx-0 btn-rounded disabled ml-3">Resumen</a>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <hr class="">
+        </section>
+        <!--Section: Content-->
+    </div>
+
+
+
+    <!--evento SEPTIEMBRE-->
+
+    <div class="container mt-5" style="@ViewBag.SEPTIEMBRE">
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+            <br /><br />
+            <!-- Grid row -->
+            <div class="row align-items-center">
+                <!-- Grid column -->
+                <div class="col-lg-5 col-xl-4">
+                    <!-- Featured image -->
+                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4 mr-3">
+                        <img class="img-fluid" src="~/Content/Calendario/Imagenes/reunion.jpg" alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-lg-7 col-xl-8">
+                    <!-- Post data -->
+                    <p>
+                        <a class="font-weight-bold" style="font-size:20px;">SEPTIEMBRE</a>&nbsp;<i class="fas fa-angle-double-right" style="color:#B0BD20"></i> &nbsp;   21/09/2020
+                        <img src="~/Content/Calendario/Imagenes/Vigente.png" class="float-right wow animated zoomInDown" style="height:40px;@ViewBag.SEPTIEMBRE" />
+                    </p>
+                    <!-- Read more button -->
+                    <!-- Post title -->
+                    <h4 class="font-weight-bold mb-3"><strong>Temas Varios</strong></h4>
+                    <!-- Excerpt -->
+                    <p class="dark-grey-text">
+                        -Temas de Innovación.<br />
+                        -Rendición de cuentas- Avance en los proyectos.<br />
+                        -Insumos Recolectados (consultas de las Zonas copiadas a Crédito Retail)<br />
+                        -Consultas Operativas (compartirlas en los Talleres que se abarcaran)<br />
+                        -Recopilación de ideas-sugerencias por correo electronico.<br />
+                        -Información adicional que se obtendra de los Talleres)<br />
+                        -Problematicas que aquejan a la red de oficinas.<br />
+                        -Noticias recientes,  datos estadisticos, tips de crédito.<br />
+                        -Material de cambios normativos.<br />
+                        -Salidas no conformes.<br />
+                        -Consultas abiertas de productos de crédito (Inivtado Especial)
+
+                    </p>
+                    <a href="mailto:consultascreditoretail@bncr.fi.cr?subject=¡Confirmar%20de%20Asistencia%20al%20Evento%20Septiembre%20Crédito%20Retail!&body=Se%20Confirma%20Asistencia%20el%20a%20la%20Capacitacion%20-%20Evento:" class="btn btn-primary btn-md mx-0 btn-rounded @ViewBag.SEPTIEMBREBTN">Confirmar Asistencia</a>
+                    <a class="btn btn-primary btn-md mx-0 btn-rounded disabled ml-3">Resumen</a>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <hr class="">
+        </section>
+        <!--Section: Content-->
+    </div>
+
+    <!--evento OCTUBRE-->
+
+    <div class="container mt-5" style="@ViewBag.OCTUBRE">
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+            <br /><br />
+            <!-- Grid row -->
+            <div class="row align-items-center">
+                <!-- Grid column -->
+                <div class="col-lg-5 col-xl-4">
+                    <!-- Featured image -->
+                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4 mr-3">
+                        <img class="img-fluid" src="~/Content/Calendario/Imagenes/reunion.jpg" alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-lg-7 col-xl-8">
+                    <!-- Post data -->
+                    <p>
+                        <a class="font-weight-bold" style="font-size:20px;">OCTUBRE</a>&nbsp;<i class="fas fa-angle-double-right" style="color:#B0BD20"></i> &nbsp;   19/10/2020
+                        <img src="~/Content/Calendario/Imagenes/Vigente.png" class="float-right wow animated zoomInDown" style="height:40px;@ViewBag.OCTUBRE" />
+                    </p>
+                    <!-- Read more button -->
+                    <!-- Post title -->
+                    <h4 class="font-weight-bold mb-3"><strong>Temas Varios</strong></h4>
+                    <!-- Excerpt -->
+                    <p class="dark-grey-text">
+                        -Temas de Innovación.<br />
+                        -Rendición de cuentas- Avance en los proyectos.<br />
+                        -Insumos Recolectados (consultas de las Zonas copiadas a Crédito Retail)<br />
+                        -Consultas Operativas (compartirlas en los Talleres que se abarcaran)<br />
+                        -Recopilación de ideas-sugerencias por correo electronico.<br />
+                        -Información adicional que se obtendra de los Talleres)<br />
+                        -Problematicas que aquejan a la red de oficinas.<br />
+                        -Noticias recientes,  datos estadisticos, tips de crédito.<br />
+                        -Material de cambios normativos.<br />
+                        -Salidas no conformes.<br />
+                        -Consultas abiertas en temas de garantia.
+
+                    </p>
+                    <a href="mailto:consultascreditoretail@bncr.fi.cr?subject=¡Confirmar%20de%20Asistencia%20al%20Evento%20Octubre%20Crédito%20Retail!&body=Se%20Confirma%20Asistencia%20el%20a%20la%20Capacitacion%20-%20Evento:" class="btn btn-primary btn-md mx-0 btn-rounded @ViewBag.OCTUBREBTN">Confirmar Asistencia</a>
+                    <a class="btn btn-primary btn-md mx-0 btn-rounded disabled ml-3">Resumen</a>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <hr class="">
+        </section>
+        <!--Section: Content-->
+    </div>
+
+    <!--evento NOVIEMBRE-->
+
+    <div class="container mt-5" style="@ViewBag.NOVIEMBRE">
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+            <br /><br />
+            <!-- Grid row -->
+            <div class="row align-items-center">
+                <!-- Grid column -->
+                <div class="col-lg-5 col-xl-4">
+                    <!-- Featured image -->
+                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4 mr-3">
+                        <img class="img-fluid" src="~/Content/Calendario/Imagenes/reunion.jpg" alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-lg-7 col-xl-8">
+                    <!-- Post data -->
+                    <p>
+                        <a class="font-weight-bold" style="font-size:20px;">NOVIEMBRE</a>&nbsp;<i class="fas fa-angle-double-right" style="color:#B0BD20"></i> &nbsp;   13/11/2020
+                        <img src="~/Content/Calendario/Imagenes/Vigente.png" class="float-right wow animated zoomInDown" style="height:40px;@ViewBag.NOVIEMBRE" />
+                    </p>
+                    <!-- Read more button -->
+                    <!-- Post title -->
+                    <h4 class="font-weight-bold mb-3"><strong>Temas Varios</strong></h4>
+                    <!-- Excerpt -->
+                    <p class="dark-grey-text">
+                        -Temas de Innovación.<br />
+                        -Rendición de cuentas- Avance en los proyectos.<br />
+                        -Insumos Recolectados (consultas de las Zonas copiadas a Crédito Retail)<br />
+                        -Consultas Operativas (compartirlas en los Talleres que se abarcaran)<br />
+                        -Recopilación de ideas-sugerencias por correo electronico.<br />
+                        -Información adicional que se obtendra de los Talleres)<br />
+                        -Problematicas que aquejan a la red de oficinas.<br />
+                        -Noticias recientes,  datos estadisticos, tips de crédito.<br />
+                        -Material de cambios normativos.<br />
+                        -Salidas no conformes.<br />
+                        -Atestados y duda razonable.
+
+                    </p>
+                    <a href="mailto:consultascreditoretail@bncr.fi.cr?subject=¡Confirmar%20de%20Asistencia%20al%20Evento%20Noviembre%20Crédito%20Retail!&body=Se%20Confirma%20Asistencia%20el%20a%20la%20Capacitacion%20-%20Evento:" class="btn btn-primary btn-md mx-0 btn-rounded @ViewBag.NOVIEMBREBTN">Confirmar Asistencia</a>
+                    <a class="btn btn-primary btn-md mx-0 btn-rounded disabled ml-3">Resumen</a>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <hr class="">
+        </section>
+        <!--Section: Content-->
+    </div>
+
+    <!--evento DICIEMBRE-->
+
+    <div class="container mt-5" style="@ViewBag.DICIEMBRE">
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+            <br /><br />
+            <!-- Grid row -->
+            <div class="row align-items-center">
+                <!-- Grid column -->
+                <div class="col-lg-5 col-xl-4">
+                    <!-- Featured image -->
+                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4 mr-3">
+                        <img class="img-fluid" src="~/Content/Calendario/Imagenes/reunion.jpg" alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-lg-7 col-xl-8">
+                    <!-- Post data -->
+                    <p>
+                        <a class="font-weight-bold" style="font-size:20px;">DICIEMBRE</a>&nbsp;<i class="fas fa-angle-double-right" style="color:#B0BD20"></i> &nbsp;   18/12/2020
+                        <img src="~/Content/Calendario/Imagenes/Vigente.png" class="float-right wow animated zoomInDown" style="height:40px;@ViewBag.DICIEMBRE" />
+                    </p>
+                    <!-- Read more button -->
+                    <!-- Post title -->
+                    <h4 class="font-weight-bold mb-3"><strong>No se registran Reuniones</strong></h4>
+                    <!-- Excerpt -->
+                    <p class="dark-grey-text">
+
+                    </p>
+                    <a href="mailto:consultascreditoretail@bncr.fi.cr?subject=¡Confirmar%20de%20Asistencia%20al%20Evento%20Diciembre%20Crédito%20Retail!&body=Se%20Confirma%20Asistencia%20el%20a%20la%20Capacitacion%20-%20Evento:" class="btn btn-primary btn-md mx-0 btn-rounded @ViewBag.DICIEMBRE disabled">Confirmar Asistencia</a>
+                    <a class="btn btn-primary btn-md mx-0 btn-rounded disabled ml-3">Resumen</a>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <hr class="">
+        </section>
+        <!--Section: Content-->
+    </div>
+
+    <!--evento 2-->
+
+
+
+
+    <br /><br />
+
+    <!-- Footer -->
+
+
+    <div class="mt-5 pt-3 pb-1 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xs-12 about-company">
+                    <h2>Contáctenos</h2>
+                    <p class="pr-5 text-white-50">Por favor refiera cualquier consulta, duda o problema de la página al siguiente correo: &nbsp;&nbsp;<a href="mailto:jmolinaz@bncr.fi.cr"><i class="fas fa-envelope-open-text"></i></a></p>
+                    <img src="~/Content/imagenes/Inicio/Logo-azu-BN.png" height="70" alt="Alternate Text" />
+                </div>
+                <div class="col-lg-3 col-xs-12 links">
+                    <h4 class="mt-lg-0 mt-sm-3">Navegación</h4>
+                    <ul class="m-0 p-0">
+                        <li class="mt-3"><a href="~/Home/Inicio"><i class="fas fa-link"></i>&nbsp;&nbsp;Sitio</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Servicios</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Noticias</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Sobre Nosotros</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-xs-12 location">
+                    <h4 class="mt-lg-0 mt-sm-3">Ubicación</h4>
+                    <p><i class="fas fa-map-marked-alt mr-3"></i>San Jose, La Uruca, Edificio Cipac</p>
+
+                    <p class="mt-3"><i class="fa fa-phone mr-3"></i>(+506) 2212-2000</p>
+                    <p class="mb-0"><i class="far fa-envelope mr-3"></i>ConsultasCreditoRetail@bncr.fi.cr</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col copyright text-center">
+                    <p class="footer-copyright text-center py-3">
+                        Copyright © 2020 All rights reserved |
+                        <a href="#">Dirección de Crédito Desarrollo y Personas</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Footer -->
+    <!--iniciar animaciones de MDBootrapt-->
+
+
+
+
+    <script>
+        $(document).ready(function () {
+
+            new WOW().init();
+
+        });
+    </script>
+
+</body>
+</html>
+

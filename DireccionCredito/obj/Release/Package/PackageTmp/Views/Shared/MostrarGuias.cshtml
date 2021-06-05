@@ -1,0 +1,14 @@
+﻿@model DireccionCredito.Models.GuiaComercial
+
+<option value="999">--Seleccione Guia--</option>
+
+@{
+    if (ViewBag.Guia != null)
+    {
+        foreach (var item in ViewBag.Guia)
+        {
+            <option value="@item.Value">@item.Text</option>
+        }
+
+    }
+}

@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="POCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CONTROL">
+          <Key>
+            <PropertyRef Name="intCONTROL" />
+          </Key>
+          <Property Name="intCONTROL" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="numCLIENTE" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="intQ" Type="int" />
+        </EntityType>
+        <EntityType Name="ctACCIONES">
+          <Key>
+            <PropertyRef Name="intACCIONES" />
+          </Key>
+          <Property Name="intACCIONES" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="strACCIONES" Type="nvarchar" MaxLength="200" />
+          <Property Name="rlPESO" Type="real" />
+          <Property Name="btHAB" Type="bit" />
+        </EntityType>
+        <EntityType Name="ctEXPERIENCIAS">
+          <Key>
+            <PropertyRef Name="intEXPERIENCIA" />
+          </Key>
+          <Property Name="intEXPERIENCIA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="strEXPERIENCIA" Type="nvarchar" MaxLength="200" />
+          <Property Name="rlPESO" Type="real" />
+          <Property Name="btHAB" Type="bit" />
+        </EntityType>
+        <EntityType Name="ctFLUJOS_CAJA">
+          <Key>
+            <PropertyRef Name="intFLUJO_CAJA" />
+          </Key>
+          <Property Name="intFLUJO_CAJA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="strFLUJO_CAJA" Type="nvarchar" MaxLength="200" />
+          <Property Name="rlPESO" Type="real" />
+          <Property Name="btHAB" Type="bit" />
+        </EntityType>
+        <EntityType Name="ctNCPS">
+          <Key>
+            <PropertyRef Name="intNCP" />
+          </Key>
+          <Property Name="intNCP" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="strNCP" Type="nvarchar" MaxLength="10" />
+          <Property Name="rlPESO" Type="real" />
+          <Property Name="btHAB" Type="bit" />
+        </EntityType>
+        <EntityType Name="ctRATINGS">
+          <Key>
+            <PropertyRef Name="intRATING" />
+          </Key>
+          <Property Name="intRATING" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="strRATING" Type="nvarchar" MaxLength="10" />
+          <Property Name="rlPESO" Type="real" />
+          <Property Name="btHAB" Type="bit" />
+        </EntityType>
+        <EntityType Name="ctRESULTADOS">
+          <Key>
+            <PropertyRef Name="intRESULTADOS" />
+          </Key>
+          <Property Name="intRESULTADOS" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="strRESULTADOS" Type="nvarchar" MaxLength="10" />
+          <Property Name="rlPESO" Type="real" />
+          <Property Name="btHAB" Type="bit" />
+        </EntityType>
+        <EntityType Name="ctSECTORES">
+          <Key>
+            <PropertyRef Name="intSECTORES" />
+          </Key>
+          <Property Name="intSECTORES" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="strSECTORES" Type="nvarchar" MaxLength="20" />
+          <Property Name="rlPESO" Type="real" />
+          <Property Name="btHAB" Type="bit" />
+        </EntityType>
+        <EntityType Name="ctVARIABLES">
+          <Key>
+            <PropertyRef Name="intVARIABLE" />
+          </Key>
+          <Property Name="intVARIABLE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="intNCP" Type="int" />
+          <Property Name="intFLUJO_CAJA" Type="int" />
+          <Property Name="rlPESOmin" Type="real" />
+          <Property Name="rlPESOmax" Type="real" />
+          <Property Name="intRESULTADO" Type="int" />
+          <Property Name="strRESULTADO" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Repositorio_ClientesJuridicos">
+          <Key>
+            <PropertyRef Name="CLI_IDENTIFICACION" />
+          </Key>
+          <Property Name="CLI_CODIGO_CLIENTE" Type="int" Nullable="false" />
+          <Property Name="TPI_CODIGO_IDENTIFICACION" Type="tinyint" Nullable="false" />
+          <Property Name="CLI_IDENTIFICACION" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="ID_SUGEF" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="CFI_NOMBRE" Type="varchar" MaxLength="150" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TRX">
+          <Key>
+            <PropertyRef Name="intTRX" />
+          </Key>
+          <Property Name="intTRX" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="numCLIENTE" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="dtFECHA_APLICACION" Type="datetime" />
+          <Property Name="intOFICINA" Type="int" />
+          <Property Name="strUSUARIO" Type="nvarchar" MaxLength="100" />
+          <Property Name="btHAB" Type="bit" />
+          <Property Name="intEXPERIENCIA" Type="int" />
+          <Property Name="intRATING" Type="int" />
+          <Property Name="intACCIONES" Type="int" />
+          <Property Name="intSECTOR" Type="int" />
+          <Property Name="intNCP" Type="int" />
+          <Property Name="intFLUJO_CAJA" Type="int" Nullable="false" />
+          <Property Name="intRESULTADO" Type="int" />
+          <Property Name="strRESULTADO" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Repositorio_AgenciasBNCR">
+          <Key>
+            <PropertyRef Name="Oficina_Codigo" />
+          </Key>
+          <Property Name="Oficina_Codigo" Type="int" Nullable="false" />
+          <Property Name="Oficina_Descripcion" Type="varchar" MaxLength="150" />
+          <Property Name="Id_Zona" Type="int" />
+        </EntityType>
+        <Function Name="PROC_PRORROGA_EMPRESAS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="intEXPERIENCIA" Type="int" Mode="In" />
+          <Parameter Name="intRATING" Type="int" Mode="In" />
+          <Parameter Name="intACCIONES" Type="int" Mode="In" />
+          <Parameter Name="intSECTOR" Type="int" Mode="In" />
+          <Parameter Name="intNCP" Type="int" Mode="In" />
+          <Parameter Name="intFLUJO_CAJA" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="POCModelStoreContainer">
+          <EntitySet Name="CONTROL" EntityType="Self.CONTROL" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ctACCIONES" EntityType="Self.ctACCIONES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ctEXPERIENCIAS" EntityType="Self.ctEXPERIENCIAS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ctFLUJOS_CAJA" EntityType="Self.ctFLUJOS_CAJA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ctNCPS" EntityType="Self.ctNCPS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ctRATINGS" EntityType="Self.ctRATINGS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ctRESULTADOS" EntityType="Self.ctRESULTADOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ctSECTORES" EntityType="Self.ctSECTORES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ctVARIABLES" EntityType="Self.ctVARIABLES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Repositorio_ClientesJuridicos" EntityType="Self.Repositorio_ClientesJuridicos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TRX" EntityType="Self.TRX" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Repositorio_AgenciasBNCR" EntityType="Self.Repositorio_AgenciasBNCR" Schema="SipcoWeb" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="POCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CONTROL">
+          <Key>
+            <PropertyRef Name="intCONTROL" />
+          </Key>
+          <Property Name="intCONTROL" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="numCLIENTE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="intQ" Type="Int32" />
+        </EntityType>
+        <EntityType Name="ctACCIONES">
+          <Key>
+            <PropertyRef Name="intACCIONES" />
+          </Key>
+          <Property Name="intACCIONES" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="strACCIONES" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="rlPESO" Type="Single" />
+          <Property Name="btHAB" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ctEXPERIENCIAS">
+          <Key>
+            <PropertyRef Name="intEXPERIENCIA" />
+          </Key>
+          <Property Name="intEXPERIENCIA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="strEXPERIENCIA" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="rlPESO" Type="Single" />
+          <Property Name="btHAB" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ctFLUJOS_CAJA">
+          <Key>
+            <PropertyRef Name="intFLUJO_CAJA" />
+          </Key>
+          <Property Name="intFLUJO_CAJA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="strFLUJO_CAJA" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="rlPESO" Type="Single" />
+          <Property Name="btHAB" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ctNCPS">
+          <Key>
+            <PropertyRef Name="intNCP" />
+          </Key>
+          <Property Name="intNCP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="strNCP" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="rlPESO" Type="Single" />
+          <Property Name="btHAB" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ctRATINGS">
+          <Key>
+            <PropertyRef Name="intRATING" />
+          </Key>
+          <Property Name="intRATING" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="strRATING" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="rlPESO" Type="Single" />
+          <Property Name="btHAB" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ctRESULTADOS">
+          <Key>
+            <PropertyRef Name="intRESULTADOS" />
+          </Key>
+          <Property Name="intRESULTADOS" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="strRESULTADOS" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="rlPESO" Type="Single" />
+          <Property Name="btHAB" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ctSECTORES">
+          <Key>
+            <PropertyRef Name="intSECTORES" />
+          </Key>
+          <Property Name="intSECTORES" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="strSECTORES" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="rlPESO" Type="Single" />
+          <Property Name="btHAB" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ctVARIABLES">
+          <Key>
+            <PropertyRef Name="intVARIABLE" />
+          </Key>
+          <Property Name="intVARIABLE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="intNCP" Type="Int32" />
+          <Property Name="intFLUJO_CAJA" Type="Int32" />
+          <Property Name="rlPESOmin" Type="Single" />
+          <Property Name="rlPESOmax" Type="Single" />
+          <Property Name="intRESULTADO" Type="Int32" />
+          <Property Name="strRESULTADO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Repositorio_ClientesJuridicos">
+          <Key>
+            <PropertyRef Name="CLI_IDENTIFICACION" />
+          </Key>
+          <Property Name="CLI_CODIGO_CLIENTE" Type="Int32" Nullable="false" />
+          <Property Name="TPI_CODIGO_IDENTIFICACION" Type="Byte" Nullable="false" />
+          <Property Name="CLI_IDENTIFICACION" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ID_SUGEF" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CFI_NOMBRE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TRX">
+          <Key>
+            <PropertyRef Name="intTRX" />
+          </Key>
+          <Property Name="intTRX" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="numCLIENTE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="dtFECHA_APLICACION" Type="DateTime" Precision="3" />
+          <Property Name="intOFICINA" Type="Int32" />
+          <Property Name="strUSUARIO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="btHAB" Type="Boolean" />
+          <Property Name="intEXPERIENCIA" Type="Int32" />
+          <Property Name="intRATING" Type="Int32" />
+          <Property Name="intACCIONES" Type="Int32" />
+          <Property Name="intSECTOR" Type="Int32" />
+          <Property Name="intNCP" Type="Int32" />
+          <Property Name="intFLUJO_CAJA" Type="Int32" Nullable="false" />
+          <Property Name="intRESULTADO" Type="Int32" />
+          <Property Name="strRESULTADO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Repositorio_AgenciasBNCR">
+          <Key>
+            <PropertyRef Name="Oficina_Codigo" />
+          </Key>
+          <Property Name="Oficina_Codigo" Type="Int32" Nullable="false" />
+          <Property Name="Oficina_Descripcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="Id_Zona" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="POCEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CONTROL" EntityType="Self.CONTROL" />
+          <EntitySet Name="ctACCIONES" EntityType="Self.ctACCIONES" />
+          <EntitySet Name="ctEXPERIENCIAS" EntityType="Self.ctEXPERIENCIAS" />
+          <EntitySet Name="ctFLUJOS_CAJA" EntityType="Self.ctFLUJOS_CAJA" />
+          <EntitySet Name="ctNCPS" EntityType="Self.ctNCPS" />
+          <EntitySet Name="ctRATINGS" EntityType="Self.ctRATINGS" />
+          <EntitySet Name="ctRESULTADOS" EntityType="Self.ctRESULTADOS" />
+          <EntitySet Name="ctSECTORES" EntityType="Self.ctSECTORES" />
+          <EntitySet Name="ctVARIABLES" EntityType="Self.ctVARIABLES" />
+          <EntitySet Name="Repositorio_ClientesJuridicos" EntityType="Self.Repositorio_ClientesJuridicos" />
+          <EntitySet Name="TRX" EntityType="Self.TRX" />
+          <EntitySet Name="Repositorio_AgenciasBNCR" EntityType="Self.Repositorio_AgenciasBNCR" />
+          <FunctionImport Name="PROC_PRORROGA_EMPRESAS" ReturnType="Collection(POCModel.PROC_PRORROGA_EMPRESAS_Result)">
+            <Parameter Name="intEXPERIENCIA" Mode="In" Type="Int32" />
+            <Parameter Name="intRATING" Mode="In" Type="Int32" />
+            <Parameter Name="intACCIONES" Mode="In" Type="Int32" />
+            <Parameter Name="intSECTOR" Mode="In" Type="Int32" />
+            <Parameter Name="intNCP" Mode="In" Type="Int32" />
+            <Parameter Name="intFLUJO_CAJA" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="PROC_PRORROGA_EMPRESAS_Result">
+          <Property Type="Int32" Name="intRESULTADO" Nullable="true" />
+          <Property Type="String" Name="strRESULTADO" Nullable="true" MaxLength="50" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="POCModelStoreContainer" CdmEntityContainer="POCEntities">
+          <EntitySetMapping Name="CONTROL">
+            <EntityTypeMapping TypeName="POCModel.CONTROL">
+              <MappingFragment StoreEntitySet="CONTROL">
+                <ScalarProperty Name="intCONTROL" ColumnName="intCONTROL" />
+                <ScalarProperty Name="numCLIENTE" ColumnName="numCLIENTE" />
+                <ScalarProperty Name="intQ" ColumnName="intQ" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ctACCIONES">
+            <EntityTypeMapping TypeName="POCModel.ctACCIONES">
+              <MappingFragment StoreEntitySet="ctACCIONES">
+                <ScalarProperty Name="intACCIONES" ColumnName="intACCIONES" />
+                <ScalarProperty Name="strACCIONES" ColumnName="strACCIONES" />
+                <ScalarProperty Name="rlPESO" ColumnName="rlPESO" />
+                <ScalarProperty Name="btHAB" ColumnName="btHAB" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ctEXPERIENCIAS">
+            <EntityTypeMapping TypeName="POCModel.ctEXPERIENCIAS">
+              <MappingFragment StoreEntitySet="ctEXPERIENCIAS">
+                <ScalarProperty Name="intEXPERIENCIA" ColumnName="intEXPERIENCIA" />
+                <ScalarProperty Name="strEXPERIENCIA" ColumnName="strEXPERIENCIA" />
+                <ScalarProperty Name="rlPESO" ColumnName="rlPESO" />
+                <ScalarProperty Name="btHAB" ColumnName="btHAB" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ctFLUJOS_CAJA">
+            <EntityTypeMapping TypeName="POCModel.ctFLUJOS_CAJA">
+              <MappingFragment StoreEntitySet="ctFLUJOS_CAJA">
+                <ScalarProperty Name="intFLUJO_CAJA" ColumnName="intFLUJO_CAJA" />
+                <ScalarProperty Name="strFLUJO_CAJA" ColumnName="strFLUJO_CAJA" />
+                <ScalarProperty Name="rlPESO" ColumnName="rlPESO" />
+                <ScalarProperty Name="btHAB" ColumnName="btHAB" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ctNCPS">
+            <EntityTypeMapping TypeName="POCModel.ctNCPS">
+              <MappingFragment StoreEntitySet="ctNCPS">
+                <ScalarProperty Name="intNCP" ColumnName="intNCP" />
+                <ScalarProperty Name="strNCP" ColumnName="strNCP" />
+                <ScalarProperty Name="rlPESO" ColumnName="rlPESO" />
+                <ScalarProperty Name="btHAB" ColumnName="btHAB" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ctRATINGS">
+            <EntityTypeMapping TypeName="POCModel.ctRATINGS">
+              <MappingFragment StoreEntitySet="ctRATINGS">
+                <ScalarProperty Name="intRATING" ColumnName="intRATING" />
+                <ScalarProperty Name="strRATING" ColumnName="strRATING" />
+                <ScalarProperty Name="rlPESO" ColumnName="rlPESO" />
+                <ScalarProperty Name="btHAB" ColumnName="btHAB" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ctRESULTADOS">
+            <EntityTypeMapping TypeName="POCModel.ctRESULTADOS">
+              <MappingFragment StoreEntitySet="ctRESULTADOS">
+                <ScalarProperty Name="intRESULTADOS" ColumnName="intRESULTADOS" />
+                <ScalarProperty Name="strRESULTADOS" ColumnName="strRESULTADOS" />
+                <ScalarProperty Name="rlPESO" ColumnName="rlPESO" />
+                <ScalarProperty Name="btHAB" ColumnName="btHAB" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ctSECTORES">
+            <EntityTypeMapping TypeName="POCModel.ctSECTORES">
+              <MappingFragment StoreEntitySet="ctSECTORES">
+                <ScalarProperty Name="intSECTORES" ColumnName="intSECTORES" />
+                <ScalarProperty Name="strSECTORES" ColumnName="strSECTORES" />
+                <ScalarProperty Name="rlPESO" ColumnName="rlPESO" />
+                <ScalarProperty Name="btHAB" ColumnName="btHAB" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ctVARIABLES">
+            <EntityTypeMapping TypeName="POCModel.ctVARIABLES">
+              <MappingFragment StoreEntitySet="ctVARIABLES">
+                <ScalarProperty Name="intVARIABLE" ColumnName="intVARIABLE" />
+                <ScalarProperty Name="intNCP" ColumnName="intNCP" />
+                <ScalarProperty Name="intFLUJO_CAJA" ColumnName="intFLUJO_CAJA" />
+                <ScalarProperty Name="rlPESOmin" ColumnName="rlPESOmin" />
+                <ScalarProperty Name="rlPESOmax" ColumnName="rlPESOmax" />
+                <ScalarProperty Name="intRESULTADO" ColumnName="intRESULTADO" />
+                <ScalarProperty Name="strRESULTADO" ColumnName="strRESULTADO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Repositorio_ClientesJuridicos">
+            <EntityTypeMapping TypeName="POCModel.Repositorio_ClientesJuridicos">
+              <MappingFragment StoreEntitySet="Repositorio_ClientesJuridicos">
+                <ScalarProperty Name="CLI_CODIGO_CLIENTE" ColumnName="CLI_CODIGO_CLIENTE" />
+                <ScalarProperty Name="TPI_CODIGO_IDENTIFICACION" ColumnName="TPI_CODIGO_IDENTIFICACION" />
+                <ScalarProperty Name="CLI_IDENTIFICACION" ColumnName="CLI_IDENTIFICACION" />
+                <ScalarProperty Name="ID_SUGEF" ColumnName="ID_SUGEF" />
+                <ScalarProperty Name="CFI_NOMBRE" ColumnName="CFI_NOMBRE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRX">
+            <EntityTypeMapping TypeName="POCModel.TRX">
+              <MappingFragment StoreEntitySet="TRX">
+                <ScalarProperty Name="intTRX" ColumnName="intTRX" />
+                <ScalarProperty Name="numCLIENTE" ColumnName="numCLIENTE" />
+                <ScalarProperty Name="dtFECHA_APLICACION" ColumnName="dtFECHA_APLICACION" />
+                <ScalarProperty Name="intOFICINA" ColumnName="intOFICINA" />
+                <ScalarProperty Name="strUSUARIO" ColumnName="strUSUARIO" />
+                <ScalarProperty Name="btHAB" ColumnName="btHAB" />
+                <ScalarProperty Name="intEXPERIENCIA" ColumnName="intEXPERIENCIA" />
+                <ScalarProperty Name="intRATING" ColumnName="intRATING" />
+                <ScalarProperty Name="intACCIONES" ColumnName="intACCIONES" />
+                <ScalarProperty Name="intSECTOR" ColumnName="intSECTOR" />
+                <ScalarProperty Name="intNCP" ColumnName="intNCP" />
+                <ScalarProperty Name="intFLUJO_CAJA" ColumnName="intFLUJO_CAJA" />
+                <ScalarProperty Name="intRESULTADO" ColumnName="intRESULTADO" />
+                <ScalarProperty Name="strRESULTADO" ColumnName="strRESULTADO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Repositorio_AgenciasBNCR">
+            <EntityTypeMapping TypeName="POCModel.Repositorio_AgenciasBNCR">
+              <MappingFragment StoreEntitySet="Repositorio_AgenciasBNCR">
+                <ScalarProperty Name="Oficina_Codigo" ColumnName="Oficina_Codigo" />
+                <ScalarProperty Name="Oficina_Descripcion" ColumnName="Oficina_Descripcion" />
+                <ScalarProperty Name="Id_Zona" ColumnName="Id_Zona" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="PROC_PRORROGA_EMPRESAS" FunctionName="POCModel.Store.PROC_PRORROGA_EMPRESAS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="POCModel.PROC_PRORROGA_EMPRESAS_Result">
+                <ScalarProperty Name="intRESULTADO" ColumnName="intRESULTADO" />
+                <ScalarProperty Name="strRESULTADO" ColumnName="strRESULTADO" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

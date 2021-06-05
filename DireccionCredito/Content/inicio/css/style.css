@@ -1,0 +1,165 @@
+
+.fondoSeccion {
+    /*completa el fondo del monitor*/
+    height: 100vh; /*altura completa del dispositivo*/
+    /* background-image: url('/Content/imagenes/Portada/Log.jpg');*/
+    background-image: url('/Content/imagenes/Inicio/fondoinicio3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*clase para que el nav cambie de color al hacer scroll*/
+
+.top-nav-collapse {
+        background: rgba(176,189,32,0.774) !important;
+
+
+
+
+
+}
+
+
+
+/*LETRA PARA EL MENU PRINCIPAL*/
+.letra {
+    margin: 0;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 1.71429 !important;    
+    text-align: left !important;
+}
+
+
+/* CLASE PARA EL CARRUCEL */
+
+.BannerMio {
+    font-family: 'Poppins';
+}
+
+header .carousel-inner .item {
+    height: 100vh;
+}
+
+.BannerMio{
+
+    
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    height:100vh;
+    width:auto;
+    
+}
+
+
+/*//eliminar sombreado de MD BOOTSTRAP*/
+.navbar {
+    box-shadow: none !important;
+}
+
+
+.carousel-caption {
+
+    padding-bottom:150px;
+    font-family:poppins;
+}
+
+
+
+.carousel-caption h3{
+
+    font-size:20px;
+}
+
+
+
+.carousel-caption h2 {
+    font-size:40px;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+
+    .carousel-caption h2 span {
+        color: #B0BD20;
+    }
+
+
+    .carousel-caption a {
+        background: #133D8D;
+        padding: 10px 20px;
+        display: inline-block;
+        margin-top: 15px;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 25px;
+    }
+
+
+.carousel-control-prev {
+    background-image: none;
+    background-color: none;
+}
+
+.carousel-control-next {
+    background-image: none;
+    background-color:none;
+}
+
+.carousel-indicators .active {
+    background-color: #133D8D;
+    
+}
+
+.carousel-indicators {
+    background-image: none;
+    background-color: none;
+    border-color: none;
+    margin-bottom:15px;
+}
+
+/*Footer*/
+.footer {
+    background: #133D8D;
+    color: white;
+}
+
+    .footer .links ul {
+        list-style-type: none;
+    }
+
+    .footer .links li a {
+        color: white;
+        -webkit-transition: color .2s;
+        transition: color .2s;
+    }
+
+        .footer .links li a:hover {
+            text-decoration: none;
+            color: #4180CB;
+        }
+
+    .footer .about-company i {
+        font-size: 25px;
+    }
+
+    .footer .about-company a {
+        color: white;
+        -webkit-transition: color .2s;
+        transition: color .2s;
+    }
+
+        .footer .about-company a:hover {
+            color: #4180CB;
+        }
+
+    .footer .location i {
+        font-size: 18px;
+    }
+
+    .footer .copyright p {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+/*END Footer*/
+

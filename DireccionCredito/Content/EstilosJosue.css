@@ -1,0 +1,176 @@
+﻿/*estilos de botones cambiar al hover colores banco**/
+
+
+
+
+
+
+
+.ImagenIcono{
+
+    width:50px;
+    height:50px;
+
+}
+
+.lineaSeparador {
+    font-size: large;
+    font: 170% bolder icon;
+    font-weight: 200;
+     
+}
+
+.EfectoLink {
+    color:#494949;
+    font-family:'Microsoft JhengHei UI';
+}
+
+EfectoLink:hover {
+    Text-decoration: none;
+}
+
+.EfectoLink:active {
+    color: #2db0b9;
+    Text-decoration: none;
+}
+
+
+/* start home  3,12,13*/   /*fondo de imagen principal*/
+#home {
+    background: url('imagenes/Portada/4.jpg') no-repeat;
+    /*background: url('imagenes/bancoNew.jpg') no-repeat;*/
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+    /*texto dentro de imagen*/
+    #home p {
+        font-weight: 400;
+        font-style: italic;
+        line-height: 2em;
+        opacity: 0.5;
+    }
+
+    /*icono dentro de imagen*/
+    #home img {
+        display: inline-block;
+        
+    }
+/* end home */
+
+/* overlay --> texto dentro de la imagen  */
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    padding-top: 50px;
+    padding-bottom: 40px;
+    
+    
+
+}
+/* over lay */
+
+
+
+
+
+
+/*footer section*/
+.footer {
+    background: #000000;
+}
+
+    .footer .main_footer {
+        overflow: hidden;
+        padding: 5px 0px;
+        
+    }
+
+    .footer .flowus {
+        text-align: right;
+        
+    }
+
+        .footer .flowus a i {
+            color: #fff;
+            font-size: 1rem;
+            padding: 5px;
+            
+            
+            width: 30px;
+            height: 10px;
+            text-align: center;
+            line-height: 8px;
+            margin-right: 5px;
+            margin-top: 10px;
+        }
+
+            .footer .flowus a i:hover {
+                color: #B0BD20;
+            }
+
+.copyright_text {
+    text-align: left;
+    
+}
+
+    .copyright_text p {
+        color: #fff;
+        
+        line-height: 5px;
+        max-width: 100%;
+        padding-top: 5px;
+    }
+
+        .copyright_text p i {
+            padding: 0px 10px;
+            color: #ff0000;
+        }
+
+        .copyright_text p a {
+            padding: 0px 6px;
+            color: #ff7200;
+        }
+
+
+        /*colores para el boton de busqueda*/
+
+
+        /*fin del css para boton de busqueda*/
+
+
+.example {
+    border-radius: 20rem;
+    height:20px;
+}
+
+
+
+/*drop down list especial*/
+.dropdown-slide > .dropdown-menu {
+    opacity: .3;
+    display: block;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-transform: scale(1, 0);
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+
+.show.dropdown-slide > .dropdown-menu {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+
+
+

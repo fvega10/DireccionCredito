@@ -1,0 +1,818 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8413821-071C-4F8C-9145-CBD3BED334DF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DireccionCredito</RootNamespace>
+    <AssemblyName>DireccionCredito</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>disabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.2</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\VisitasController.cs" />
+    <Compile Include="Filtros\Autorizacion.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Buscador\DependenciaProductos.cs" />
+    <Compile Include="Models\ConexionCreditoNacional.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConexionCreditoNacional.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ConexionCreditoNacional.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConexionCreditoNacional.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ConexionCreditoNacional.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConexionCreditoNacional.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CONTROL.cs">
+      <DependentUpon>POC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ctACCIONES.cs">
+      <DependentUpon>POC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ctEXPERIENCIAS.cs">
+      <DependentUpon>POC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ctFLUJOS_CAJA.cs">
+      <DependentUpon>POC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ctNCPS.cs">
+      <DependentUpon>POC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ctRATINGS.cs">
+      <DependentUpon>POC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ctRESULTADOS.cs">
+      <DependentUpon>POC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ctSECTORES.cs">
+      <DependentUpon>POC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ctVARIABLES.cs">
+      <DependentUpon>POC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ficha.cs">
+      <DependentUpon>ConexionCreditoNacional.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GuiaComercial.cs">
+      <DependentUpon>ConexionCreditoNacional.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MatrizSeguimiento\ResultadoMatriz.cs" />
+    <Compile Include="Models\POC.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POC.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\POC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\POC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POC.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROC_PRORROGA_EMPRESAS_Result.cs">
+      <DependentUpon>POC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Producto.cs">
+      <DependentUpon>ConexionCreditoNacional.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Repositorio_AgenciasBNCR.cs">
+      <DependentUpon>POC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Repositorio_ClientesJuridicos.cs">
+      <DependentUpon>POC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Rol.cs">
+      <DependentUpon>ConexionCreditoNacional.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TRX.cs">
+      <DependentUpon>POC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Usuario.cs">
+      <DependentUpon>ConexionCreditoNacional.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Usuario_Rol.cs">
+      <DependentUpon>ConexionCreditoNacional.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Visitas.cs">
+      <DependentUpon>ConexionCreditoNacional.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\AnimateCSS\animate.css" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstraptoggle\bootstrap4-toggle.min.css" />
+    <Content Include="Content\bootstraptoggle\bootstrap4-toggle.min.js" />
+    <Content Include="Content\BotonBuscarCSS.css" />
+    <Content Include="Content\brands.css" />
+    <Content Include="Content\brands.min.css" />
+    <Content Include="Content\Calendario\css\fontGoogle.css" />
+    <Content Include="Content\Calendario\css\fonts\icomoon.svg" />
+    <Content Include="Content\Calendario\css\style.css" />
+    <Content Include="Content\Calendario\css\style_icomoon.css" />
+    <Content Include="Content\Calendario\Imagenes\11.png" />
+    <Content Include="Content\Calendario\Imagenes\ICO.png" />
+    <Content Include="Content\Calendario\Imagenes\LogoBnBlancoC.png" />
+    <Content Include="Content\Calendario\Imagenes\reunion.jpg" />
+    <Content Include="Content\Calendario\script\aos.js" />
+    <Content Include="Content\ErrorAcceso\CSS\ErrorAccesocss.css" />
+    <Content Include="Content\ErrorAcceso\JS\ErrorAccesoJS.js" />
+    <Content Include="Content\Estadisticas\Imagenes\analisis.jpg" />
+    <Content Include="Content\Estadisticas\Imagenes\banner2.jpg" />
+    <Content Include="Content\Estadisticas\Imagenes\fondo_2.jpg" />
+    <Content Include="Content\Estadisticas\Imagenes\Fotolia_90649332_S.jpg" />
+    <Content Include="Content\Estadisticas\Imagenes\idea.gif" />
+    <Content Include="Content\Estadisticas\Imagenes\alerta.png" />
+    <Content Include="Content\EstiloMenuDropDownList.css" />
+    <Content Include="Content\EstilosJosue.css" />
+    <Content Include="Content\fontawesome-all.css" />
+    <Content Include="Content\fontawesome-all.min.css" />
+    <Content Include="Content\fontawesome.css" />
+    <Content Include="Content\fontawesome.min.css" />
+    <Content Include="Content\FuentesGoogle\Poppins.css" />
+    <Content Include="Content\FuentesGoogle\Roboto.css" />
+    <Content Include="Content\Hexagono\FontGoogleapis.css" />
+    <Content Include="Content\Hexagono\hexagons.css" />
+    <Content Include="Content\ImageHover\demo-page.css" />
+    <Content Include="Content\ImageHover\imagehover.css" />
+    <Content Include="Content\imagenes\ADN_2.png" />
+    <Content Include="Content\imagenes\ADN_H.png" />
+    <Content Include="Content\imagenes\bancoNew.jpg" />
+    <Content Include="Content\imagenes\Buscador\business.jpg" />
+    <Content Include="Content\imagenes\Buscador\compu3.png" />
+    <Content Include="Content\imagenes\Buscador\comunicados.gif" />
+    <Content Include="Content\imagenes\Buscador\Digital.jpg" />
+    <Content Include="Content\imagenes\Buscador\icoBn1.png" />
+    <Content Include="Content\imagenes\Buscador\iconoFicha.png" />
+    <Content Include="Content\imagenes\Buscador\iconoficha2.png" />
+    <Content Include="Content\imagenes\Buscador\iconoficha3.png" />
+    <Content Include="Content\imagenes\Buscador\iconoNoExiste.png" />
+    <Content Include="Content\imagenes\Buscador\IMAGEN.jpg" />
+    <Content Include="Content\imagenes\Buscador\Log.jpg" />
+    <Content Include="Content\imagenes\Buscador\logobnsolo.png" />
+    <Content Include="Content\imagenes\Buscador\Menu1.gif" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\analisis.jpg" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\analisis2.jpg" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\archivo.jpg" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\avaluo.jpg" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\avaluo2.jpg" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\documentoLegal.jpg" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\documentoLegal2.jpg" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\documentoLegal3.jpg" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\entrevista.jpg" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\entrevista2.jpg" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\entrevista3.jpg" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\entrevista4.jpg" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\Estructuracion.jpg" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\Formalizacion.jpg" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\Formalizacion2.jpg" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\Planesautoexpedibles.jpg" />
+    <Content Include="Content\imagenes\Buscador\ModuloAtencion\ResolucionTramite.jpg" />
+    <Content Include="Content\imagenes\Buscador\compu.png" />
+    <Content Include="Content\imagenes\Buscador\pngocean.com.png" />
+    <Content Include="Content\imagenes\Buscador\prueba\1.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\10.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\11.jfif" />
+    <Content Include="Content\imagenes\Buscador\prueba\12.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\13.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\14.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\15.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\16.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\17.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\18.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\19.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\2.jfif" />
+    <Content Include="Content\imagenes\Buscador\prueba\20.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\21.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\22.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\23.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\24.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\25.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\26.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\27.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\28.png" />
+    <Content Include="Content\imagenes\Buscador\prueba\29.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\3.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\30.png" />
+    <Content Include="Content\imagenes\Buscador\prueba\31.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\32.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\33.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\34.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\35.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\4.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\4.png" />
+    <Content Include="Content\imagenes\Buscador\prueba\5.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\6.png" />
+    <Content Include="Content\imagenes\Buscador\prueba\icono1.png" />
+    <Content Include="Content\imagenes\Buscador\prueba\7.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\8.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\9.jpg" />
+    <Content Include="Content\imagenes\Buscador\prueba\icono2.png" />
+    <Content Include="Content\imagenes\Buscador\prueba\icono3.png" />
+    <Content Include="Content\imagenes\Buscador\prueba\icono4.png" />
+    <Content Include="Content\imagenes\Buscador\prueba\icono5.ico" />
+    <Content Include="Content\imagenes\Buscador\prueba\icono6.ico" />
+    <Content Include="Content\imagenes\Buscador\prueba\software-img.png" />
+    <Content Include="Content\imagenes\Buscador\prueba\icono7.png" />
+    <Content Include="Content\imagenes\Buscador\prueba\icono8.png" />
+    <Content Include="Content\imagenes\Buscador\prueba\stab1.png" />
+    <Content Include="Content\imagenes\Buscador\prueba\user.png" />
+    <Content Include="Content\imagenes\Buscador\warningicon.png" />
+    <Content Include="Content\imagenes\Buscador_Logo_bncr2.png" />
+    <Content Include="Content\imagenes\Buscador_Ico_bncr.png" />
+    <Content Include="Content\imagenes\COP.png" />
+    <Content Include="Content\imagenes\EDIFICIO.png" />
+    <Content Include="Content\imagenes\edificionew.png" />
+    <Content Include="Content\imagenes\GIF\1.gif" />
+    <Content Include="Content\imagenes\GIF\8.gif" />
+    <Content Include="Content\imagenes\GIF\2.gif" />
+    <Content Include="Content\imagenes\GIF\3.gif" />
+    <Content Include="Content\imagenes\GIF\4.gif" />
+    <Content Include="Content\imagenes\GIF\6.gif" />
+    <Content Include="Content\imagenes\GIF\5.gif" />
+    <Content Include="Content\imagenes\GIF\7.gif" />
+    <Content Include="Content\imagenes\icoBn1.png" />
+    <Content Include="Content\imagenes\Inicio\81.jpg" />
+    <Content Include="Content\imagenes\Inicio\82.jpg" />
+    <Content Include="Content\imagenes\Inicio\83.jpg" />
+    <Content Include="Content\imagenes\Inicio\carrucel2.jpg" />
+    <Content Include="Content\imagenes\Inicio\CARRUEL11c.jpg" />
+    <Content Include="Content\imagenes\Inicio\fondoinicio1.jpg" />
+    <Content Include="Content\imagenes\Inicio\fondoinicio2.jpg" />
+    <Content Include="Content\imagenes\Inicio\fondoinicio3.jpg" />
+    <Content Include="Content\imagenes\Inicio\Gif\1.gif" />
+    <Content Include="Content\imagenes\Inicio\Gif\2.gif" />
+    <Content Include="Content\imagenes\Inicio\Gif\3.gif" />
+    <Content Include="Content\imagenes\Inicio\Logo-azu-BN.png" />
+    <Content Include="Content\imagenes\Inicio\LogoBnBlancoC.png" />
+    <Content Include="Content\imagenes\Inicio\portaflio\calendario.png" />
+    <Content Include="Content\imagenes\Inicio\portaflio\DashBoard.png" />
+    <Content Include="Content\imagenes\Inicio\portaflio\Estadisticas.jpg" />
+    <Content Include="Content\imagenes\Inicio\portaflio\Instructico.png" />
+    <Content Include="Content\imagenes\Inicio\portaflio\Motor.png" />
+    <Content Include="Content\imagenes\Inicio\portaflio\questions.png" />
+    <Content Include="Content\imagenes\Inicio\video.jpg" />
+    <Content Include="Content\imagenes\koala.jpg" />
+    <Content Include="Content\imagenes\LogoBnBlanco.png" />
+    <Content Include="Content\imagenes\Modal\13.jpg" />
+    <Content Include="Content\imagenes\Modal\21.jpg" />
+    <Content Include="Content\imagenes\Modal\22.jpg" />
+    <Content Include="Content\imagenes\Modal\23.jpg" />
+    <Content Include="Content\imagenes\Portada\1.jpg" />
+    <Content Include="Content\imagenes\Portada\2.jpg" />
+    <Content Include="Content\imagenes\Portada\3.jpg" />
+    <Content Include="Content\imagenes\Portada\4.jpg" />
+    <Content Include="Content\imagenes\Portada\Log.jpg" />
+    <Content Include="Content\Inicio\css\bootstrap.min.css" />
+    <Content Include="Content\Inicio\css\doppioOne.css" />
+    <Content Include="Content\Inicio\css\EstiloMenuDropDownList.css" />
+    <Content Include="Content\Inicio\css\EstiloSeccionVideo.css" />
+    <Content Include="Content\Inicio\css\mdb.min.css" />
+    <Content Include="Content\Inicio\css\Roboto.css" />
+    <Content Include="Content\Inicio\css\style.css" />
+    <Content Include="Content\Inicio\css\WorkSans.css" />
+    <Content Include="Content\Inicio\portafolio\cubeportfolio.min.css" />
+    <Content Include="Content\Inicio\portafolio\global.css" />
+    <Content Include="Content\Inicio\portafolio\stylePortafolio.css" />
+    <Content Include="Content\Layout\MenuLayout.css" />
+    <Content Include="Content\Layout\MenuLayout.js" />
+    <Content Include="Content\Loading2.gif" />
+    <Content Include="Content\NavbarBuscador\b4megamenu.css" />
+    <Content Include="Content\Noticias\Documentos\Bitacora\Informe Oficina Tipo 3 de marzo a diciembre 2019_New4.png" />
+    <Content Include="Content\Noticias\Documentos\CAPSULAS\Octubre_2020\CapsulaRuta.JPG" />
+    <Content Include="Content\Noticias\Documentos\CAPSULAS\Octubre_2020\PresupuestoConstruccion.png" />
+    <Content Include="Content\Noticias\Imagenes\2.png" />
+    <Content Include="Content\Calendario\Imagenes\charla.jpg" />
+    <Content Include="Content\Noticias\Imagenes\Historial\Custom_10.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\Custom_11.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\Custom_12.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\Custom_6.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\Custom_7.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\Custom_8.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\Custom_9.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\New_10.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\New_11.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\New_12.jpg" />
+    <Content Include="Content\Noticias\Imagenes\Historial\new5.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\New_4.jpg" />
+    <Content Include="Content\Noticias\Imagenes\Historial\Custom_1.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\Custom_3.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\New2_Pic.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\New_1.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\New_2.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\New_3.jpg" />
+    <Content Include="Content\Noticias\Imagenes\Historial\new_5.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\new_6.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\New_9.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\RendicionCuentas_Julio.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Noticias2.jpg" />
+    <Content Include="Content\Noticias\Imagenes\RendicionCuentas.JPG" />
+    <Content Include="Content\Noticias\Imagenes\roundtables.gif" />
+    <Content Include="Content\Calendario\Imagenes\Vigente.png" />
+    <Content Include="Content\Noticias\Imagenes\SalidasNoConformes.JPG" />
+    <Content Include="Content\Noticias\Imagenes\SeguimientoPlanesInversión.JPG" />
+    <Content Include="Content\Noticias\Imagenes\VideoTutorial.PNG" />
+    <Content Include="Content\pattern_dot.png" />
+    <Content Include="Content\PreguntasFrecuentes\banner.jpg" />
+    <Content Include="Content\PreguntasFrecuentes\faq.gif" />
+    <Content Include="Content\PreguntasFrecuentes\ImagenesConversatorios\preguntafrecuente_1.png" />
+    <Content Include="Content\PreguntasFrecuentes\ImagenesConversatorios\preguntafrecuente_12.png" />
+    <Content Include="Content\PreguntasFrecuentes\ImagenesConversatorios\preguntafrecuente_13.png" />
+    <Content Include="Content\PreguntasFrecuentes\ImagenesConversatorios\preguntafrecuente_16.png" />
+    <Content Include="Content\PreguntasFrecuentes\ImagenesConversatorios\preguntafrecuente_22.jpg" />
+    <Content Include="Content\PreguntasFrecuentes\ImagenesConversatorios\preguntafrecuente_23.png" />
+    <Content Include="Content\PreguntasFrecuentes\ImagenesConversatorios\preguntafrecuente_4.png" />
+    <Content Include="Content\PreguntasFrecuentes\ImagenesConversatorios\preguntafrecuente_5.png" />
+    <Content Include="Content\PreguntasFrecuentes\ImagenesConversatorios\preguntafrecuente_6.jpg" />
+    <Content Include="Content\PreguntasFrecuentes\ImagenesConversatorios\preguntafrecuente_6_1.png" />
+    <Content Include="Content\PreguntasFrecuentes\ImagenesConversatorios\preguntafrecuente_7.jpg" />
+    <Content Include="Content\PreguntasFrecuentes\ImagenesConversatorios\preguntafrecuente_8.png" />
+    <Content Include="Content\PreguntasFrecuentes\Imagenes\12.PNG" />
+    <Content Include="Content\PreguntasFrecuentes\Imagenes\12_1.PNG" />
+    <Content Include="Content\PreguntasFrecuentes\Imagenes\18.png" />
+    <Content Include="Content\PreguntasFrecuentes\Imagenes\20.PNG" />
+    <Content Include="Content\PreguntasFrecuentes\Imagenes\21.PNG" />
+    <Content Include="Content\PreguntasFrecuentes\Imagenes\6.png" />
+    <Content Include="Content\PreguntasFrecuentes\Imagenes\7.png" />
+    <Content Include="Content\PreguntasFrecuentes\Imagenes\2_Ingenieria.PNG" />
+    <Content Include="Content\PromiseFix\es6-promise.auto.js" />
+    <Content Include="Content\PromiseFix\es6-promise.js" />
+    <Content Include="Content\regular.css" />
+    <Content Include="Content\regular.min.css" />
+    <Content Include="Content\Selected2\select2.css" />
+    <Content Include="Content\Selected2\select2.full.js" />
+    <Content Include="Content\Selected2\StylosSelect2.css" />
+    <Content Include="Content\solid.css" />
+    <Content Include="Content\solid.min.css" />
+    <Content Include="Content\svg-with-js.css" />
+    <Content Include="Content\svg-with-js.min.css" />
+    <Content Include="Content\SweetAlert2\sweetalert2.all.js" />
+    <Content Include="Content\SweetAlert2\sweetalert2.all.min.js" />
+    <Content Include="Content\SweetAlert2\sweetalert2.css" />
+    <Content Include="Content\SweetAlert2\sweetalert2.js" />
+    <Content Include="Content\SweetAlert2\sweetalert2.min.css" />
+    <Content Include="Content\SweetAlert2\sweetalert2.min.js" />
+    <Content Include="Content\v4-shims.css" />
+    <Content Include="Content\v4-shims.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Models\ConexionCreditoNacional.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ConexionCreditoNacional.Context.cs</LastGenOutput>
+      <DependentUpon>ConexionCreditoNacional.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\ConexionCreditoNacional.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ConexionCreditoNacional.edmx</DependentUpon>
+      <LastGenOutput>ConexionCreditoNacional.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\POC.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>POC.edmx</DependentUpon>
+      <LastGenOutput>POC.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\POC.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>POC.edmx</DependentUpon>
+      <LastGenOutput>POC.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Buscador\VariasJS4.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\fontawesome\all.js" />
+    <Content Include="Scripts\fontawesome\all.min.js" />
+    <Content Include="Scripts\fontawesome\brands.js" />
+    <Content Include="Scripts\fontawesome\brands.min.js" />
+    <Content Include="Scripts\fontawesome\conflict-detection.js" />
+    <Content Include="Scripts\fontawesome\conflict-detection.min.js" />
+    <Content Include="Scripts\fontawesome\fontawesome.js" />
+    <Content Include="Scripts\fontawesome\fontawesome.min.js" />
+    <Content Include="Scripts\fontawesome\regular.js" />
+    <Content Include="Scripts\fontawesome\regular.min.js" />
+    <Content Include="Scripts\fontawesome\solid.js" />
+    <Content Include="Scripts\fontawesome\solid.min.js" />
+    <Content Include="Scripts\fontawesome\v4-shims.js" />
+    <Content Include="Scripts\fontawesome\v4-shims.min.js" />
+    <Content Include="Scripts\index.js.flow" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <EntityDeploy Include="Models\ConexionCreditoNacional.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ConexionCreditoNacional.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ConexionCreditoNacional.edmx.diagram">
+      <DependentUpon>ConexionCreditoNacional.edmx</DependentUpon>
+    </Content>
+    <Content Include="Content\SweetAlert2\CHANGELOG.md" />
+    <Content Include="Content\SweetAlert2\LICENSE" />
+    <Content Include="Content\SweetAlert2\package.json" />
+    <Content Include="Content\SweetAlert2\README.md" />
+    <Content Include="Content\Calendario\css\fonts\icomoon.eot" />
+    <Content Include="Content\Calendario\css\fonts\icomoon.ttf" />
+    <Content Include="Content\Calendario\css\fonts\icomoon.woff" />
+    <Content Include="Content\Noticias\Documentos\Consultas Crédito Retail y Empresarial DGC-209-2019.docx" />
+    <Content Include="Content\Noticias\Documentos\Bitacora\Informe Oficina Tipo 3 de marzo a diciembre 2019_New4.docx.pdf" />
+    <Content Include="Content\Noticias\Documentos\Plan de Inversión conversatorio mayo 2020.pptx" />
+    <Content Include="Content\Noticias\Documentos\TIP_ACUERDOSSOCIEDADES.pptx" />
+    <Content Include="Content\Noticias\Documentos\Documentación_digital.pptx" />
+    <Content Include="Content\Noticias\Documentos\Informe_salidas_no_conformes.pptx" />
+    <Content Include="Content\Noticias\Documentos\Protectora_Crédito.pptx" />
+    <Content Include="Content\Noticias\Documentos\Rendicion_Julio_2020.pptx" />
+    <Content Include="Content\Noticias\Documentos\Infografia formato BN.pdf" />
+    <Content Include="Content\Noticias\Documentos\Informe de Oficina Tipo 3 enero-junio 2020.pdf" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\Noticias\Documentos\Bitacora\Octubre2020\Rendicion_de_Cuentas_Octubre_2020.pptx" />
+    <Content Include="Content\Noticias\Documentos\Bitacora\Octubre2020\Informe_de_Salidas_No_Conformes_Agosto_Septiembre_2020.pptx" />
+    <Content Include="Content\Noticias\Documentos\Bitacora\Octubre2020\Planes_de_inversión.pptx" />
+    <Content Include="Content\Noticias\Documentos\CAPSULAS\Octubre_2020\Presupuesto de Construcción.pptx" />
+    <Content Include="Content\Noticias\Documentos\CAPSULAS\Octubre_2020\Ruta MPC cierre de planes de Inversión.pptx" />
+    <EntityDeploy Include="Models\POC.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>POC.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\POC.edmx.diagram">
+      <DependentUpon>POC.edmx</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\inicio\bootstrap.min.js" />
+    <Content Include="Scripts\inicio\jquery.min.js" />
+    <Content Include="Scripts\inicio\mdb.min.js" />
+    <Content Include="Scripts\inicio\popper.min.js" />
+    <Content Include="Scripts\inicio\portafolio\jquery.cubeportfolio.min.js" />
+    <Content Include="Scripts\inicio\portafolio\portfolio-3-col.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\smooth-scroll.min.js" />
+    <Content Include="Scripts\src\index.js" />
+    <Content Include="Scripts\src\methods\defaults.js" />
+    <Content Include="Scripts\src\methods\destroy.js" />
+    <Content Include="Scripts\src\methods\disableEventListeners.js" />
+    <Content Include="Scripts\src\methods\enableEventListeners.js" />
+    <Content Include="Scripts\src\methods\placements.js" />
+    <Content Include="Scripts\src\methods\update.js" />
+    <Content Include="Scripts\src\modifiers\applyStyle.js" />
+    <Content Include="Scripts\src\modifiers\arrow.js" />
+    <Content Include="Scripts\src\modifiers\computeStyle.js" />
+    <Content Include="Scripts\src\modifiers\flip.js" />
+    <Content Include="Scripts\src\modifiers\hide.js" />
+    <Content Include="Scripts\src\modifiers\index.js" />
+    <Content Include="Scripts\src\modifiers\inner.js" />
+    <Content Include="Scripts\src\modifiers\keepTogether.js" />
+    <Content Include="Scripts\src\modifiers\offset.js" />
+    <Content Include="Scripts\src\modifiers\preventOverflow.js" />
+    <Content Include="Scripts\src\modifiers\shift.js" />
+    <Content Include="Scripts\src\utils\clockwise.js" />
+    <Content Include="Scripts\src\utils\computeAutoPlacement.js" />
+    <Content Include="Scripts\src\utils\debounce.js" />
+    <Content Include="Scripts\src\utils\find.js" />
+    <Content Include="Scripts\src\utils\findCommonOffsetParent.js" />
+    <Content Include="Scripts\src\utils\findIndex.js" />
+    <Content Include="Scripts\src\utils\getBordersSize.js" />
+    <Content Include="Scripts\src\utils\getBoundaries.js" />
+    <Content Include="Scripts\src\utils\getBoundingClientRect.js" />
+    <Content Include="Scripts\src\utils\getClientRect.js" />
+    <Content Include="Scripts\src\utils\getFixedPositionOffsetParent.js" />
+    <Content Include="Scripts\src\utils\getOffsetParent.js" />
+    <Content Include="Scripts\src\utils\getOffsetRect.js" />
+    <Content Include="Scripts\src\utils\getOffsetRectRelativeToArbitraryNode.js" />
+    <Content Include="Scripts\src\utils\getOppositePlacement.js" />
+    <Content Include="Scripts\src\utils\getOppositeVariation.js" />
+    <Content Include="Scripts\src\utils\getOuterSizes.js" />
+    <Content Include="Scripts\src\utils\getParentNode.js" />
+    <Content Include="Scripts\src\utils\getPopperOffsets.js" />
+    <Content Include="Scripts\src\utils\getReferenceNode.js" />
+    <Content Include="Scripts\src\utils\getReferenceOffsets.js" />
+    <Content Include="Scripts\src\utils\getRoot.js" />
+    <Content Include="Scripts\src\utils\getRoundedOffsets.js" />
+    <Content Include="Scripts\src\utils\getScroll.js" />
+    <Content Include="Scripts\src\utils\getScrollParent.js" />
+    <Content Include="Scripts\src\utils\getStyleComputedProperty.js" />
+    <Content Include="Scripts\src\utils\getSupportedPropertyName.js" />
+    <Content Include="Scripts\src\utils\getViewportOffsetRectRelativeToArtbitraryNode.js" />
+    <Content Include="Scripts\src\utils\getWindow.js" />
+    <Content Include="Scripts\src\utils\getWindowSizes.js" />
+    <Content Include="Scripts\src\utils\includeScroll.js" />
+    <Content Include="Scripts\src\utils\index.js" />
+    <Content Include="Scripts\src\utils\isBrowser.js" />
+    <Content Include="Scripts\src\utils\isFixed.js" />
+    <Content Include="Scripts\src\utils\isFunction.js" />
+    <Content Include="Scripts\src\utils\isIE.js" />
+    <Content Include="Scripts\src\utils\isModifierEnabled.js" />
+    <Content Include="Scripts\src\utils\isModifierRequired.js" />
+    <Content Include="Scripts\src\utils\isNumeric.js" />
+    <Content Include="Scripts\src\utils\isOffsetContainer.js" />
+    <Content Include="Scripts\src\utils\removeEventListeners.js" />
+    <Content Include="Scripts\src\utils\runModifiers.js" />
+    <Content Include="Scripts\src\utils\setAttributes.js" />
+    <Content Include="Scripts\src\utils\setStyles.js" />
+    <Content Include="Scripts\src\utils\setupEventListeners.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper.js.flow" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Home\Buscador.cshtml" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="Views\Shared\MostrarFichas.cshtml" />
+    <Content Include="Views\Shared\MostrarGuias.cshtml" />
+    <Content Include="Views\Visitas\RegistroVisitas.cshtml" />
+    <Content Include="Views\Home\Inicio.cshtml" />
+    <Content Include="Views\Home\Calendario.cshtml" />
+    <Content Include="Views\Home\Noticias.cshtml" />
+    <Content Include="Views\Home\Estadisticas.cshtml" />
+    <Content Include="Views\Home\ErrorAcceso.cshtml" />
+    <Content Include="Views\Home\PreguntasFrecuentes.cshtml" />
+    <Content Include="Views\Home\MatrizSeguimiento.cshtml" />
+    <Content Include="Views\Home\Parciales\MatrizSeguimiento\_GestionClienteMatrizSeguimiento.cshtml" />
+    <Content Include="Views\Home\Parciales\MatrizSeguimiento\_GuardarMatrizSeguimiento.cshtml" />
+    <Content Include="Views\Home\Parciales\MatrizSeguimiento\_MatrizSeguimiento_ResultadoGuardado.cshtml" />
+    <Content Include="Views\Home\Parciales\MatrizSeguimiento\_ConsultaFormularioMatriz.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\Estadisticas\css\" />
+    <Folder Include="Content\Estadisticas\Script\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Content\SweetAlert2\sweetalert2.d.ts" />
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54395</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54395/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

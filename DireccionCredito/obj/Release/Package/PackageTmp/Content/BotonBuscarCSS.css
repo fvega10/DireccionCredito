@@ -1,0 +1,77 @@
+﻿body {
+}
+
+/*colores para el boton de busqueda*/
+
+
+
+:root {
+    --blue: #133D8D;
+    --green: #B0BD20;
+    --letra: #fff
+}
+
+.botonbuscar-ghost {
+    position: relativate;
+    display: inline-block;
+    padding: 8px 25px;
+    color: #fff;
+    font-weight: 100;
+    text-decoration: none;
+    background-color: #133D8D;
+    transition: color 0.3s, background 0.3s;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    margin-top: 27px;
+    
+    text-align: center;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    opacity: 0.9;
+}
+
+    .botonbuscar-ghost.round {
+        border-radius: 30px;
+    }
+
+
+
+    .botonbuscar-ghost:hover {
+        color: #fff;
+        background-color: transparent;
+    }
+
+
+
+    .botonbuscar-ghost:active {
+        box-shadow: inset 0 0 20px #fff;
+    }
+
+
+
+
+    /** GREEN */
+    .botonbuscar-ghost.green {
+        background-color: #133D8D;
+        border-color: #133D8D;
+        color: #fff;
+    }
+
+
+
+        .botonbuscar-ghost.green:hover {
+            background-color: #B0BD20;
+            color: #fff;
+            border-color: #B0BD20;
+            opacity: 0.6;
+        }
+
+
+
+        .botonbuscar-ghost.green:active {
+            box-shadow: inset 0 0 20px #B0BD20;
+        }
+
+
+/*fin del css para boton de busqueda*/

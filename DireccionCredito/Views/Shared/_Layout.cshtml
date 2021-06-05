@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="~/Content/Layout/MenuLayout.css" rel="stylesheet" />
+    <script src="~/Content/Layout/MenuLayout.js"></script>
+    <title>Credito Nacional</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+
+
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#133D8D;">
+            <a class="navbar-brand ml-5" href="#"> <img src="~/Content/imagenes/LogoBnBlanco.png" style="height:55px;width:60px;" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Home/index">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Home/Inicio">Sitio<span class="sr-only">(current)</span></a>
+                    </li>
+                    
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Home/Buscador">Buscador</a>
+                    </li>
+
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Visitas/RegistroVisitas">Visitas</a>
+                    </li>
+
+
+                </ul>
+
+                <img src="~/Content/imagenes/Buscador/pngocean.com.png" style="height:60px;width:70px;" />
+            </div>
+
+
+
+        </nav>
+    </div>
+
+    <br />
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Crédito Nacional</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/smooth")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

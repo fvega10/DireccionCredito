@@ -1,0 +1,575 @@
+﻿
+@{
+    Layout = null;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+}
+
+<!DOCTYPE html>
+
+<html>
+
+@Styles.Render("~/Content/css_Secciones")
+@Scripts.Render("~/bundles/scriptsSecciones")
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="~/Content/imagenes/icoBn1.png" type="image/x-icon">
+    <title>Estadísticas</title>
+</head>
+<body>
+
+
+    <!--inicio nav-->
+    <!-- menu minimizar -->
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+    <!--  fin menu minimizar -->
+    <!--***Menu principal***-->
+    <div class="site-navbar-wrap">
+        <div class="site-navbar-top">
+            <div class="container py-1">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <a href="https://twitter.com/bnmascerca" class="p-2 pl-0"><span class="icon-twitter"></span></a>
+                        <a href="https://www.facebook.com/bnmascerca/" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                        <a href="https://cr.linkedin.com/company/banco-nacional" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
+                        <a href="https://www.instagram.com/bnmascerca/?hl=es-la" class="p-2 pl-0"><span class="icon-instagram"></span></a>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex ml-auto">
+                            <a href="#" class="d-flex align-items-center ml-auto mr-4">
+                                <span class="icon-phone mr-2"></span>
+                                <span class="d-none d-md-inline-block">+506 2212 2000</span>
+                            </a>
+                            <a href="mailto:consultascreditoretail@bncr.fi.cr" class="d-flex align-items-center">
+                                <span class="icon-envelope mr-2"></span>
+                                <span class="d-none d-md-inline-block">consultascreditoretail@bncr.fi.cr</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-navbar">
+            <div class="container">
+                <div class="row align-items-center" style="height:50px;">
+                    <div class="col-2">
+                        <h2 class="site-logo"><a href="~/Home/Inicio"><img src="../../Content/Calendario/Imagenes/ICO.png" class="img-fluid" style="height:45px;"></a></h2>
+                    </div>
+                    <div class="col-10">
+                        <nav class="site-navigation text-right" role="navigation">
+                            <div class="container">
+                                <div class="d-inline-block d-lg-none ml-md-0 mr-auto "><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+                                <ul class="site-menu js-clone-nav d-none d-lg-block">
+
+                                    <li><a href="~/Home/Inicio">SITIO</a></li>
+
+                                    <li class="has-children">
+                                        <a href="#!">SERVICIOS</a>
+                                        <ul class="dropdown arrow-top">
+                                            <li><a href="~/Home/Buscador">Motor Búsqueda</a></li>
+                                            <li><a href="http://dsn820bda01:81/sipcoweb/">SipcoWeb</a></li>
+                                            <li><a href="~/Home/Estadisticas">Estadísticas</a></li>
+                                            <li><a href="http://bnportal/sites/comercial/CIPAC/CIPAC_Tramite.zip">BD Sipco</a></li>
+                                            <li><a href="~/Home/MatrizSeguimiento"><i class="fas fa-calculator"></i> Matriz Seguimiento</a></li>
+                                        </ul>
+
+
+                                    </li>
+
+                                    <li class="has-children">
+                                        <a href="#!">INFÓRMESE</a>
+                                        <ul class="dropdown arrow-top">
+                                            <li><a href="~/Home/Noticias">Noticias</a></li>
+                                            <li><a href="~/Home/ErrorAcceso">Guía de Uso</a></li>
+                                            <li><a href="~/Home/PreguntasFrecuentes">Preguntas Frecuentes</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="https://universidad.bncr.fi.cr/login/index.php">CAPACITACIONES</a></li>
+                                    <li><a href="~/Home/Calendario">CALENDARIO</a></li>
+                                    <li><a href="~/Home/ErrorAcceso">CONTACTO</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END menu principal-->
+
+
+
+
+
+    <div class="site-blocks-cover inner-page" style="background-image: url(../../Content/Estadisticas/Imagenes/Banner2.jpg)" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row align-items-center  mb-4">
+                <div class="col-md-7">
+                    <span class="sub-text"><br /><br /><br /><br /><br /><br />Consulta de Resultados</span>
+                    <h1 class="wow flipInX" data-wow-delay="0.5s">    <strong>Estadísticas</strong></h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- .Divisor -->
+
+    <div class="container-fluid slider-1" style="background-color:#B0BD20;">
+        <div class="row">
+            <br />
+        </div>
+
+    </div>
+
+
+
+
+
+    <!--inicia el titulo de las capacitaciones-->
+
+    <div class="container my-5 py-5 z-depth-1">
+
+
+        <!--Section: Content-->
+        <section class="text-center px-md-5 mx-md-5 dark-grey-text">
+
+
+
+            <h3 class="font-weight-bold mb-4 pb-2">Informe de Estadísticas</h3>
+
+            <p class="text-center mx-auto mb-2 pb-2">Consulte Información como Reportes Diarios,Salidas No Conformes, Casos de Trámite y más..</p>
+
+            <i class="fas fa-caret-down wow animated slideOutDown infinite" style="font-size:30px;color:#B0BD20;"></i>
+
+        </section>
+        <!--Section: Content-->
+
+
+    </div>
+
+
+
+    <!-- Evento uno-->
+
+    <div class="container mt-5">
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+            <br /><br />
+            <!-- Grid row -->
+            <div class="row align-items-center">
+                <!-- Grid column -->
+                <div class="col-4">
+                    <!-- Featured image -->
+                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4 mr-1 w-75">
+                        <img class="img-fluid" src="~/Content/Estadisticas/Imagenes/idea.gif" alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-7">
+                    <!-- Post data -->
+                    <p>
+
+                        <a class="font-weight-bold" style="font-size:30px;"><i class="fas fa-angle-double-right" style="color:#B0BD20"></i>&nbsp;Informe diario Crédito Retail</a>
+
+                        <img src="~/Content/Estadisticas/Imagenes/alerta.png" class="float-right wow animated zoomInDown" style="height:40px;" />
+                    </p>
+                    <!-- Read more button -->
+                    <!-- Post title -->
+                    <h5 class="dark-grey-text mb-3">Siga estos consejos:</h5>
+                    <!-- Excerpt -->
+                    <p class="dark-grey-text">
+                        <i class="fas fa-caret-right" style="color:#B0BD20"></i>Presione la tecla <strong>F11</strong> de su teclado para <strong>aumentar el tamaño de visualización.</strong><br /><br />
+                        <i class="fas fa-caret-right" style="color:#B0BD20"></i>Cuando termine de visualizar el informe, vuelva a presionar <strong>F11</strong> para volver<br /> a la configuracion inicial.<br /><br />
+                        <i class="fas fa-caret-right" style="color:#B0BD20"></i>Si desea descargar el informe y visualizarlo en su computadora de clic en el <br />siguiente enlace:<br />
+                        <br />Link del Informe (Power BI): <a href="https://app.powerbi.com/groups/22c4b1a0-6b26-42bf-b966-462651eaf953/reports/a7710ba7-c17b-4cba-8e66-797462cd84ee?ctid=e4821339-88e3-43d4-bd05-6954a946b94e">&nbsp;<i class="fas fa-file-contract" style="font-size:30px;color:goldenrod;"></i></a><br />
+
+
+
+                    </p>
+                    <a href="mailto:consultascreditoretail@bncr.fi.cr?subject=¡Problema%20de%20Acceso%20al%20Reporte%20Credito%20Retail!&body=Por%20Favor%20describanos%20el%20inconveniente%20que%20se%20le%20presenta:" class="botonbuscar-ghost color1 rounded-lg mt-3 ml-1" style="margin-left:-8px;">Notificar Problema</a>
+
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <hr class="mt-5">
+        </section>
+        <!--Section: Content-->
+    </div>
+
+
+
+
+    <style>
+
+        /* esto es para la imagen de proyectos  */
+        .contenedores {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+            .contenedores figure {
+                position: relative;
+                height: 250px;
+                cursor: pointer;
+                width: 350px;
+                overflow: hidden;
+                border-radius: 6px;
+                box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+
+                .contenedores figure img {
+                    width: 100%;
+                    height: 100%;
+                    transition: all 500ms ease-out;
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: sans-serif;
+                }
+
+                .contenedores figure .capa {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,103,123,0.7);
+                    transition: all 500ms ease-out;
+                    opacity: 0;
+                    visibility: hidden;
+                    text-align: center;
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: sans-serif;
+                }
+
+                .contenedores figure:hover > .capa {
+                    opacity: 1;
+                    visibility: visible;
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: sans-serif;
+                }
+
+                    .contenedores figure:hover > .capa h3 {
+                        margin-top: 70px;
+                        margin-bottom: 15px;
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        font-family: sans-serif;
+                    }
+
+                .contenedores figure:hover > img {
+                    transform: scale(1.3);
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: sans-serif;
+                }
+
+                .contenedores figure .capa h3 {
+                    color: #fff;
+                    font-weight: 400;
+                    margin-bottom: 120px;
+                    transition: all 500ms ease-out;
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: sans-serif;
+                    margin-top: 30px;
+                }
+
+                .contenedores figure .capa p {
+                    color: #fff;
+                    font-size: 15px;
+                    line-height: 1.5;
+                    width: 100%;
+                    max-width: 220px;
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: sans-serif;
+                    margin: auto;
+                }
+
+
+
+
+
+        :root {
+            --color1: #133D8D;
+            --color2: #B0BD20;
+            --blue: #133D8D;
+            --green: #B0BD20;
+            --letra: #fff
+        }
+
+        .botonbuscar-ghost {
+            position: relativate;
+            display: inline-block;
+            padding: 8px 25px;
+            color: #fff;
+            font-weight: 100;
+            text-decoration: none;
+            background-color: #133D8D;
+            transition: color 0.3s, background 0.3s;
+            margin-left: 30px;
+            margin-bottom: 2px;
+            margin-top: 2px;
+            text-align: center;
+            border: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: small;
+        }
+
+            .botonbuscar-ghost.round {
+                border-radius: 30px;
+            }
+
+
+
+            .botonbuscar-ghost:hover {
+                color: #fff;
+                background-color: #B0BD20;
+            }
+
+
+
+            .botonbuscar-ghost:active {
+                box-shadow: inset 0 0 20px #fff;
+            }
+
+
+
+
+            /** GREEN */
+            .botonbuscar-ghost.color2 {
+                background-color: #133D8D;
+                border-color: #133D8D;
+                color: #fff;
+            }
+
+
+
+                .botonbuscar-ghost.color2:hover {
+                    background-color: #B0BD20;
+                    color: #fff;
+                    border-color: #B0BD20;
+                    opacity: 0.1;
+                }
+
+
+
+                .botonbuscar-ghost.color2:active {
+                    box-shadow: inset 0 0 20px #B0BD20;
+                }
+
+
+        /*fin del css para boton de busqueda*/
+
+
+
+
+
+
+    </style>
+
+
+
+    <!-- Evento dos-->
+
+    <div class="container">
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+
+            <!-- Grid row -->
+            <div class="row align-items-center">
+
+                <div class="col-5">
+                    <!-- Post data -->
+                    <p>
+                        <h5 class="font-weight-bold mb-3 wow fadeIn" data-wow-iteration="infinite" data-wow-duration="5s" data-wow-delay="0.5s" style="font-size:x-large"><i class="fas fa-info-circle" style="color:#133D8D;"></i>&nbsp;New</h5>
+                        <a class="font-weight-bold" style="font-size:30px;"><i class="fas fa-angle-double-right" style="color:#B0BD20"></i>&nbsp;Promesas de Calidad</a>
+
+                    </p>
+                    <!-- Read more button -->
+                    <!-- Post title -->
+                    <h5 class="dark-grey-text mb-3">Siga estos consejos:</h5>
+                    <!-- Excerpt -->
+                    <p class="dark-grey-text">
+                        <i class="fas fa-caret-right" style="color:#B0BD20"></i>Presione la tecla <strong>F11</strong> de su teclado para <strong>aumentar el tamaño de visualización.</strong><br /><br />
+                        <i class="fas fa-caret-right" style="color:#B0BD20"></i>Cuando termine de visualizar el informe, vuelva a presionar <strong>F11</strong> para volver<br /> a la configuracion inicial.<br /><br />
+                        <i class="fas fa-caret-right" style="color:#B0BD20"></i>Si desea descargar el informe y visualizarlo en su computadora de clic en el <br />siguiente enlace:<br />
+                        <br />Link del Informe (Power BI) en las imagenes de la derecha.<br />
+
+
+
+                    </p>
+                    <a href="mailto:amorafe@bncr.fi.cr?subject=¡Problema%20de%20Acceso%20al%20Reporte%20Promesa%20Calidad!&body=Por%20Favor%20describanos%20el%20inconveniente%20que%20se%20le%20presenta:" class="botonbuscar-ghost color1 rounded-lg mt-3 ml-1" style="margin-left:-8px;">Notificar Problema</a>
+
+                </div>
+
+                <!-- Grid column -->
+                <div class="col-7">
+                    <!-- Featured image -->
+                    <div class="contenedores">
+                        <figure>
+                            <img src="~/Content/Estadisticas/Imagenes/fondo_2.jpg">
+                            <div class="capa">
+                                <h4 class="h4 mt-4 text-white">Promesas de Calidad</h4>
+                                <p class="mt-5">
+					<!--
+				    <a class="botonbuscar-ghost color1 rounded-lg mt-3 mr-3" href="https://app.powerbi.com/Redirect?action=OpenApp&appId=16e7c97b-b75c-4320-8eeb-d5d61cef2f68&ctid=e4821339-88e3-43d4-bd05-6954a946b94e">Red de Oficinas</a>                                    
+                                    <a class="botonbuscar-ghost color1 rounded-lg mt-3 mr-3" href="https://app.powerbi.com/view?r=eyJrIjoiOTQyZjNmNDMtYmQxOS00Njg1LTg5N2MtMzdhYjE5ZjM3NTJlIiwidCI6ImU0ODIxMzM5LTg4ZTMtNDNkNC1iZDA1LTY5NTRhOTQ2Yjk0ZSIsImMiOjR9">Dirección de Crédito</a>
+					-->
+        
+                                    <a class="botonbuscar-ghost color1 rounded-lg mt-3 mr-3" href="https://app.powerbi.com/groups/me/apps/42b1f159-0cde-4451-b39d-28b57d19f9f5/reports/c5286520-8a0f-4126-89ac-c7cab2b3426e/ReportSection843a7d57159947327708" target="_blank">Promesas de Calidad</a>
+
+                                </p>
+                            </div>
+                        </figure>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <figure>
+                            <img src="~/Content/Estadisticas/Imagenes/Fotolia_90649332_S.jpg">
+                            <div class="capa">
+                                <h4 class="h4 mt-4 text-white">Próximamente <i class="far fa-clock"></i></h4>
+                                <p class="text-white-50 mt-5" style="font-size:18px;">Apelaciones Tiempos <br />Promesas de calidad</p>
+                            </div>
+                        </figure>
+
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <hr class="mb-2">
+        </section>
+        <!--Section: Content-->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br /><br />
+    <!-- Footer -->
+
+
+    <div class="mt-5 pt-3 pb-1 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xs-12 about-company">
+                    <h2>Contáctenos</h2>
+                    <p class="pr-5 text-white-50">Por favor refiera cualquier consulta, duda o problema de la página al siguiente correo: &nbsp;&nbsp;<a href="mailto:jmolinaz@bncr.fi.cr"><i class="fas fa-envelope-open-text"></i></a></p>
+                    <img src="~/Content/imagenes/Inicio/Logo-azu-BN.png" height="70" alt="Alternate Text" />
+                </div>
+                <div class="col-lg-3 col-xs-12 links">
+                    <h4 class="mt-lg-0 mt-sm-3">Navegación</h4>
+                    <ul class="m-0 p-0">
+                        <li class="mt-3"><a href="~/Home/Inicio"><i class="fas fa-link"></i>&nbsp;&nbsp;Sitio</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Servicios</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Noticias</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Sobre Nosotros</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-xs-12 location">
+                    <h4 class="mt-lg-0 mt-sm-3">Ubicación</h4>
+                    <p><i class="fas fa-map-marked-alt mr-3"></i>San Jose, La Uruca, Edificio Cipac</p>
+
+                    <p class="mt-3"><i class="fa fa-phone mr-3"></i>(+506) 2212-2000</p>
+                    <p class="mb-0"><i class="far fa-envelope mr-3"></i>ConsultasCreditoRetail@bncr.fi.cr</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col copyright text-center">
+                    <p class="footer-copyright text-center py-3">
+                        Copyright © 2020 All rights reserved |
+                        <a href="#">Dirección de Crédito Desarrollo y Personas</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Footer -->
+    <!--iniciar animaciones de MDBootrapt-->
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            new WOW().init();
+        });
+    </script>
+
+</body>
+</html>

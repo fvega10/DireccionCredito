@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+
+
+
+<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
+    <div class="container-fluid ml-1" style="height:30px;width:100%;">
+        <a href="~/Home/Inicio" class="navbar-brand">
+            <img src="~/Content/imagenes/Buscador_Ico_bncr.png" height="40" alt="Pic">
+        </a>
+        <span class="d-flex align-items-center justify-content-center lineaSeparador">|</span>
+
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <ul class="main-nav nav navbar-nav navbar-right">
+                
+                
+
+                <!--Titulo 3-->
+                
+
+                <!--Titulo 4-->
+               
+
+                <!--Titulo 5-->
+
+                <li><a href="javascript:window.open('https://bnficr.sharepoint.com/sites/finanzas/Tasas/Tasas%20Activas%20%20BN.xlsx?Web=1','','width=1100,height=550,resizable=yes,menubar=yes,scrollbars=yes');void 0" class="nav-item nav-link">Tasa Interés</a></li>
+                <li><a href="javascript:window.open('https://bnficr.sharepoint.com/sites/finanzas/Lists/Manual%20de%20Comisiones/II%20Servicios%20de%20Crdito.aspx','','height=550,resizable=yes,menubar=yes,scrollbars=yes');void 0" class="nav-item nav-link">Manual Comisiones</a></li>
+
+                <li><a href="javascript:window.open('https://bnficr.sharepoint.com/sites/procesos/default.aspx','','width=1100,height=550,resizable=yes,menubar=yes,scrollbars=yes');void 0" class="nav-item nav-link">Mapa Proceso</a></li>
+
+
+
+
+
+            </ul><!--fin del menu-->
+            <div class="navbar-nav ml-auto mt-2">
+
+                <span class="d-flex align-items-center justify-content-center mr-2" style="font-family:'Segoe UI Emoji';font-size:small"> HoLa @ViewBag.Given_Name!</span>
+                <a href="#" class="navbar-brand">
+                    <img src="@ViewBag.FotoUsuario" class="rounded-circle" height="40" style="padding-bottom:5px;" alt="PicUser">
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>

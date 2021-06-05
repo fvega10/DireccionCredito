@@ -1,0 +1,962 @@
+﻿
+@{
+    Layout = null;
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+}
+
+<!DOCTYPE html>
+
+<html>
+
+@Styles.Render("~/Content/css_inicio")
+@Scripts.Render("~/bundles/SweetAlert/js")
+@Scripts.Render("~/bundles/scriptsInicio")
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inicio</title>
+    <link href="~/Content/Inicio/css/style.css" rel="stylesheet" />
+    <link href="~/Content/Inicio/css/WorkSans.css" rel="stylesheet" />
+    <link rel="icon" href="~/Content/imagenes/EDIFICIO.png" type="image/x-icon">
+
+
+</head>
+<body>
+
+    <header>
+
+
+
+        <!-- menu minimizar -->
+        <div class="site-mobile-menu">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div> <!-- .site-mobile-menu -->
+        <!--***Menu principal***-->
+        <div class="site-navbar-wrap">
+            <div class="site-navbar-top">
+                <div class="container py-1">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <a href="https://twitter.com/bnmascerca" class="p-2 pl-0"><span class="icon-twitter"></span></a>
+                            <a href="https://www.facebook.com/bnmascerca/" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                            <a href="https://cr.linkedin.com/company/banco-nacional" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
+                            <a href="https://www.instagram.com/bnmascerca/?hl=es-la" class="p-2 pl-0"><span class="icon-instagram"></span></a>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex ml-auto">
+                                <a href="#" class="d-flex align-items-center ml-auto mr-4">
+                                    <span class="icon-phone mr-2"></span>
+                                    <span class="d-none d-md-inline-block">+506 2212 2000</span>
+                                </a>
+                                <a href="mailto:consultascreditoretail@bncr.fi.cr" class="d-flex align-items-center">
+                                    <span class="icon-envelope mr-2"></span>
+                                    <span class="d-none d-md-inline-block">consultascreditoretail@bncr.fi.cr</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-navbar">
+                <div class="container">
+                    <div class="row align-items-center" style="height:50px;">
+                        <div class="col-2">
+                            <h2 class="site-logo"><a href="~/Home/Inicio"><img src="../../Content/Calendario/Imagenes/ICO.png" class="img-fluid" style="height:45px;"></a></h2>
+                        </div>
+                        <div class="col-10">
+                            <nav class="site-navigation text-right" role="navigation">
+                                <div class="container">
+                                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto "><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+                                    <ul class="site-menu js-clone-nav d-none d-lg-block">
+
+                                        <li><a href="~/Home/Inicio">SITIO</a></li>
+
+                                        <li class="has-children">
+                                            <a href="#!">SERVICIOS</a>
+                                            <ul class="dropdown arrow-top">
+                                                <li><a href="~/Home/Buscador">Motor Búsqueda</a></li>
+                                                <li><a href="http://dsn820bda01:81/sipcoweb/">SipcoWeb</a></li>
+                                                <li><a href="~/Home/Estadisticas">Estadísticas</a></li>
+                                                <li><a href="http://bnportal/sites/comercial/CIPAC/CIPAC_Tramite.zip">BD Sipco</a></li>
+						                        <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=OROC5OOI1EO9BWlUqUa5TpV4yZbwDzNNtAQ7DBJnkTRUM0haSENPTjM5MEdLTzhYRU9NVTFWMk05Qi4u" target="_blank"><i class="fas fa-hand-holding-usd"></i> Crédito BN Empleados</a></li>
+                                                <li><a href="~/Home/MatrizSeguimiento"><i class="fas fa-calculator"></i> Matriz Seguimiento</a></li>
+                                            </ul>
+
+
+                                        </li>
+
+                                        <li class="has-children">
+                                            <a href="#!">INFÓRMESE</a>
+                                            <ul class="dropdown arrow-top">
+                                                <li><a href="~/Home/Noticias">Noticias</a></li>
+                                                <li><a href="~/Home/ErrorAcceso">Guía de Uso</a></li>
+                                                <li><a href="~/Home/PreguntasFrecuentes">Preguntas Frecuentes</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="https://universidad.bncr.fi.cr/login/index.php">CAPACITACIONES</a></li>
+                                        <li><a href="~/Home/Calendario">CALENDARIO</a></li>
+                                        <li><a href="~/Home/ErrorAcceso">CONTACTO</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END menu principal-->
+        <!--***CARRUCEL*** -->
+        <div class="fondoSeccion wow animated flash">
+            @* controles *@
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-pause="false" data-interval="8000">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="~/Content/imagenes/Inicio/autogestionBnEmpleados.jpg" class=" BannerMio d-block w-100" alt="...">
+                        <div class="carousel-caption" style="text-align:start;">
+                            <h2 class="animated jackInTheBox" style="font-family:poppins;animation-delay:1s;">Gestione su BN <span style="background-color: #133D8D;
+        color: white;
+        border-radius: 40px;
+        padding: 4px 4px 4px 4px;
+        font-size: 35px;
+        opacity: 0.8">Empleado</span></h2>
+                            <h3 class="animated fadeInUp mt-4" style="animation-delay:2s;font-family: 'Doppio One', sans-serif;font-size:22px;">Podrás solicitar tu crédito de empleados fácil y ágil</h3>
+                            <h3 class="animated fadeInUp" style="animation-delay:3s;font-family: 'Doppio One', sans-serif;font-size:22px;"> a un solo clic</h3>
+                            <p class="animated zoomIn" style="animation-delay:4s;"> <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=OROC5OOI1EO9BWlUqUa5TpV4yZbwDzNNtAQ7DBJnkTRUM0haSENPTjM5MEdLTzhYRU9NVTFWMk05Qi4u" target="_blank" style="background-color: #BFDB0A">Solicitar</a> </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="/Content/imagenes/Inicio/fondoinicio3.jpg" class="d-block w-100 BannerMio" alt="...">
+                        <div class="carousel-caption">
+                            <h2 class="animated fadeInUp" style="font-family:poppins;animation-delay:0.5s;">Estamos <span>Mejorando!</span></h2>
+                            <h3 class="animated bounceInLeft mt-3" style="animation-delay:1s;font-family: 'Doppio One', sans-serif;font-size:22px;">
+                                Generamos un ecosistema de atención de procesos mediante
+                            </h3>
+                            <h3 class="animated bounceInRight" style="animation-delay:2s;font-family: 'Doppio One', sans-serif;font-size:22px;">
+                                el desarrollo de métodos ágiles de gestión.
+                            </h3>
+                            <p class="animated fadeIn" style="animation-delay:3s;"> <a href="#mejoramosporusted">Ver Más</a> </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="~/Content/imagenes/Inicio/carrucel2.jpg" class=" BannerMio d-block w-100" alt="...">
+                        <div class="carousel-caption" style="text-align:start;">
+                            <h2 class="animated jackInTheBox" style="font-family:poppins;animation-delay:1s;">Comunicación <span style="background-color:#B0BD20;color:white;border-radius:40px;padding: 4px 4px 4px 4px;font-size:35px;opacity:0.8">Oportuna</span></h2>
+                            <h3 class="animated fadeInUp mt-4" style="animation-delay:2s;font-family: 'Doppio One', sans-serif;font-size:22px;">Enterese de las noticias más relevantes y los ultimos cambios realizados</h3>
+                            <h3 class="animated fadeInUp" style="animation-delay:3s;font-family: 'Doppio One', sans-serif;font-size:22px;">así como Tips y consejos que le ayudarán en las funciones diarias.</h3>
+                            <p class="animated zoomIn" style="animation-delay:4s;"> <a href="~/Home/Noticias">Ver Más</a> </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="~/Content/imagenes/Inicio/CARRUEL11c.jpg" class=" BannerMio d-block w-100" alt="...">
+                        <div class="carousel-caption" style="text-align:end;">
+                            <h2 class="animated zoomIn" style="font-family:poppins;animation-delay:1s;"><span style="background-color:#B0BD20;color:white;border-radius:40px;padding: 4px 4px 4px 4px;font-size:35px;opacity:0.8">Servicios</span>  Asistencia</h2>
+                            <h3 class="animated fadeInLeft mt-4" style="animation-delay:2s;font-family: 'Doppio One', sans-serif;font-size:22px;">Encuentre todos los servicios que le ayudarán a mejorar </h3>
+                            <h3 class="animated fadeInLeft" style="animation-delay:3s;font-family: 'Doppio One', sans-serif;font-size:22px;">el proceso de gestión crediticia en un solo sitio.</h3>
+                            <p class="animated zoomIn" style="animation-delay:4s;"><a href="~/Home/Buscador">Ver Más</a> </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span><br />
+                </a>
+            </div>
+        </div>
+        <!--END Carrucel-->
+
+    </header>
+
+    <!--***IMAGEN ADN***-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-13">
+                <br />
+                <img src="~/Content/imagenes/ADN_2.png" style="width:100%;" />
+            </div>
+        </div>
+    </div>
+    <!--END adn-->
+    <!--***DIV MEJORANDO POR USTED***-->
+    <div class="container mt-4 my-5">
+
+
+        <!--Section: Content-->
+        <section class="dark-grey-text mt-5" style="margin-top:-50px;" id="mejoramosporusted">
+
+            <div class="row pr-lg-5">
+                <div class="col-6 mb-4">
+
+                    <div class="view">
+                        <img src="~/Content/imagenes/Inicio/Gif/2.gif" class="img-fluid wow zoomIn" data-wow-delay="0.2s" alt="Equipo" style="height:300px;">
+                    </div>
+
+                </div>
+                <div class="col-6 d-flex align-items-center" >
+                    <div style="margin-top:-30px;margin-left:-15px;">
+
+                        <h3 class="font-weight-bold mb-4 wow rollIn" data-wow-delay="0.3s">¡Mejoramos por usted!</h3>
+
+                        <p class="wow fadeIn" data-wow-delay="0.4s">En el departamento de <strong>Análisis y Gestión de Crédito Retail</strong>, día con día, buscamos la forma de mejorar los procesos relacionados a Crédito, a través de revisiones minuciosas a los procesos actuales, buscando nuevas ideas <i class="far fa-lightbulb" style="color:khaki;"></i> y escuchando las necesidades de nuestros clientes internos, con el fin de innovar las gestiones y mitigar los riesgos.</p>
+
+                        <button type="button" onclick="location.href='/Home/Calendario'" class="btn btn-sm blue-gradient btn-rounded mx-0 wow fadeIn" data-wow-delay="0.5s">Ver Más</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="container" />
+        <!--Section: Content-->
+
+
+    </div>
+    
+    <!--***Portafolio***-->
+
+
+    <div class="js__header-sticky">
+
+        <!-- Portfolio Filter -->
+        <div class="container g-padding-y-80--xs" style="margin-top:-70px;">
+            <div class="g-text-center--xs g-margin-b-40--xs">
+                <h2 class="g-font-size-32--xs g-font-size-36--md">Portafolio Asistencia</h2>
+            </div>
+            <div class="s-portfolio" style="margin-top:-20px;">
+                <div id="js__filters-portfolio-gallery" class="s-portfolio__filter-v1 cbp-l-filters-text cbp-l-filters-center">
+                    <div data-filter="*" class="s-portfolio__filter-v1-item cbp-filter-item cbp-filter-item-active">Todos</div>
+                    <div data-filter=".graphic" class="s-portfolio__filter-v1-item cbp-filter-item">Gestión</div>
+                    <div data-filter=".logos" class="s-portfolio__filter-v1-item cbp-filter-item">Documentación</div>
+                    <div data-filter=".motion" class="s-portfolio__filter-v1-item cbp-filter-item">Otros</div>
+                </div>
+            </div>
+        </div>
+        <!-- End Portfolio Filter -->
+        <!-- Portfolio Gallery -->
+        <div class="container g-margin-b-100--xs">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-9">
+                    <div id="js__grid-portfolio-gallery" class="cbp" style="margin-top:-40px;">
+
+
+
+
+                        <!-- Item -->
+                        <div class="s-portfolio__item cbp-item graphic col-4">
+                            <div class="s-portfolio__img-effect">
+                                <img src="~/Content/imagenes/Inicio/portaflio/Estadisticas.jpg" alt="Portfolio Image">
+                            </div>
+                            <a href="~/Home/Estadisticas">
+                                <div class="s-portfolio__caption-hover--cc">
+                                    <div class="g-margin-b-25--xs" style="background-color:#133D8D;opacity:0.7;padding-top:15px;padding-bottom:15px;border-radius:50px;">
+                                        <h4 class="g-font-size-24--xs g-color--white g-margin-b-5--xs">ESTADISTICAS</h4>
+                                        <p class="g-color--white-opacity">Ingresar</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item GESTION-->
+                        <div class="s-portfolio__item cbp-item logos  col-4">
+                            <div class="s-portfolio__img-effect">
+                                <img src="~/Content/imagenes/Inicio/portaflio/calendario.png" alt="Portfolio Image">
+                            </div>
+                            <a href="~/Home/Calendario">
+                                <div class="s-portfolio__caption-hover--cc">
+                                    <div class="g-margin-b-25--xs" style="background-color:#133D8D;opacity:0.7;padding-top:15px;padding-bottom:15px;border-radius:50px;">
+                                        <h4 class="g-font-size-24--xs g-color--white g-margin-b-5--xs">CALENDARIO</h4>
+                                        <p class="g-color--white-opacity">Ingresar</p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item -->
+                        <div class="s-portfolio__item cbp-item graphic  col-4">
+                            <div class="s-portfolio__img-effect">
+                                <img src="~/Content/imagenes/Inicio/portaflio/DashBoard.png" alt="Portfolio Image">
+
+                            </div>
+
+                            <div class="s-portfolio__caption-hover--cc">
+                                <div class="g-margin-b-25--xs" style="background-color:#133D8D;opacity:0.7;padding-top:15px;padding-bottom:15px;border-radius:50px;color:white;">
+                                    <h4 class="g-font-size-24--xs g-color--white g-margin-b-5--xs">DashBoard</h4>
+                                    <p class="g-color--white-opacity">-En Contrucción-<br /><i class="fas fa-tools"></i></p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Item GESTION-->
+                        <div class="s-portfolio__item cbp-item logos  col-4">
+                            <div class="s-portfolio__img-effect">
+                                <img src="~/Content/imagenes/Inicio/portaflio/Instructico.png" alt="Portfolio Image">
+
+                            </div>
+                            <a href="#!">
+                                <div class="s-portfolio__caption-hover--cc">
+                                    <div class="g-margin-b-25--xs" style="background-color:#133D8D;opacity:0.7;padding-top:15px;padding-bottom:15px;border-radius:50px;">
+                                        <h4 class="g-font-size-24--xs g-color--white g-margin-b-5--xs">Guía Uso</h4>
+                                        <p class="g-color--white-opacity">Ingresar</p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Item GESTION-->
+                        <div class="s-portfolio__item cbp-item graphic  col-4">
+                            <div class="s-portfolio__img-effect">
+                                <img src="~/Content/imagenes/Inicio/portaflio/Motor.png" alt="Portfolio Image">
+
+                            </div>
+                            <a href="~/Home/Buscador">
+                                <div class="s-portfolio__caption-hover--cc">
+                                    <div class="g-margin-b-25--xs" style="background-color:#133D8D;opacity:0.7;padding-top:15px;padding-bottom:15px;border-radius:50px;">
+                                        <h4 class="g-font-size-24--xs g-color--white g-margin-b-5--xs">Motor Búsqueda</h4>
+                                        <p class="g-color--white-opacity">Ingresar</p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item GESTION-->
+                        <div class="s-portfolio__item cbp-item motion  col-4">
+                            <div class="s-portfolio__img-effect">
+                                <img src="~/Content/imagenes/Inicio/portaflio/questions.png" alt="Portfolio Image">
+                            </div>
+                            <a href="~/Home/PreguntasFrecuentes">
+
+                                <div class="s-portfolio__caption-hover--cc">
+                                    <div class="g-margin-b-25--xs" style="background-color:#133D8D;opacity:0.7;padding-top:15px;padding-bottom:15px;border-radius:50px;">
+                                        <h4 class="g-font-size-24--xs g-color--white g-margin-b-5--xs">Preguntas Frecuentes</h4>
+                                        <p class="g-color--white-opacity">Ingresar</p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End Item -->
+                    </div><!-- End Portfolio Gallery -->
+                </div>
+                
+            </div>
+                
+                
+            </div>
+        </div>
+    
+    <!-- END Portfolio -->
+    
+    
+    <!--***START NOTICIAS***-->
+    <hr class="container" />
+    <div class="container-fluid mt-5 wow fadeIn" data-wow-delay="0.5s">
+        <h3 class="text-center font-weight-bold mb-5">Últimas Noticias</h3>
+        <div class="row">
+            <div class="col-sm-12">
+                <a href="#inam" class="carousel-control-prev" data-slide="prev">
+                    <i class="fas fa-chevron-circle-left" style="font-size:xx-large;margin-right:100px;color:#133D8D;"></i>
+                </a>
+                <a href="#inam" class="carousel-control-next" data-slide="next">
+                    <i class="fas fa-chevron-circle-right" style="font-size:xx-large;margin-left:100px;color:#133D8D;"></i>
+                </a>
+
+
+                <div id="inam" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+
+                            <!--Primer grupo de tres cartas-->
+
+
+                            <div class="container">
+                                <div class="row">
+
+                                    <!--carta 1-->
+                                    <!--RENDICION DE CUENTAS-->
+                                    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+
+                                        <!-- Card -->
+                                        <div class="card hoverable">
+                                            <a href="/Home/Noticias#RendicionCuentas">
+                                                <!-- Card image -->
+                                                <img class="card-img-top" src="~/Content/Noticias/Imagenes/Historial/new_1.jpg" alt="Card image cap" style="height:240px;">
+                                            </a>
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <!-- Title -->
+                                                <a href="~/Home/Noticias#RendicionCuentas" class="black-text"><i class="fab fa-twitch blue-text"></i>&nbsp; Rendición de Cuentas Análisis y Gestión de Crédito Retail</a>
+                                                <!-- Text -->
+                                                <br />
+                                                <hr />
+                                                <p class="card-title text-muted font-small mt-3 mb-2">Informese como van nuestros proyectos en la Unidad de Análisis y Gestión de Crédito Retail.</p>
+                                                <br /><br />
+                                                <button type="button" onclick="location.href='/Home/Noticias#RendicionCuentas'" class="btn btn-flat text-primary p-0 mx-0">&nbsp;Ir a Noticias<i class="fa fa-angle-right ml-2"></i></button>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- Card -->
+
+                                    </div>
+                                    <!--carta 2-->
+                                    <!--Orden Administrativo para canalizar consultas / DGC-209-2019-->
+                                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+
+                                        <!-- Card -->
+                                        <div class="card hoverable">
+                                            <a href="/Home/Noticias#New_2">
+                                                <!-- Card image -->
+                                                <img class="card-img-top" src="~/Content/Noticias/Imagenes/Historial/New_2.jpg" alt="Card image cap" style="height:240px;">
+                                            </a>
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <!-- Title -->
+                                                <a href="~/Home/Noticias#New_2" class="black-text"><i class="fab fa-twitch blue-text"></i>&nbsp; Orden Administrativo para canalizar consultas / DGC-209-2019</a>
+                                                <!-- Text -->
+                                                <hr />
+                                                <p class="card-title text-muted font-small mt-3 mb-2">Descripcion breve de la noticia para informar al usuario que ingrese en la misma y vea la documentacion relaciaonada</p>
+                                                <br />
+                                                <button type="button" onclick="location.href='/Home/Noticias#New_2'" class="btn btn-flat text-primary p-0 mx-0">&nbsp;Ir a Noticias<i class="fa fa-angle-right ml-2"></i></button>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- Card -->
+
+                                    </div>
+                                    <!--carta 3-->
+                                    <!-- Aclaración Garantía Pagaré -->
+                                    <div class="col-lg-4 col-md-6 mb-0">
+                                        <!-- Card -->
+                                        <div class="card hoverable">
+                                            <a href="/Home/Noticias#New_3">
+                                                <!-- Card image -->
+                                                <img class="card-img-top" src="~/Content/Noticias/Imagenes/Historial/New_3.jpg" alt="Card image cap" style="height:240px;border-bottom: #eaeff4 1px solid;">
+                                            </a>
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <!-- Title -->
+                                                <a href="~/Home/Noticias#New_3" class="black-text"><i class="fab fa-twitch blue-text"></i>&nbsp;Aclaración Garantía Pagaré</a>
+                                                <!-- Text -->&nbsp;<br /><br />
+                                                <hr />
+                                                <p class="card-title text-muted font-small mt-3 mb-2">Consideraciones para financiamiento con garantía pagaré.</p>
+                                                <!-- BR PARA AJUSTAR -->
+                                                <br /><br />
+
+                                                <button type="button" onclick="location.href='/Home/Noticias#New_3'" class="btn btn-flat text-primary p-0 mx-0">&nbsp;Ir a Noticias<i class="fa fa-angle-right ml-2"></i></button>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- Card -->
+
+                                    </div>
+
+                                </div>
+                                <br />
+                            </div>
+
+
+                        </div><!--fin del carrousel primer grupo de cartas-->
+                        <!--SEGUNDO grupo de tres cartas-->
+
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+
+                                    <!--carta 1-->
+                                    <!--Informe de Oficina Tipo 3-->
+                                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+
+                                        <!-- Card -->
+                                        <div class="card hoverable">
+
+                                            <!-- Card image -->
+                                            <a href="/Home/Noticias#New_4">
+                                                <img class="card-img-top" src="~/Content/Noticias/Imagenes/Historial/New_4.jpg" alt="Card image cap" style="height:240px;">
+                                            </a>
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <!-- Title -->
+                                                <a href="~/Home/Noticias#New_4" class="black-text"><i class="fab fa-twitch blue-text"></i>&nbsp; Informe de Oficina Tipo 3</a>
+                                                <!-- Text -->
+                                                <hr />
+                                                <p class="card-title text-muted font-small mt-3 mb-2">Infórmese sobre la cantidad de casos de oficina tipo 3 analizados por la "Línea Especializada" para el periodo de marzo a diciembre 2019</p>
+                                                <br /><br />
+                                                <button type="button" onclick="location.href='/Home/Noticias#New_4'" class="btn btn-flat text-primary p-0 mx-0">&nbsp; Ir a Noticias<i class="fa fa-angle-right ml-2"></i></button>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- Card -->
+
+                                    </div>
+                                    <!--carta 2-->
+                                    <!--Cálculo de Giro de Cuota para Créditos de Construcción-->
+                                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+                                        <!-- Card -->
+                                        <div class="card hoverable">
+                                            <a href="/Home/Noticias#New_5">
+                                                <!-- Card image -->
+                                                <img class="card-img-top" src="~/Content/Noticias/Imagenes/Historial/New5.jpg" alt="Card image cap" style="height:240px;">
+                                            </a>
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <!-- Title -->
+                                                <a href="~/Home/Noticias#New_5" class="black-text"><i class="fab fa-twitch blue-text"></i>&nbsp; Cálculo de Giro de Cuota para Créditos de Construcción</a>
+                                                <!-- Text -->
+                                                <hr />
+                                                <p class="card-title text-muted font-small mt-3 mb-2">
+                                                    Infórmese ¿Cómo se realiza el cálculo de Giros de Cuota para créditos de Construcción?
+                                                </p>
+                                                <br /><br />
+                                                <button type="button" onclick="location.href='/Home/Noticias#New_5'" class="btn btn-flat text-primary p-0 mx-0">&nbsp; Ir a Noticias<i class="fa fa-angle-right ml-2"></i></button>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- Card -->
+
+                                    </div>
+                                    <!--carta 3-->
+                                    <!--¿Cancelación parcial de Hipoteca con y sin Recibo de Suma?-->
+                                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+
+                                        <!-- Card -->
+                                        <div class="card hoverable">
+                                            <a href="/Home/Noticias#New_6">
+                                                <!-- Card image -->
+                                                <img class="card-img-top" src="~/Content/Noticias/Imagenes/Historial/new_6.jpg" alt="Card image cap" style="height:240px;">
+                                            </a>
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <!-- Title -->
+                                                <a href="~/Home/Noticias#New_6" class="black-text">
+                                                    <i class="fab fa-twitch blue-text"></i>&nbsp; ¿Cancelación parcial de Hipoteca con y sin Recibo de Suma?
+                                                </a>
+                                                <!-- Text -->
+                                                <hr />
+                                                <p class="card-title text-muted font-small mt-3 mb-2">
+                                                    ¿Sabes que es? Encuentre la definición según el tipo de cancelación parcial de la Hipoteca.
+                                                </p>
+                                                <br /><br />
+                                                <button type="button" onclick="location.href='/Home/Noticias#New_6'" class="btn btn-flat text-primary p-0 mx-0">&nbsp; Ir a Noticias<i class="fa fa-angle-right ml-2"></i></button>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- Card -->
+
+                                    </div>
+
+
+                                </div><!--fin del row segundo grupo de cartas-->
+                                <br />
+                            </div><!--fin container segundo grupo de cartas-->
+                        </div><!--fin segundo grupo de cartas-->
+                        <!--Tercer grupo de tres cartas-->
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+
+                                    <!--carta 1-->
+                                    <!--Seguimiento de Planes de Inversión-->
+                                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+                                        <!-- Card -->
+                                        <div class="card hoverable">
+                                            <a href="/Home/Noticias#SeguiminetoPlanesInversion">
+                                                <!-- Card image -->
+                                                <img class="card-img-top" src="~/Content/Noticias/Imagenes/Historial/Custom_7.jpg" alt="Card image cap" style="height:240px;">
+                                            </a>
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <!-- Title -->
+                                                <a href="~/Home/Noticias#SeguiminetoPlanesInversion" class="black-text"><i class="fab fa-twitch blue-text"></i>&nbsp;Seguimiento de Planes de Inversión</a><br /><br />
+                                                <!-- Text -->
+                                                <hr />
+                                                <p class="card-title text-muted font-small mt-3 mb-2">Muestreo de Revisión - Analisis de la Muestra del Cumplimineto de los Planes de Inversión.</p>
+                                                <br /><br />
+                                                <button type="button" onclick="location.href='/Home/Noticias#SeguiminetoPlanesInversion'" class="btn btn-flat text-primary p-0 mx-0">&nbsp; Ir a Noticias<i class="fa fa-angle-right ml-2"></i></button>
+                                            </div>
+                                        </div>
+                                        <!-- Card -->
+                                    </div>
+
+                                    <!--carta 2-->
+                                    <!--Cálculo de Giro de Cuota para Créditos de Construcción-->
+                                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+                                        <!-- Card -->
+                                        <div class="card hoverable">
+                                            <!-- Card image -->
+                                            <a href="/Home/Noticias#CalculoCuota">
+                                                <img class="card-img-top" src="~/Content/Noticias/Imagenes/Historial/Custom_8.JPG" alt="Card image cap" style="height:240px;">
+                                            </a>
+                                            <!-- Card content -->
+                                            <div class="card-body">
+                                                <!-- Title -->
+                                                <a href="~/Home/Noticias#CalculoCuota" class="black-text"><i class="fab fa-twitch blue-text"></i>&nbsp; Cálculo de Giro de Cuota para Créditos de Construcción</a>
+                                                <!-- Text -->
+                                                <hr />
+                                                <p class="card-title text-muted font-small mt-3 mb-2">
+                                                    Infórmese ¿Cómo se realiza el cálculo de Giros de Cuota para créditos de Construcción?
+                                                </p>
+                                                <br /><br />
+                                                <button type="button" onclick="location.href='/Home/Noticias#CalculoCuota'" class="btn btn-flat text-primary p-0 mx-0">&nbsp; Ir a Noticias<i class="fa fa-angle-right ml-2"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--carta 3-->
+                                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+
+                                        <!-- Carta 3 -->
+                                        <!--Cuando se requiere un acuerdo, autorización o declaración-->
+                                        <div class="card hoverable">
+                                            <!-- Card image -->
+                                            <a href="/Home/Noticias#New_9">
+                                                <img class="card-img-top" src="~/Content/Noticias/Imagenes/Historial/new_9.jpg" alt="Card image cap" style="height:240px;">
+                                            </a>
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <!-- Title -->
+                                                <a href="~/Home/Noticias#New_9" class="black-text">
+                                                    <i class="fab fa-twitch blue-text"></i>&nbsp; ¿Cuando se requiere un acuerdo, autorización o declaración?
+                                                </a>
+                                                <!-- Text -->
+                                                <hr />
+                                                <p class="card-title text-muted font-small mt-3 mb-2">
+                                                    Cuándo requiero acuerdo de Asamblea de Accionistas,autorización de Junta Directiva y declaración jurada?
+                                                </p>
+                                                <br />
+                                                <button type="button" onclick="location.href='/Home/Noticias#New_9'" class="btn btn-flat text-primary p-0 mx-0">&nbsp; Ir a Noticias<i class="fa fa-angle-right ml-2"></i></button>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                </div><!--fin del row segundo grupo de cartas-->
+                                <br />
+                            </div><!--fin container segundo grupo de cartas-->
+                        </div><!--fin TERCER grupo de cartas-->
+                        <!--Cuarto grupo de tres cartas-->
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+
+                                    <!--carta 1-->
+                                    <!--Protectora de Crédito-->
+                                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+
+                                        <!-- Card -->
+                                        <div class="card hoverable">
+                                            <a href="/Home/Noticias#New_10">
+                                                <!-- Card image -->
+                                                <img class="card-img-top" src="~/Content/Noticias/Imagenes/Historial/New_10.jpg" alt="Card image cap" style="height:240px;">
+                                            </a>
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <!-- Title -->
+                                                <a href="~/Home/Noticias#New_10" class="black-text"><i class="fab fa-twitch blue-text"></i>&nbsp;Protectora de Crédito</a>
+                                                <!-- Text -->
+                                                <hr />
+                                                <p class="card-title text-muted font-small mt-3 mb-2">¿Es necesarios generar la protectora de crédito en todos los análisis de crédito?.</p>
+                                                <br /><br />
+                                                <button type="button" onclick="location.href='/Home/Noticias#New_10'" class="btn btn-flat text-primary p-0 mx-0">&nbsp; Ir a Noticias<i class="fa fa-angle-right ml-2"></i></button>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- Card -->
+
+                                    </div>
+
+                                    <!--carta 2-->
+                                    <!-- Informe de salidas no conformes. -->
+                                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+                                        <!-- Card -->
+                                        <div class="card hoverable">
+                                            <!-- Card image -->
+                                            <a href="/Home/Noticias#InformeSalidasNoConforme">
+                                                <img class="card-img-top" src="~/Content/Noticias/Imagenes/Historial/New_11.JPG" alt="Card image cap" style="height:240px;">
+                                            </a>
+                                            <!-- Card content -->
+                                            <div class="card-body">
+                                                <!-- Title -->
+                                                <a href="~/Home/Noticias#InformeSalidasNoConforme" class="black-text"><i class="fab fa-twitch blue-text"></i>&nbsp; Informe de salidas no conformes.</a>
+                                                <!-- Text -->
+                                                <hr />
+                                                <p class="card-title text-muted font-small mt-3 mb-2">
+                                                    » Comportamiento SNC 2020.<br />
+                                                    » Principales Causas.<br />
+                                                    » Propuestas de Abordaje.
+
+                                                    <br />
+
+                                                </p>
+                                                <br />
+                                                <button type="button" onclick="location.href='/Home/Noticias#InformeSalidasNoConforme'" class="btn btn-flat text-primary p-0 mx-0">&nbsp; Ir a Noticias<i class="fa fa-angle-right ml-2"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--carta 3-->
+                                    <!-- ¿Como podemos agilizar los trámites de crédito? -->
+                                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+
+                                        <!-- Carta 3 -->
+                                        <div class="card hoverable">
+
+                                            <!-- Card image -->
+                                            <a href="/Home/Noticias#New_12">
+                                                <img class="card-img-top" src="~/Content/Noticias/Imagenes/Historial/New_12.jpg" alt="Card image cap" style="height:240px;">
+                                            </a>
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <!-- Title -->
+                                                <a href="~/Home/Noticias#New_12" class="black-text">
+                                                    <i class="fab fa-twitch blue-text"></i>&nbsp; ¿Como podemos agilizar los trámites de crédito?
+                                                </a>
+                                                <!-- Text -->
+                                                <hr />
+                                                <p class="card-title text-muted font-small mt-3 mb-2">
+                                                    » Documentación digital.<br />
+                                                    » Documentos que no es necesario imprimir.
+                                                </p>
+                                                <br />
+                                                <button type="button" onclick="location.href='/Home/Noticias#New_12'" class="btn btn-flat text-primary p-0 mx-0">&nbsp; Ir a Noticias<i class="fa fa-angle-right ml-2"></i></button>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                </div><!--fin del row segundo grupo de cartas-->
+                                <br />
+                            </div><!--fin container segundo grupo de cartas-->
+                        </div><!--fin Cuarto grupo de cartas-->
+
+
+
+                        <!--Quinto grupo de tres cartas-->
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+
+                                    <!--carta 1-->
+                                    <!--Presupuesto de Construcción-->
+                                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+
+                                        <!-- Card -->
+                                        <div class="card hoverable">
+                                            <a href="/Home/Noticias#PresupuestoConstrucción">
+                                                <!-- Card image -->
+                                                <img class="card-img-top" src="~/Content/Noticias/Documentos/CAPSULAS/Octubre_2020/PresupuestoConstruccion.png" style="height:240px;">
+                                            </a>
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <!-- Title -->
+                                                <a href="~/Home/Noticias#PresupuestoConstrucción" class="black-text"><i class="fab fa-twitch blue-text"></i>&nbsp;Presupuesto de Construcción</a>
+                                                <!-- Text -->
+                                                <hr />
+                                                <p class="card-title text-muted font-small mt-3 mb-2">Se describe los principales puntos a considerar en la revisión de un presupuesto de construcción.</p>
+                                                <br /><br />
+                                                <button type="button" onclick="location.href='/Home/Noticias#PresupuestoConstrucción'" class="btn btn-flat text-primary p-0 mx-0">&nbsp; Ir a Noticias<i class="fa fa-angle-right ml-2"></i></button>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- Card -->
+
+                                    </div>
+
+                                    <!--carta 2-->
+                                    <!-- Ruta para cierre de planes de inversión MPC -->
+                                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+                                        <!-- Card -->
+                                        <div class="card hoverable">
+                                            <!-- Card image -->
+
+                                            <a href="/Home/Noticias#RutaplanesinversiónMPC">
+                                                <img class="card-img-top" src="~/Content/Noticias/Documentos/CAPSULAS/Octubre_2020/CapsulaRuta.JPG" alt="Card image cap" style="height:240px;">
+                                            </a>
+                                            <!-- Card content -->
+                                            <div class="card-body">
+                                                <!-- Title -->
+                                                <a href="~/Home/Noticias#RutaplanesinversiónMPC" class="black-text">
+                                                    <i class="fab fa-twitch blue-text"></i>&nbsp; Ruta para cierre de planes de inversión MPC
+
+                                                </a>
+                                                <!-- Text -->
+                                                <hr />
+                                                <p class="card-title text-muted font-small mt-3 mb-2">
+                                                    » Descripción breve de la ruta que el usuario debe seguir para los cierres de planes de inversión en el sistema de MPC.
+
+                                                    <br />
+
+                                                </p>
+                                                <br />
+                                                <button type="button" onclick="location.href='/Home/Noticias#RutaplanesinversiónMPC'" class="btn btn-flat text-primary p-0 mx-0">&nbsp; Ir a Noticias<i class="fa fa-angle-right ml-2"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                </div><!--fin del row segundo grupo de cartas-->
+                                <br />
+                            </div><!--fin container segundo grupo de cartas-->
+                        </div><!--fin Cuarto grupo de cartas-->
+
+
+
+                    </div>
+                </div> <!--fin de la clase carrousel-->
+            </div><!--fin de la clase carrousel-->
+        </div><!--fin del row principal-->
+
+
+        <div class="text-center mt-5">
+            <a href="~/Home/Noticias">Navegar en la seccion de Noticias</a>
+        </div>
+
+
+    </div><!--fin del container-->
+    <!--END NOTICIAS-->
+
+
+
+
+
+
+
+
+
+
+
+
+    <br />
+    <br />
+    <hr class="container" />
+
+    
+
+
+
+    <br /><br />
+       
+
+
+
+
+
+
+    <!-- ***Footer*** -->
+    <div class="mt-5 pt-3 pb-1 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xs-12 about-company">
+                    <h2>Contáctenos</h2>
+                    <p class="pr-5 text-white-50">Por favor refiera cualquier consulta, duda o problema de la página al siguiente correo: &nbsp;&nbsp;<a href="mailto:jmolinaz@bncr.fi.cr"><i class="fas fa-envelope-open-text"></i></a></p>
+                    <img src="~/Content/imagenes/Inicio/Logo-azu-BN.png" height="70" alt="Alternate Text" />
+                </div>
+                <div class="col-lg-3 col-xs-12 links">
+                    <h4 class="mt-lg-0 mt-sm-3">Navegación</h4>
+                    <ul class="m-0 p-0">
+                        <li class="mt-3"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Sitio</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Servicios</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Noticias</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Sobre Nosotros</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-xs-12 location">
+                    <h4 class="mt-lg-0 mt-sm-3">Ubicación</h4>
+                    <p><i class="fas fa-map-marked-alt mr-3"></i>San Jose, La Uruca, Edificio Cipac</p>
+
+                    <p class="mt-3"><i class="fa fa-phone mr-3"></i>(+506) 2212-2000</p>
+                    <p class="mb-0"><i class="far fa-envelope mr-3"></i>ConsultasCreditoRetail@bncr.fi.cr</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col copyright text-center">
+                    <p class="footer-copyright text-center py-3">
+                        Copyright © 2020 All rights reserved |
+                        <a href="#">Dirección de Crédito Desarrollo y Personas</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Footer -->
+    <!--Script del proyecto-->
+    <!--iniciar animaciones de MDBootrapt-->
+    <script>
+        $(document).ready(function () {
+            new WOW().init();
+        });
+    </script>
+    <script>
+        $(function () {
+            $('.material-tooltip-main').tooltip({
+                template: '<div class="tooltip md-tooltip"><div class="tooltip-arrow md-arrow"></div><div class="tooltip-inner md-inner"></div></div>'
+            });
+        })
+    </script>
+    <script>
+        //reproductor de video
+        $('#play').on('click', function (e) {
+            e.preventDefault();
+            $("#player")[0].src += "?autoplay=0";
+            $('#player').show();
+            $('#video-cover').hide();
+        })
+        $('#modal1').on('hidden.bs.modal', function (e) {
+            $('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
+        });
+
+    </script>
+    <!--END Script del proyecto-->
+    <!-- End project-->
+</body>
+</html>

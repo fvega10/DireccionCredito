@@ -1,0 +1,14 @@
+﻿@model DireccionCredito.Models.Ficha
+
+<option value="">--Seleccione Actividad--</option>
+
+@{ 
+    if (ViewBag.Fichas != null)
+    {
+        foreach(var item in ViewBag.Fichas)
+        {
+            <option value="@item.Value">@item.Text</option>
+        }
+
+    }
+ }

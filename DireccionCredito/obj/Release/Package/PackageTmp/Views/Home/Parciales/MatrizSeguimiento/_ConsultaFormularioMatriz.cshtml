@@ -1,0 +1,408 @@
+﻿
+
+
+@{
+    List<DireccionCredito.Models.ctEXPERIENCIAS> ExperienciaActividad = ViewBag.ExperienciaActividad;
+    List<DireccionCredito.Models.ctRATINGS> ClasificacionRating = ViewBag.ClasificacionRating;
+    List<DireccionCredito.Models.ctACCIONES> AccionesCovid = ViewBag.AccionesCovid;
+    List<DireccionCredito.Models.ctSECTORES> ComportamientoSector = ViewBag.ComportamientoSector;
+    List<DireccionCredito.Models.ctNCPS> CapacidadPago = ViewBag.CapacidadPago;
+    List<DireccionCredito.Models.ctFLUJOS_CAJA> FlujoCaja = ViewBag.FlujoCaja;
+
+
+
+    DireccionCredito.Models.TRX RESULTADO = ViewBag.Resultado;
+
+}
+
+
+
+    <div class="container mt-5" id="FormularioConsultaDatos">
+    <br />
+        <form action="/" method="post">
+            <!-- datos encontrados-->
+
+            <div class="col-12 border rounded disabled mt-5 mb-3" style="background: linear-gradient(to right, rgb(15, 12, 41), rgb(48, 43, 99), rgb(36, 36, 62));">
+
+                <div class="form-group row mt-3">
+
+                    <span class="col-1 ml-3 text-white-50 text-center">Cliente:</span>
+                    <div class="col-6">
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i> </span>
+                            </div>
+                            <input type="text" class="form-control" value="@ViewBag.NombreCliente" disabled>
+                        </div>
+                    </div>
+
+
+                    <span class="col-1 text-white-50 text-center">ID:</span>
+                    <div class="col-3">
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control col-9 text-sm" value="@ViewBag.CedulaCliente" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="card card-primary mt-5">
+                <span class="text-center">*******************************REIMPRESION**************************</span>
+                <div class="card-header border-0" style="background: #133D8D; height:45px;">
+                    <div class="card-title text-white">
+                        <i class="far fa-file-alt"></i>&nbsp; Formulario Matriz Seguimiento
+
+
+                    </div>
+                </div>
+
+                <div class="row ml-1">
+                    <!-- inicio columna 7 -->
+                    <div class="col-12">
+                        <!-- /.card-header -->
+                        <!-- form start -->
+
+                        <div class="card-body">
+
+
+                            <!--Linea  Experiencia en la Actividad: -->
+                            <div class="form-group row">
+                                <div class="col-7">
+                                    <span class="mt-2 font-weight-bold ">
+                                        <i class="fas fa-caret-right text-black-50"></i> Experiencia en la Actividad:
+                                    </span>
+                                    <p class="text-black-50 mt-1">
+                                        Corresponde a los años en el desarrollo de la actividad del solicitante.
+                                    </p>
+                                </div>
+                                <!--Text Box-->
+                                <div class="col-sm-4">
+                                    <div class="input-group input-group-sm mt-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-sort-amount-down"></i></span>
+                                        </div>
+                                        <select class="form-control" id="Txt_ExperienciaActividad" name="Txt_ExperienciaActividad" disabled>
+                                            
+
+                                            @foreach (var item in ExperienciaActividad)
+                                            {
+                                                if (RESULTADO.intEXPERIENCIA == @item.intEXPERIENCIA)
+                                                {
+                                                    <option selected value="@item.intEXPERIENCIA" disabled> @item.strEXPERIENCIA </option>
+                                                }
+                                            }
+
+
+
+
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div><!--FIN ROW -->
+                            <!--Linea    Clasificación del Rating BN:   -->
+                            <div class="form-group row">
+                                <div class="col-7">
+                                    <span class="mt-2 font-weight-bold">
+                                        <i class="fas fa-caret-right text-black-50"></i> Clasificación del Rating BN:
+                                    </span>
+                                    <p class="text-black-50 mt-1">
+                                        Corresponde a la clasificación del rating obtenida.
+                                    </p>
+                                </div>
+                                <!--Text Box-->
+                                <div class="col-sm-4">
+                                    <div class="input-group input-group-sm mt-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-sort-amount-down"></i></span>
+                                        </div>
+                                        <select class="form-control" id="Txt_ClasificacionRating" name="Txt_ClasificacionRating" disabled>
+                                            
+                                            @foreach (var item in ClasificacionRating)
+                                            {
+                                                if (RESULTADO.intRATING == @item.intRATING)
+                                                {
+                                                    <option selected value="@item.intRATING" disabled> @item.strRATING </option>
+                                                }
+
+                                            }
+
+
+
+
+
+
+
+
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!--FIN ROW -->
+                            <!--Linea    Acciones correctivas ante el COVID-19:   -->
+                            <div class="form-group row">
+                                <div class="col-7">
+                                    <span class="mt-2 font-weight-bold">
+                                        <i class="fas fa-caret-right text-black-50"></i> Acciones correctivas ante el COVID-19:
+                                    </span>
+                                    <p class="text-black-50 mt-1">
+                                        Corresponde a aquellos aspectos o acciones que el cliente a realizado para minimizar el impacto en su actividad producto de la pandemia del COVID-19.
+                                    </p>
+                                </div>
+                                <!--Text Box-->
+                                <div class="col-sm-4">
+                                    <div class="input-group input-group-sm mt-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-sort-amount-down"></i></span>
+                                        </div>
+                                        <select class="form-control" id="Txt_AccionesCovid" name="Txt_AccionesCovid" disabled>
+                                            
+
+                                            @foreach (var item in AccionesCovid)
+                                            {
+                                                
+
+
+                                                if (RESULTADO.intACCIONES == @item.intACCIONES)
+                                                {
+                                                    <option selected value="@item.intACCIONES" disabled> @item.strACCIONES </option>
+                                                }
+
+
+
+
+
+
+
+                                            }
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!--FIN ROW -->
+                            <!--Linea    Clasificación del Rating BN:   -->
+                            <div class="form-group row">
+                                <div class="col-7">
+                                    <span class="mt-2 font-weight-bold">
+                                        <i class="fas fa-caret-right text-black-50"></i> Comportamiento del Sector:
+                                    </span>
+                                    <p class="text-black-50 mt-1">
+                                        Corresponde al desempeño de la actividad según se muestre en elsiguiente informe
+                                        <i class="far fa-arrow-alt-circle-right text-sm"></i>
+                                        <a href="https://app.powerbi.com/reportEmbed?reportId=fb3a8767-f9c6-452a-8352-d8596f1e958e&appId=0d227791-d341-4c11-a91d-6a6478c79212&autoAuth=true&ctid=e4821339-88e3-43d4-bd05-6954a946b94e&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D"
+                                           target="_blank" class="btn-sm btn-light">
+                                            Abrir Informe
+                                        </a>
+                                    </p>
+                                </div>
+                                <!--Text Box-->
+                                <div class="col-sm-4">
+                                    <div class="input-group input-group-sm mt-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-sort-amount-down"></i></span>
+                                        </div>
+                                        <select class="form-control" id="Txt_ComportamientoSector" name="Txt_ComportamientoSector" disabled>
+                                            
+
+                                            @foreach (var item in ComportamientoSector)
+                                            {
+                                                
+
+                                                if (RESULTADO.intSECTOR == @item.intSECTORES)
+                                                {
+                                                    <option selected value="@item.intSECTORES" disabled> @item.strSECTORES </option>
+                                                }
+
+
+
+
+                                            }
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!--FIN ROW -->
+                            <!--Linea    Clasificación del Rating BN:   -->
+                            <div class="form-group row">
+                                <div class="col-7">
+                                    <span class="mt-2 font-weight-bold">
+                                        <i class="fas fa-caret-right text-black-50"></i> Nivel actual de Capacidad de Pago:
+                                    </span>
+                                    <p class="text-black-50 mt-1">
+                                        Corresponde a la clasificación Sugef
+                                    </p>
+                                </div>
+                                <!--Text Box-->
+                                <div class="col-sm-4">
+                                    <div class="input-group input-group-sm mt-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-sort-amount-down"></i></span>
+                                        </div>
+                                        <select class="form-control" id="Txt_CapacidadPago" name="Txt_CapacidadPago" disabled>                                            
+
+                                            @foreach (var item in CapacidadPago)
+                                            {
+                                                
+
+                                                if (RESULTADO.intNCP == @item.intNCP)
+                                                {
+                                                    <option selected value="@item.intNCP"> @item.strNCP </option>
+                                                }
+
+
+
+
+
+                                            }
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!--FIN ROW -->
+                            <!--Linea    Clasificación del Rating BN:   -->
+                            <div class="form-group row">
+                                <div class="col-7">
+                                    <span class="mt-2 font-weight-bold">
+                                        <i class="fas fa-caret-right text-black-50"></i> Resultado del Flujo de Caja
+                                    </span>
+                                    <p class="text-black-50 mt-1">
+                                        (proyección 12 meses escenario base)
+                                    </p>
+                                </div>
+                                <!--Text Box-->
+                                <div class="col-sm-4">
+                                    <div class="input-group input-group-sm mt-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-sort-amount-down"></i></span>
+                                        </div>
+                                        <select class="form-control" id="Txt_FlujoCaja" name="Txt_FlujoCaja" disabled>
+                                            
+
+                                            @foreach (var item in FlujoCaja)
+                                            {
+                                                <option value="@item.intFLUJO_CAJA"> @item.strFLUJO_CAJA </option>
+
+                                                if (RESULTADO.intFLUJO_CAJA == @item.intFLUJO_CAJA)
+                                                {
+                                                    <option selected value="@item.intFLUJO_CAJA"> @item.strFLUJO_CAJA </option>
+                                                }
+                                            }
+
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!--FIN ROW -->
+
+                        </div><!-- fin TARJETA -->
+
+
+                    </div><!-- fin col-7 #1 -->
+
+
+
+
+
+                    <div class="container mb-4">
+                        <div class="col-12">
+
+                            <div class="col-1">   </div>
+
+                            <div class="col-11 border bg-info mb-1">
+                                <div class="card-body">
+                                    <div class="form-group row">
+
+                                        <span class="col-5 text-black-50 mt-2 "> <i class="fas fa-info-circle text-warning"></i> Resultado Final del Nivel de Capacidad de Pago de Seguimiento:</span>
+                                        <div class="col-2">
+
+
+                                            <input type="text" class="form-control text-center" value="@RESULTADO.strRESULTADO" disabled>
+
+                                        </div>
+                                        <div class="col-sm-1"></div>
+                                        <span class="col-sm-2 text-black-50 mt-2 text-center">Consecutivo </span>
+                                        <div class="col-sm-2">
+
+                                            <input type="text" class="form-control text-center" value="@RESULTADO.intTRX" disabled>
+
+
+                                        </div>
+
+
+                                        <div class="col-1"></div>
+                                    </div><!-- inicio columna 5 -->
+
+                                </div><!-- fin TARJETA -->
+
+                            </div>
+
+
+                            <div class="col-12 text-center">Registro @RESULTADO.dtFECHA_APLICACION</div>
+                            <div class="col-12 text-center">Oficina: #@RESULTADO.intOFICINA</div>
+
+                        </div>
+                    </div>
+
+
+
+                </div><!--FIn ROW-->
+                <!--Boton Generar-->
+                <div class="col-12 mb-4 justify-content-center d-flex">
+                    <a href="javascript:window.print()" id="Btn_Print" class="btn btn-primary"><i class="fas fa-print"></i> Imprimir</a>
+                    <button type="button" class="btn btn-info" onclick="Limpiar2()"> <i class="far fa-trash-alt"></i> Limpiar</button>
+
+
+                </div><!--FIn Col 5-->
+
+
+
+
+
+
+            </div><!--FIn Tarjeta-->
+
+
+
+        </form>
+
+
+
+
+    </div><!--FIn Container-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    //oculta el reporte si no existe algun valor y muestra el mensaje
+
+    function Limpiar2() {
+
+       
+        $("#FormularioConsultaDatos").hide();
+
+       
+
+
+
+
+
+    }
+</script>

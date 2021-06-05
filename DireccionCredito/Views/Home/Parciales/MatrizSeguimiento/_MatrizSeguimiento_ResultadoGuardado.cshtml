@@ -1,0 +1,84 @@
+﻿@{
+    List<DireccionCredito.Models.TRX> Resultado = ViewBag.Resultado;
+
+
+}
+
+<div class="container mt-5" id="ResultadoGuardado">
+    <p class="mb-2">Cliente : @ViewBag.NombreCliente</p> 
+    <table class="table border">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Oficina</th>
+                <th scope="col">Resultado</th>
+                <th scope="col">Fecha Registro</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Resultado)
+            {
+            <tr>
+                <th scope="row"> @item.numCLIENTE</th>
+                <td>@item.intOFICINA</td>
+                <td>@item.strRESULTADO</td>
+                <td>@item.dtFECHA_APLICACION</td>
+                <td>
+
+
+                    @Ajax.ActionLink(" Ver", "MostrarFormularioConsulta", new { indice = item.intTRX, CedulaGuiones = ViewBag.CedulaCliente }, new AjaxOptions
+               {
+
+                   HttpMethod = "POST",
+                   UpdateTargetId = "MostrarFormularios",
+                   InsertionMode = InsertionMode.Replace,
+                   LoadingElementId = "PopUp",
+                   
+
+
+
+               }, new { @class = "far fa-eye btn btn-primary btn-sm", title = "Consultar Información" })
+
+
+
+
+
+
+
+
+                </td>
+
+            </tr>
+            }
+
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-info float-right" onclick="Limpiar()"> <i class="far fa-trash-alt"></i> Limpiar</button>
+</div>
+
+
+
+<div class="container mt-5">
+    <div class="mt-5 mb-5" id="MostrarFormularios"></div>
+</div>
+
+<script>
+    //oculta el reporte si no existe algun valor y muestra el mensaje
+
+    function Limpiar() {
+
+        $("#Txt_Cedula").val("");
+        $("#IdOficina").val("");
+        $("#ResultadoGuardado").hide();
+        $("#FormularioConsultaDatos").hide();
+
+        //activar botones
+        $("#Txt_Cedula").attr("disabled", false);
+        $("#IdOficina").attr("disabled", false);
+        $("#Btn_Submit").attr("disabled", false);
+
+    }
+
+    </script>

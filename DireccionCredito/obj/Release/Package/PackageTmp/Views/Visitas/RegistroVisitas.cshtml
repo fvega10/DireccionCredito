@@ -1,0 +1,115 @@
+﻿@model IEnumerable<DireccionCredito.Models.Visitas>
+
+@{
+    ViewBag.Title = "Registros";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+    <h3>Registro al Sistema</h3>
+    <br />
+
+
+
+    
+
+
+        <table class="table table-hover">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pic)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Empleado)
+
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.NombreCompleto)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Oficina)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.FECHA)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Hora)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Tipo)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.ProductoBuscado)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Actividad)
+                </th>
+                
+                
+
+
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="@Html.DisplayFor(modelItem => item.Pic)" class="rounded-circle" height="45" style="padding-bottom:5px;" alt="PicUser"> 
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Empleado)
+
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NombreCompleto)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Oficina)
+                    </td>
+
+                    <td>
+                        @Convert.ToDateTime(item.FECHA).ToString("dd/MM/yyyy")
+                    </td>
+
+                    <td>
+                        @{
+                            string horareal = @Html.DisplayFor(modelItem => item.Hora).ToString();
+                            horareal = horareal.Substring(0, 5);
+
+                        <span>@horareal</span>
+
+                        }
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tipo)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductoBuscado)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Actividad)
+                    </td>
+
+                    
+                </tr>
+
+            }
+
+        </table>
+
+    
+
+    

@@ -1,0 +1,1015 @@
+﻿
+@{
+    Layout = null;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+}
+
+<!DOCTYPE html>
+
+<html>
+
+@Styles.Render("~/Content/css_Secciones")
+@Scripts.Render("~/bundles/scriptsSecciones")
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="~/Content/imagenes/icoBn1.png" type="image/x-icon">
+    <title>Noticias</title>
+</head>
+<body>
+
+
+
+    <!--#region Nav Principal-->
+    <!--inicio nav-->
+    <!-- menu minimizar -->
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+    <!--  fin menu minimizar -->
+    <!--***Menu principal***-->
+    <div class="site-navbar-wrap">
+        <div class="site-navbar-top">
+            <div class="container py-1">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <a href="https://twitter.com/bnmascerca" class="p-2 pl-0"><span class="icon-twitter"></span></a>
+                        <a href="https://www.facebook.com/bnmascerca/" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                        <a href="https://cr.linkedin.com/company/banco-nacional" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
+                        <a href="https://www.instagram.com/bnmascerca/?hl=es-la" class="p-2 pl-0"><span class="icon-instagram"></span></a>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex ml-auto">
+                            <a href="#" class="d-flex align-items-center ml-auto mr-4">
+                                <span class="icon-phone mr-2"></span>
+                                <span class="d-none d-md-inline-block">+506 2212 2000</span>
+                            </a>
+                            <a href="mailto:consultascreditoretail@bncr.fi.cr" class="d-flex align-items-center">
+                                <span class="icon-envelope mr-2"></span>
+                                <span class="d-none d-md-inline-block">consultascreditoretail@bncr.fi.cr</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-navbar">
+            <div class="container">
+                <div class="row align-items-center" style="height:50px;">
+                    <div class="col-2">
+                        <h2 class="site-logo"><a href="~/Home/Inicio"><img src="../../Content/Calendario/Imagenes/ICO.png" class="img-fluid" style="height:45px;"></a></h2>
+                    </div>
+                    <div class="col-10">
+                        <nav class="site-navigation text-right" role="navigation">
+                            <div class="container">
+                                <div class="d-inline-block d-lg-none ml-md-0 mr-auto "><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+                                <ul class="site-menu js-clone-nav d-none d-lg-block">
+
+                                    <li><a href="~/Home/Inicio">SITIO</a></li>
+
+                                    <li class="has-children">
+                                        <a href="#!">SERVICIOS</a>
+                                        <ul class="dropdown arrow-top">
+                                            <li><a href="~/Home/Buscador">Motor Búsqueda</a></li>
+                                            <li><a href="http://dsn820bda01:81/sipcoweb/">SipcoWeb</a></li>
+                                            <li><a href="~/Home/Estadisticas">Estadísticas</a></li>
+                                            <li><a href="http://bnportal/sites/comercial/CIPAC/CIPAC_Tramite.zip">BD Sipco</a></li>
+                                            <li><a href="~/Home/MatrizSeguimiento"><i class="fas fa-calculator"></i> Matriz Seguimiento</a></li>
+                                        </ul>
+
+
+                                    </li>
+
+                                    <li class="has-children">
+                                        <a href="#!">INFÓRMESE</a>
+                                        <ul class="dropdown arrow-top">
+                                            <li><a href="~/Home/Noticias">Noticias</a></li>
+                                            <li><a href="~/Home/ErrorAcceso">Guía de Uso</a></li>
+                                            <li><a href="~/Home/PreguntasFrecuentes">Preguntas Frecuentes</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="https://universidad.bncr.fi.cr/login/index.php">CAPACITACIONES</a></li>
+                                    <li><a href="~/Home/Calendario">CALENDARIO</a></li>
+                                    <li><a href="~/Home/ErrorAcceso">CONTACTO</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END menu principal-->
+    <!--#endregion-->
+    <!-- titulo de imagen inicial-->
+    <div class="site-blocks-cover inner-page" style="background-image: url(../../Content/Noticias/Imagenes/Noticias2.jpg)" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row align-items-center  mb-4">
+                <div class="col-md-7">
+                    <span class="sub-text"><br /><br /><br /><br /><br /><br />Información reciente sobre Crédito</span>
+                    <h1 class="wow flipInX" data-wow-delay="0.5s">    <strong>NOTICIAS</strong></h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- .Divisor de titulo inicial -->
+    <div class="container-fluid slider-1" style="background-color:#B0BD20;">
+        <div class="row">
+            <br />
+        </div>
+    </div>
+
+    <!--segundo cuadro inicial con el titulo de las Noticias-->
+    <div class="container my-5 py-5 z-depth-2">
+        <!--Section: Content-->
+        <section class="text-center px-md-5 mx-md-5 dark-grey-text">
+
+            <div class="row mb-4">
+                <div class="col-md-5 mx-auto">
+                    <div class="view  pb-2">
+                        <img src="~/Content/Noticias/Imagenes/roundtables.gif" class="img-fluid" alt="smaple image">
+                    </div>
+                </div>
+            </div>
+            <h3 class="font-weight-bold mb-2 pb-2">Noticias Informes y Comunicados...</h3>
+        </section>
+        <!--Section: Content-->
+    </div>
+    <br />
+
+    <!--*******************NOTICIAS*************************************************************-->
+
+    <div class="container">
+
+
+        @{
+            string RendicionCuenas = "Octubre2020/Rendicion_de_Cuentas_Octubre_2020.pptx";
+            string PlanesInversion = "Octubre2020/Planes_de_inversión.pptx";
+            string SalidasNoConformes = "Octubre2020/Informe_de_Salidas_No_Conformes_Agosto_Septiembre_2020.pptx";
+            string Fecha = "12/10/2020";
+
+
+        }
+
+
+
+
+
+
+
+
+
+        <!--#region Ruta para cierre de planes de inversión MPC  -->
+        <hr class="container my-5" id="VideoTutorial">
+        <div class="container mt-5">
+            <!--Section: Content-->
+            <section class="dark-grey-text">
+                <!-- Grid row -->
+                <div class="row align-items-center">
+
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-5">
+                        <!-- Category -->
+                        <a href="#!" class="text-primary">
+                            <h6 class="font-weight-bold mb-3 wow fadeIn" data-wow-iteration="infinite" data-wow-duration="5s" data-wow-delay="0.5s" style="font-size:x-large"><i class="fas fa-info-circle"></i>&nbsp;New</h6>
+                        </a>
+                        <h4 class="font-weight-bold mb-3" id="RutaplanesinversiónMPC"><strong>Video Tutoriales Sipco-Web</strong></h4>
+                        <div class="row">
+                            <div class="col-12">
+
+                                <p>
+
+                                    Lista de Videos con la explicación de cada uno de los módulos de la plataforma.
+                                    <BR />
+                                    <BR />
+
+                                    <i class="fas fa-video"></i> Video 1 - Interfaz SipcoWeb  <i class="fas fa-caret-right ml-3" style="color:#B0BD20"></i><a href="https://bnficr-my.sharepoint.com/:v:/g/personal/jmolinaz_bncr_fi_cr/EbnJFPEMjT5GomZpG072RQMBJ8I228iD8JOdQwLl_HeCrg?e=dWpvlj">Link</a><br />
+
+                                <p><i class="fas fa-video"></i> Video 2 - Trámite - Registo  <i class="fas fa-caret-right ml-3" style="color:#B0BD20"></i><a href="https://bnficr-my.sharepoint.com/:v:/g/personal/jmolinaz_bncr_fi_cr/Ebf-Zm4_tGRMtiFWrdWCPnsBKT1PoiAabYtlxhr5QGELyQ?e=7r5MrU">Link</a><br /></p>
+
+                                <p><i class="fas fa-video"></i> Video 3 - Trámite - Consulta  <i class="fas fa-caret-right ml-3" style="color:#B0BD20"></i><a href="https://bnficr-my.sharepoint.com/:v:/g/personal/jmolinaz_bncr_fi_cr/EYiyTQHfupZHrmXEmlx4WcsBSKpRYpWS2qtVQp7TvofEvA?e=IcRdex">Link</a><br /></p>
+
+                                <p><i class="fas fa-video"></i> Video 4 - Pendientes Tramitar  <i class="fas fa-caret-right ml-3" style="color:#B0BD20"></i><a href="https://bnficr-my.sharepoint.com/:v:/g/personal/jmolinaz_bncr_fi_cr/ETNCyLtmpppGhgUVcDVtOXUBNJAlt-T4v80Sf_kpUptTxA?e=6lCr2a">Link</a><br /></p>
+
+
+                                <p><i class="fas fa-video"></i> Video 5 - Asignar Caso  <i class="fas fa-caret-right ml-3" style="color:#B0BD20"></i><a href="https://bnficr-my.sharepoint.com/:v:/g/personal/jmolinaz_bncr_fi_cr/EQ_8tiqlB1pMs3hrqU-LJSwBIEbqeyLoK_tLb1B-075aBA?e=svKQfu">Link</a><br /></p>
+
+
+                                <p><i class="fas fa-video"></i> Video 6 - Opcion Compromiso Pago  <i class="fas fa-caret-right ml-3" style="color:#B0BD20"></i><a href="https://bnficr-my.sharepoint.com/:v:/g/personal/jmolinaz_bncr_fi_cr/EZNPHix_yX9KiyhsoPvUl14BYrsRJg2MWmo-1oxMjj5hHQ?e=4xdDGq">Link</a><br /></p>
+
+
+                                <p><i class="fas fa-video"></i> Video 7 - Gestion Usuario  <i class="fas fa-caret-right ml-3" style="color:#B0BD20"></i><a href="https://bnficr-my.sharepoint.com/:v:/g/personal/jmolinaz_bncr_fi_cr/EXO2nWu4e_ROvmAaOYTu_c4BhVan4K5bMn8pKdZtz7ZUsQ?e=1fl76X">Link</a><br /></p>
+
+
+                                <p><i class="fas fa-video"></i> Video 8 - Cobro Judicial  <i class="fas fa-caret-right ml-3" style="color:#B0BD20"></i><a href="https://bnficr-my.sharepoint.com/:v:/g/personal/jmolinaz_bncr_fi_cr/EauGE2Dl6_hNi_Ny38waK7oB5SGDpOZnEAJZZNQyAEEcVg?e=mCDBzU">Link</a><br /></p>
+
+
+                                <p><i class="fas fa-video"></i> Video 9 - Gestion Usuarios y Otros  <i class="fas fa-caret-right ml-3" style="color:#B0BD20"></i><a href="https://bnficr-my.sharepoint.com/:v:/g/personal/jmolinaz_bncr_fi_cr/ERPRctGsV8NOpRkdrA4t49kBqwEEmJVoJ6xHbvzFAlEc6g?e=inCWCI">Link</a><br /></p>
+
+
+
+                                Por <a href="mailto:consultascreditoretail@bncr.fi.cr"><strong style="color:#133D8D">Análisis Gestión Crédito. </strong></a><br /> 03/11/2020
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">   </div>
+                    <div class="col-4 mt-4 ml-5">
+
+                        <!-- Featured image -->
+                        <div class="view overlay rounded z-depth-2 mb-0 mb-4">
+                            <img src="~/Content/Noticias/Imagenes/VideoTutorial.png" class="w-100" />
+                            <a href="~/Content/Noticias/Documentos/CAPSULAS/Octubre_2020/Ruta MPC cierre de planes de Inversión.pptx">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!--#endregion-->
+        <!--#region Ruta para cierre de planes de inversión MPC  -->
+        <hr class="container my-5" id="RutaplanesinversiónMPC">
+        <div class="container mt-5">
+            <!--Section: Content-->
+            <section class="dark-grey-text">
+                <!-- Grid row -->
+                <div class="row align-items-center">
+
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-4">
+                        <!-- Category -->
+                        <a href="#!" class="text-primary">
+                            <h6 class="font-weight-bold mb-3 wow fadeIn" data-wow-iteration="infinite" data-wow-duration="5s" data-wow-delay="0.5s" style="font-size:x-large"><i class="fas fa-info-circle"></i>&nbsp;New</h6>
+                        </a>
+                        <h4 class="font-weight-bold mb-3" id="RutaplanesinversiónMPC"><strong>Ruta para cierre de planes de inversión MPC</strong></h4>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>
+                                    <h5 class="font-weight-bold mb-3">Infórmese:</h5>
+                                </p>
+                                <p>
+                                    <i class="fas fa-caret-right" style="color:#B0BD20"></i>
+                                    » Descripción breve de la ruta que el usuario debe seguir para los cierres de planes de inversión en el sistema de MPC.
+                                    <BR />
+                                    <br /><a href="~/Content/Noticias/Documentos/CAPSULAS/Octubre_2020/Ruta MPC cierre de planes de Inversión.pptx" style="font-size:x-large">Link</a>
+                                    <br /><br />Por <a href="mailto:consultascreditoretail@bncr.fi.cr"><strong style="color:#133D8D">Análisis Gestión Crédito. </strong></a><br /> 14/10/2020
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">   </div>
+                    <div class="col-5 mt-4 ml-5">
+
+                        <!-- Featured image -->
+                        <div class="view overlay rounded z-depth-2 mb-0 mb-4">
+                            <img src="~/Content/Noticias/Documentos/CAPSULAS/Octubre_2020/CapsulaRuta.JPG" class="w-100" />
+                            <a href="~/Content/Noticias/Documentos/CAPSULAS/Octubre_2020/Ruta MPC cierre de planes de Inversión.pptx">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!--#endregion-->
+        <!--#region Presupuesto de Construcción -->
+        <hr class="container my-5" id="PresupuestoConstrucción">
+        <div class="container mt-5">
+            <!--Section: Content-->
+            <section class="dark-grey-text">
+                <!-- Grid row -->
+                <div class="row align-items-center">
+
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-4">
+
+                        <!-- Category -->
+                        <a href="#!" class="text-primary">
+                            <h6 class="font-weight-bold mb-3 wow fadeIn" data-wow-iteration="infinite" data-wow-duration="5s" data-wow-delay="0.5s" style="font-size:x-large"><i class="fas fa-info-circle"></i>&nbsp;New</h6>
+                        </a>
+                        <h4 class="font-weight-bold mb-3" id="PresupuestoConstrucción"><strong>Presupuesto de Construcción</strong></h4>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>
+                                    <h5 class="font-weight-bold mb-3">Infórmese:</h5>
+                                </p>
+                                <p>
+                                    <i class="fas fa-caret-right" style="color:#B0BD20"></i>  Se describe los principales puntos a considerar en la revisión de un presupuesto de construcción. <BR />
+                                    <br /><a href="~/Content/Noticias/Documentos/CAPSULAS/Octubre_2020/Presupuesto de Construcción.pptx" style="font-size:x-large">Link</a>
+                                    <br /><br />Por <a href="mailto:consultascreditoretail@bncr.fi.cr"><strong style="color:#133D8D">Análisis Gestión Crédito. </strong></a><br /> 14/10/2020
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-1">   </div>
+                    <div class="col-5 mt-4 ml-5">
+
+                        <!-- Featured image -->
+                        <div class="view overlay rounded z-depth-2 mb-0 mb-4">
+                            <img src="~/Content/Noticias/Documentos/CAPSULAS/Octubre_2020/PresupuestoConstruccion.png" class="w-100" />
+                            <a href="~/Content/Noticias/Documentos/CAPSULAS/Octubre_2020/Presupuesto de Construcción.pptx">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!--#endregion-->
+        <!--#region Rendicion de cuentas -->
+        <hr class="container my-5" id="RendicionCuentas">
+        <div class="container mt-5">
+            <!--Section: Content-->
+            <section class="dark-grey-text">
+                <!-- Grid row -->
+                <div class="row align-items-center">
+
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-4">
+
+                        <!-- Category -->
+                        <a href="#!" class="text-primary">
+                            <h6 class="font-weight-bold mb-3 wow fadeIn" data-wow-iteration="infinite" data-wow-duration="5s" data-wow-delay="0.5s" style="font-size:x-large"><i class="fas fa-info-circle"></i>&nbsp;New</h6>
+                        </a>
+                        <h4 class="font-weight-bold mb-3" id="Noticia1"><strong>Rendición de Cuentas Análisis y Gestión de Crédito Retail</strong></h4>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>
+                                    <h5 class="font-weight-bold mb-3">Infórmese:</h5>
+                                </p>
+                                <p>
+                                    <i class="fas fa-caret-right" style="color:#B0BD20"></i>  Conozca como van nuestros proyectos en la Unidad de Análisis y Gestión de Crédito Retail <BR />
+                                    <br /><a href="/Content/Noticias/Documentos/Bitacora/@RendicionCuenas" style="font-size:x-large">Link</a>
+
+                                    <br /><br />Por <a href="mailto:consultascreditoretail@bncr.fi.cr"><strong style="color:#133D8D">Análisis Gestión Crédito. </strong></a><br /> @Fecha
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-1">   </div>
+
+                    <div class="col-5 mt-4 ml-5">
+
+                        <!-- Featured image -->
+                        <div class="view overlay rounded z-depth-2 mb-0 mb-4">
+
+                            <img src="~/Content/Noticias/Imagenes/RendicionCuentas.JPG" class="w-100" />
+
+
+
+                            <a href="/Content/Noticias/Documentos/Bitacora/@RendicionCuenas">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!--#endregion-->
+        <!--#region  Seguimiento de Planes de Inversión -->
+        <hr class="container my-5" id="SeguiminetoPlanesInversion">
+        <div class="container mt-5">
+            <!--Section: Content-->
+            <section class="dark-grey-text">
+                <!-- Grid row -->
+                <div class="row align-items-center">
+
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-4">
+
+                        <!-- Category -->
+                        <a href="#!" class="text-primary">
+
+                            <h6 class="font-weight-bold mb-3 wow fadeIn" data-wow-iteration="infinite" data-wow-duration="5s" data-wow-delay="0.5s" style="font-size:x-large"><i class="fas fa-info-circle"></i>&nbsp;New</h6>
+                        </a>
+                        <h4 class="font-weight-bold mb-3" id="Noticia1"><strong>Seguimiento de Planes de Inversión</strong></h4>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>
+                                    <h5 class="font-weight-bold mb-3">Recordatorio:</h5>
+                                </p>
+                                <p>
+                                    <i class="fas fa-caret-right" style="color:#B0BD20"></i> Muestreo de Revisión - Analisis de la Muestra del Cumplimineto de los Planes de Inversión. <BR />
+                                    <br />
+
+                                    <a href="/Content/Noticias/Documentos/Bitacora/@PlanesInversion" style="font-size:x-large">Link</a>
+
+                                    <br /><br />Por <a href="mailto:consultascreditoretail@bncr.fi.cr"><strong style="color:#133D8D">Análisis Gestión Crédito. </strong></a><br /> @Fecha
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-1">   </div>
+
+                    <div class="col-lg-5 mt-4 ml-5">
+                        <!-- Featured image -->
+                        <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+                            <img src="~/Content/Noticias/Imagenes/SeguimientoPlanesInversión.JPG" class="w-100" />
+                            <a href="/Content/Noticias/Documentos/Bitacora/@PlanesInversion">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!--#endregion-->
+        <!--#region Informe de salidas no conformes. -->
+        <hr class="container my-5" id="InformeSalidasNoConforme">
+        <div class="container mt-5">
+            <!--Section: Content-->
+            <section class="dark-grey-text">
+                <!-- Grid row -->
+                <div class="row align-items-center">
+
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-4">
+
+                        <!-- Category -->
+                        <a href="#!" class="text-primary">
+                            <h6 class="font-weight-bold mb-3 wow fadeIn" data-wow-iteration="infinite" data-wow-duration="5s" data-wow-delay="0.5s" style="font-size:x-large">
+                                <i class="fas fa-info-circle">
+                                </i>&nbsp;New
+                            </h6>
+                        </a>
+                        <h4 class="font-weight-bold mb-3" id="Noticia1"><strong>Informe de salidas no conformes.</strong></h4>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>
+                                    <h5 class="font-weight-bold mb-3">Infórmese:</h5>
+                                </p>
+                                <p>
+                                    <i class="fas fa-caret-right" style="color:#B0BD20"></i>
+                                    Comportamiento SNC 2020.<br />
+                                    <i class="fas fa-caret-right" style="color:#B0BD20"></i>
+                                    Principales Causas.<br />
+                                    <i class="fas fa-caret-right" style="color:#B0BD20"></i>
+                                    Propuestas de Abordaje.
+                                    <br /><br />
+
+
+                                    <a href="/Content/Noticias/Documentos/Bitacora/@SalidasNoConformes" style="font-size:x-large">Link</a>
+
+                                    <br /><br />Por <a href="mailto:consultascreditoretail@bncr.fi.cr"><strong style="color:#133D8D">Análisis Gestión Crédito. </strong></a><br /> @Fecha
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-1">   </div>
+
+                    <div class="col-lg-5 mt-4 ml-5">
+
+                        <!-- Featured image -->
+                        <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+                            <img class="img-fluid" src="~/Content/Noticias/Imagenes/SalidasNoConformes.jpg">
+                            <a href="/Content/Noticias/Documentos/Bitacora/@SalidasNoConformes">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!--#endregion-->
+        <!--#region Informe de Oficina Tipo 3 -->
+        <hr class="container my-5 mb-5" id="New_4">
+        <div class="container mt-5">
+            <!--Section: Content-->
+            <section class="dark-grey-text">
+                <!-- Grid row -->
+                <div class="row align-items-center">
+                    <!-- Grid column -->
+                    <div class="col-lg-5">
+
+
+                        <!-- Featured image -->
+                        <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+                            <img class="img-fluid" src="~/Content/Noticias/Imagenes/Historial/New_4.jpg" alt="Sample image">
+                            <a href="~/Content/Noticias/Documentos/Informe de Oficina Tipo 3 enero-junio 2020.pdf" download="">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-1"></div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-5 ml-3">
+                        <!-- Category -->
+                        @*<a href="#!" class="text-primary">
+                                <h6 class="font-weight-bold mb-3 wow fadeIn" data-wow-iteration="infinite" data-wow-duration="5s" data-wow-delay="0.5s" style="font-size:x-large">
+                                    <i class="fas fa-info-circle">
+                                    </i>&nbsp;New
+                                </h6>
+                            </a>*@
+                        <h4 class="font-weight-bold mb-3" id="Noticia1"><strong>Informe de Oficina </strong> Tipo 3</h4>
+                        <p>
+                            En este informe se puede observar la cantidad de casos de oficina tipo 3 analizados por la <strong>Línea Especializada </strong>para el periodo de marzo a diciembre 2019, así como la <strong>tasa de reproceso</strong> por oficina y las principales<strong> causas de las devoluciones.</strong>
+                            <br /><br />
+                            <i class="fas fa-caret-right" style="color:#B0BD20"></i> Link del Informe: <a href="~/Content/Noticias/Documentos/Informe de Oficina Tipo 3 enero-junio 2020.pdf" download=""><i class="fas fa-file-invoice" style="height:40px;"></i></a><br />
+
+                            <i class="fas fa-caret-right" style="color:#B0BD20"></i> Link de Imagen: <a href="~/Content/Noticias/Documentos/Infografia formato BN.pdf" download="">&nbsp;<i class="fas fa-image" style="height:40px;"></i></a><br />
+
+
+
+
+                        </p>
+
+
+                        <div class="col-6 mt-1">
+
+                            <p>Por <a><strong style="color:#133D8D">Análisis Gestión Crédito.</strong></a><br /> 05/02/2020</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+
+        <!--#endregion-->
+        <!--#region ¿Como podemos agilizar los trámites de crédito? -->
+        <hr class="container my-5" id="New_12">
+        <div class="container mt-5">
+            <!--Section: Content-->
+            <section class="dark-grey-text">
+                <!-- Grid row -->
+                <div class="row align-items-center">
+
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-5">
+
+                        <!-- Category -->
+                        @*<a href="#!" class="text-primary">
+                                <h6 class="font-weight-bold mb-3 wow fadeIn" data-wow-iteration="infinite" data-wow-duration="5s" data-wow-delay="0.5s" style="font-size:x-large">
+                                    <i class="fas fa-info-circle">
+                                    </i>&nbsp;New
+                                </h6>
+                            </a>*@
+                        <h4 class="font-weight-bold mb-3" id="Noticia1"><strong>¿Como podemos agilizar los trámites de crédito?</strong></h4>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>
+                                    <h5 class="font-weight-bold mb-3">Infórmese:</h5>
+                                </p>
+                                <p>
+                                    <i class="fas fa-caret-right" style="color:#B0BD20"></i>
+                                    Documentación digital.<br />
+
+                                    <i class="fas fa-caret-right" style="color:#B0BD20"></i>
+                                    Documentos que no es necesario imprimir.<br />
+
+                                    <br /><br />
+                                    <a href="~/Content/Noticias/Documentos/Documentación_digital.pptx" style="font-size:x-large">Link</a>
+
+                                    <br /><br />Por <a href="mailto:consultascreditoretail@bncr.fi.cr"><strong style="color:#133D8D">Análisis Gestión Crédito. </strong></a><br /> 16/07/2020
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-lg-6 mt-4">
+
+                        <!-- Featured image -->
+                        <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+                            <img class="img-fluid" src="~/Content/Noticias/Imagenes/Historial/Custom_12.jpg" alt="Sample image">
+                            <a href="~/Content/Noticias/Documentos/Documentación_digital.pptx">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!--#endregion-->
+        <!--#region Protectora de Crédito. -->
+        <hr class="container my-5" id="New_10">
+        <div class="container mt-5">
+            <!--Section: Content-->
+            <section class="dark-grey-text">
+                <!-- Grid row -->
+                <div class="row align-items-center">
+
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-5">
+
+                        <!-- Category -->
+                        @*<a href="#!" class="text-primary">
+                                <h6 class="font-weight-bold mb-3 wow fadeIn" data-wow-iteration="infinite" data-wow-duration="5s" data-wow-delay="0.5s" style="font-size:x-large">
+                                    <i class="fas fa-info-circle">
+                                    </i>&nbsp;New
+                                </h6>
+                            </a>*@
+                        <h4 class="font-weight-bold mb-3" id="Noticia1"><strong>Protectora de Crédito.</strong></h4>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>
+                                    <h5 class="font-weight-bold mb-3">Infórmese:</h5>
+                                </p>
+                                <p>
+                                    <i class="fas fa-caret-right" style="color:#B0BD20"></i>
+                                    ¿Es necesarios generar la protectora de crédito en todos los análisis de crédito?
+                                    <br /><br />
+                                    <a href="~/Content/Noticias/Documentos/Protectora_Crédito.pptx" style="font-size:x-large">Link</a>
+
+                                    <br /><br />Por <a href="mailto:consultascreditoretail@bncr.fi.cr"><strong style="color:#133D8D">Análisis Gestión Crédito. </strong></a><br /> 16/07/2020
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-lg-6 mt-4">
+
+                        <!-- Featured image -->
+                        <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+                            <img class="img-fluid" src="~/Content/Noticias/Imagenes/Historial/Custom_10.jpg" alt="Sample image">
+                            <a href="~/Content/Noticias/Documentos/TIP_ACUERDOSSOCIEDADES.pptx">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!--#endregion-->
+        <!--#region ¿Cuando se requiere un acuerdo, autorización o declaración? -->
+        <hr class="container my-5" id="New_9">
+        <div class="container mt-5">
+            <!--Section: Content-->
+            <section class="dark-grey-text">
+                <!-- Grid row -->
+                <div class="row align-items-center">
+
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-5">
+
+                        <!-- Category -->
+                        @*<a href="#!" class="text-primary">
+                                <h6 class="font-weight-bold mb-3 wow fadeIn" data-wow-iteration="infinite" data-wow-duration="5s" data-wow-delay="0.5s" style="font-size:x-large"><i class="fas fa-info-circle"></i>&nbsp;New</h6>
+                            </a>*@
+                        <h4 class="font-weight-bold mb-3" id="Noticia1"><strong>¿Cuando se requiere un acuerdo, autorización o declaración?</strong></h4>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>
+                                    <h5 class="font-weight-bold mb-3">Infórmese:</h5>
+                                </p>
+                                <p>
+                                    <i class="fas fa-caret-right" style="color:#B0BD20"></i>
+                                    Escenarios donde es necesario solicitar acuerdo de asamblea de accionistas, autorizaciones de Junta Directiva y declaraciones juradas, así como la generalidad de la forma en que deben presentarse.<br /><br /><a href="~/Content/Noticias/Documentos/TIP_ACUERDOSSOCIEDADES.pptx" style="font-size:x-large">Link</a>
+
+                                    <br /><br />Por <a href="mailto:consultascreditoretail@bncr.fi.cr"><strong style="color:#133D8D">Análisis Gestión Crédito. </strong></a><br /> 13/07/2020
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-lg-6 mt-4">
+
+                        <!-- Featured image -->
+                        <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+                            <img class="img-fluid" src="~/Content/Noticias/Imagenes/Historial/Custom_9.jpg" alt="Sample image">
+                            <a href="~/Content/Noticias/Documentos/TIP_ACUERDOSSOCIEDADES.pptx">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!--#endregion-->
+        <!--#region ¿Cancelación parcial de Hipoteca con y sin Recibo de Suma? -->
+
+
+
+        <hr class="container my-5" id="New_6">
+        <div class="container mt-5">
+            <!--Section: Content-->
+            <section class="dark-grey-text">
+                <!-- Grid row -->
+                <div class="row align-items-center">
+
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-5">
+
+                        <!-- Category -->
+                        <h4 class="font-weight-bold mb-3" id="Noticia1"><strong>¿Cancelación parcial de Hipoteca con y sin Recibo de Suma?</strong></h4>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>
+                                    <h5 class="font-weight-bold mb-3">Recordatorio:</h5>
+                                </p>
+                                <p>
+                                    <i class="fas fa-caret-right" style="color:#B0BD20"></i>  Detallamos la definición según el tipo de cancelación parcial de la Hipoteca. <BR /><br /><a href="~/Content/Noticias/Imagenes/Historial/Custom_6.JPG" style="font-size:x-large">Link</a>
+
+                                    <br /><br />Por <a href="mailto:consultascreditoretail@bncr.fi.cr"><strong style="color:#133D8D">Análisis Gestión Crédito. </strong></a><br /> 19/03/2020
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-lg-6 mt-4">
+
+                        <!-- Featured image -->
+                        <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+                            <img class="img-fluid" src="~/Content/Noticias/Imagenes/Historial/Custom_6.jpg" alt="Sample image">
+                            <a href="~/Content/Noticias/Imagenes/Historial/Custom_6.JPG">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!--#endregion-->
+        <!--#region Cálculo de Giro de Cuota para Créditos de Construcción -->
+        <hr class="container my-5" id="CalculoCuota">
+        <div class="container mt-5">
+            <!--Section: Content-->
+            <section class="dark-grey-text">
+                <!-- Grid row -->
+                <div class="row align-items-center">
+
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-5">
+                        <!-- Category -->
+                        <h4 class="font-weight-bold mb-3" id="Noticia1"><strong>Cálculo de Giro de Cuota para Créditos de Construcción</strong></h4>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>
+                                    <h5 class="font-weight-bold mb-3">Recordatorio:</h5>
+                                </p>
+                                <p>
+                                    <i class="fas fa-caret-right" style="color:#B0BD20"></i>   ¿Cómo se realiza el cálculo de Giros de Cuota para créditos de Construcción? <BR /><br /><a href="https://onedrive.live.com/view.aspx?resid=2EC99676A909DA2!12349&ithint=file%2cpptx&authkey=!AHb9qqtCn77nmvY" style="font-size:x-large">Link</a>
+                                    <br /><br />Por <a href="mailto:consultascreditoretail@bncr.fi.cr"><strong style="color:#133D8D">Análisis Gestión Crédito. </strong></a><br /> 28/02/2020
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-lg-6 mt-4">
+
+                        <!-- Featured image -->
+                        <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+                            <img class="img-fluid" src="~/Content/Noticias/Imagenes/Historial/new5.jpg" alt="Sample image">
+                            <a href="https://onedrive.live.com/view.aspx?resid=2EC99676A909DA2!12349&ithint=file%2cpptx&authkey=!AHb9qqtCn77nmvY">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!--#endregion-->
+        <!--#region Score BN Vehículos Score  -->
+
+
+
+
+
+        <hr class="container my-5" id="New_3">
+        <div class="container mt-5">
+            <!--Section: Content-->
+            <section class="dark-grey-text">
+                <!-- Grid row -->
+                <div class="row align-items-center">
+
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-5">
+
+                        <!-- Category -->
+                        <a href="#!" class="text-primary">
+                            <!--<h6 class="font-weight-bold mb-3 wow fadeIn" data-wow-iteration="infinite" data-wow-duration="5s" data-wow-delay="0.5s"><i class="fas fa-info-circle"></i>&nbsp;New</h6>-->
+                        </a>
+                        <h4 class="font-weight-bold mb-3" id="Noticia1"><strong>Proyectos</strong></h4>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>
+                                    <h5 class="font-weight-bold mb-3">Score BN Vehículos</h5>
+                                </p>
+                                <p>
+                                    <i class="fas fa-caret-right" style="color:#B0BD20"></i> Consideraciones para financiamiento con garantía pagaré.<br />
+                                    <br /><br />Por <a><strong style="color:#133D8D">Análisis Gestión Crédito. </strong></a><br /> 20/01/2020
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-lg-6 mt-4">
+
+                        <!-- Featured image -->
+                        <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+                            <img class="img-fluid" src="~/Content/Noticias/Imagenes/Historial/Custom_3.jpg" alt="Sample image">
+                            <a href="~/Content/Noticias/Imagenes/Historial/Custom_3.JPG">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!--#endregion -->
+        <!--#region Orden Administrativo para canalizar consultas -->
+        <hr class="container my-5 mb-5" id="New_2">
+        <div class="container mt-5">
+            <!--Section: Content-->
+            <section class="dark-grey-text">
+                <!-- Grid row -->
+                <div class="row align-items-center">
+                    <!-- Grid column -->
+                    <div class="col-lg-5">
+
+                        <!-- Featured image -->
+                        <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+                            <img class="img-fluid" src="~/Content/Noticias/Imagenes/Historial/New_2.jpg" alt="Sample image">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-1">   </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-4 ml-4">
+                        <!-- Category -->
+
+                        <h4 class="font-weight-bold mb-3" id="Noticia1"><strong>Orden Administrativo para canalizar consultas</strong><br />DGC-209-2019</h4>
+                        <p>
+                            Link de Comunicado: <a href="~/Content/Noticias/Documentos/Consultas Crédito Retail y Empresarial DGC-209-2019.docx"><i class="far fa-file-alt" style="height:30px;"></i></a><br />
+                            Toda respuesta deberá de copiarse a las cuentas de correo:
+                        </p>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>
+                                    <i class="fas fa-caret-right" style="color:#B0BD20"></i><strong> Análisis Gestión Crédito Retail :</strong> <br /><br /><span class="ml-4"><i class="far fa-envelope"></i> consultas_CreditoRetail@bncr.fi.cr</span><br /><br />
+                                    <i class="fas fa-caret-right" style="color:#B0BD20"></i><strong>  Análisis y Gestión de Crédito Empresarial:</strong> <br /><br /><span class="ml-4"><i class="far fa-envelope"></i> consultasdireccioncreditoempresarialeinstitucional@bncr.fi.cr</span><br /><br /><br />
+                                    Por <a><strong style="color:#133D8D">Análisis Gestión Crédito. </strong></a><br /> 20/01/2020
+                                </p>
+                                <p class="float-right"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+        <!--#endregion -->
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br /><br />
+
+    <!-- Footer -->
+
+
+    <div class="mt-5 pt-3 pb-1 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xs-12 about-company">
+                    <h2>Contáctenos</h2>
+                    <p class="pr-5 text-white-50">Por favor refiera cualquier consulta, duda o problema de la página al siguiente correo: &nbsp;&nbsp;<a href="mailto:jmolinaz@bncr.fi.cr"><i class="fas fa-envelope-open-text"></i></a></p>
+                    <img src="~/Content/imagenes/Inicio/Logo-azu-BN.png" height="70" alt="Alternate Text" />
+                </div>
+                <div class="col-lg-3 col-xs-12 links">
+                    <h4 class="mt-lg-0 mt-sm-3">Navegación</h4>
+                    <ul class="m-0 p-0">
+                        <li class="mt-3"><a href="~/Home/Inicio"><i class="fas fa-link"></i>&nbsp;&nbsp;Sitio</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Servicios</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Noticias</a></li>
+                        <li class="mt-1"><a href="#"><i class="fas fa-link"></i>&nbsp;&nbsp;Sobre Nosotros</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-xs-12 location">
+                    <h4 class="mt-lg-0 mt-sm-3">Ubicación</h4>
+                    <p><i class="fas fa-map-marked-alt mr-3"></i>San Jose, La Uruca, Edificio Cipac</p>
+
+                    <p class="mt-3"><i class="fa fa-phone mr-3"></i>(+506) 2212-2000</p>
+                    <p class="mb-0"><i class="far fa-envelope mr-3"></i>ConsultasCreditoRetail@bncr.fi.cr</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col copyright text-center">
+                    <p class="footer-copyright text-center py-3">
+                        Copyright © 2020 All rights reserved |
+                        <a href="#">Dirección de Crédito Desarrollo y Personas</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Footer -->
+    <!--iniciar animaciones de MDBootrapt-->
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            new WOW().init();
+        });
+    </script>
+
+</body>
+</html>

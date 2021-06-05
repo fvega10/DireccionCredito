@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CreditoNacionalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Ficha">
+          <Key>
+            <PropertyRef Name="Fichaid" />
+          </Key>
+          <Property Name="Productoid" Type="int" />
+          <Property Name="FICHAS" Type="nvarchar" MaxLength="255" />
+          <Property Name="Fichaid" Type="int" Nullable="false" />
+          <Property Name="Fichas_Link" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="GuiaComercial">
+          <Key>
+            <PropertyRef Name="Guiaid" />
+          </Key>
+          <Property Name="Fichaid" Type="int" />
+          <Property Name="GUIAS" Type="nvarchar" MaxLength="255" />
+          <Property Name="Guiaid" Type="int" Nullable="false" />
+          <Property Name="LinkGuia" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Producto">
+          <Key>
+            <PropertyRef Name="Productoid" />
+          </Key>
+          <Property Name="Producto" Type="nvarchar" MaxLength="255" />
+          <Property Name="Productoid" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Visitas">
+          <Key>
+            <PropertyRef Name="Consecutivo" />
+          </Key>
+          <Property Name="UsuarioWindows" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="250" />
+          <Property Name="NombreCompleto" Type="varchar" MaxLength="250" />
+          <Property Name="Empleado" Type="varchar" MaxLength="50" />
+          <Property Name="Nombre" Type="varchar" MaxLength="250" />
+          <Property Name="Apellidos" Type="varchar" MaxLength="250" />
+          <Property Name="Oficina" Type="varchar" MaxLength="250" />
+          <Property Name="Pic" Type="varchar" MaxLength="7500" />
+          <Property Name="Consecutivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FECHA" Type="date" />
+          <Property Name="Hora" Type="time" Precision="7" />
+          <Property Name="ProductoBuscado" Type="varchar" MaxLength="50" />
+          <Property Name="Actividad" Type="varchar" MaxLength="50" />
+          <Property Name="Tipo" Type="varchar" MaxLength="50" />
+          <Property Name="Garantía" Type="varchar" MaxLength="50" />
+          <Property Name="GuiaComercial" Type="varchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="Rol">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Rol" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+          <Property Name="apellidos" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="Oficina" Type="varchar" MaxLength="50" />
+          <Property Name="Empleado" Type="varchar" MaxLength="50" />
+          <Property Name="Consecutivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Usuario_Rol">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id_Usuario" Type="varchar" MaxLength="50" />
+          <Property Name="Id_Rol" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Usuario_Rol_Rol">
+          <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+          <End Role="Usuario_Rol" Type="Self.Usuario_Rol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Rol">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuario_Rol">
+              <PropertyRef Name="Id_Rol" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuario_Rol_Usuario">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="Usuario_Rol" Type="Self.Usuario_Rol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuario_Rol">
+              <PropertyRef Name="Id_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CreditoNacionalModelStoreContainer">
+          <EntitySet Name="Ficha" EntityType="Self.Ficha" Schema="Buscador" store:Type="Tables" />
+          <EntitySet Name="GuiaComercial" EntityType="Self.GuiaComercial" Schema="Buscador" store:Type="Tables" />
+          <EntitySet Name="Producto" EntityType="Self.Producto" Schema="Buscador" store:Type="Tables" />
+          <EntitySet Name="Visitas" EntityType="Self.Visitas" Schema="Buscador" store:Type="Tables" />
+          <EntitySet Name="Rol" EntityType="Self.Rol" Schema="Identity" store:Type="Tables" />
+          <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="Identity" store:Type="Tables" />
+          <EntitySet Name="Usuario_Rol" EntityType="Self.Usuario_Rol" Schema="Identity" store:Type="Tables" />
+          <AssociationSet Name="FK_Usuario_Rol_Rol" Association="Self.FK_Usuario_Rol_Rol">
+            <End Role="Rol" EntitySet="Rol" />
+            <End Role="Usuario_Rol" EntitySet="Usuario_Rol" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuario_Rol_Usuario" Association="Self.FK_Usuario_Rol_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Usuario_Rol" EntitySet="Usuario_Rol" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CreditoNacionalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="CreditoNacionalEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Ficha" EntityType="CreditoNacionalModel.Ficha" />
+          <EntitySet Name="GuiaComercial" EntityType="CreditoNacionalModel.GuiaComercial" />
+          <EntitySet Name="Producto" EntityType="CreditoNacionalModel.Producto" />
+          <EntitySet Name="Visitas" EntityType="CreditoNacionalModel.Visitas" />
+          <EntitySet Name="Rol" EntityType="CreditoNacionalModel.Rol" />
+          <EntitySet Name="Usuario" EntityType="CreditoNacionalModel.Usuario" />
+          <EntitySet Name="Usuario_Rol" EntityType="CreditoNacionalModel.Usuario_Rol" />
+          <AssociationSet Name="FK_Usuario_Rol_Rol" Association="CreditoNacionalModel.FK_Usuario_Rol_Rol">
+            <End Role="Rol" EntitySet="Rol" />
+            <End Role="Usuario_Rol" EntitySet="Usuario_Rol" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuario_Rol_Usuario" Association="CreditoNacionalModel.FK_Usuario_Rol_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Usuario_Rol" EntitySet="Usuario_Rol" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Ficha">
+          <Key>
+            <PropertyRef Name="Fichaid" />
+          </Key>
+          <Property Name="Productoid" Type="Int32" />
+          <Property Name="FICHAS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Fichaid" Type="Int32" Nullable="false" />
+          <Property Name="Fichas_Link" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="GuiaComercial">
+          <Key>
+            <PropertyRef Name="Guiaid" />
+          </Key>
+          <Property Name="Fichaid" Type="Int32" />
+          <Property Name="GUIAS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Guiaid" Type="Int32" Nullable="false" />
+          <Property Name="LinkGuia" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Producto">
+          <Key>
+            <PropertyRef Name="Productoid" />
+          </Key>
+          <Property Name="Producto1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Productoid" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Visitas">
+          <Key>
+            <PropertyRef Name="Consecutivo" />
+          </Key>
+          <Property Name="UsuarioWindows" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="NombreCompleto" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Empleado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Apellidos" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Oficina" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Pic" Type="String" MaxLength="7500" FixedLength="false" Unicode="false" />
+          <Property Name="Consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FECHA" Type="DateTime" Precision="0" />
+          <Property Name="Hora" Type="Time" Precision="7" />
+          <Property Name="ProductoBuscado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Actividad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Garantía" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GuiaComercial" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Rol">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Rol1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Usuario_Rol" Relationship="CreditoNacionalModel.FK_Usuario_Rol_Rol" FromRole="Rol" ToRole="Usuario_Rol" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Oficina" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Empleado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Usuario_Rol" Relationship="CreditoNacionalModel.FK_Usuario_Rol_Usuario" FromRole="Usuario" ToRole="Usuario_Rol" />
+        </EntityType>
+        <EntityType Name="Usuario_Rol">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id_Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Id_Rol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Rol" Relationship="CreditoNacionalModel.FK_Usuario_Rol_Rol" FromRole="Usuario_Rol" ToRole="Rol" />
+          <NavigationProperty Name="Usuario" Relationship="CreditoNacionalModel.FK_Usuario_Rol_Usuario" FromRole="Usuario_Rol" ToRole="Usuario" />
+        </EntityType>
+        <Association Name="FK_Usuario_Rol_Rol">
+          <End Type="CreditoNacionalModel.Rol" Role="Rol" Multiplicity="0..1" />
+          <End Type="CreditoNacionalModel.Usuario_Rol" Role="Usuario_Rol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Rol">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuario_Rol">
+              <PropertyRef Name="Id_Rol" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuario_Rol_Usuario">
+          <End Type="CreditoNacionalModel.Usuario" Role="Usuario" Multiplicity="0..1" />
+          <End Type="CreditoNacionalModel.Usuario_Rol" Role="Usuario_Rol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuario_Rol">
+              <PropertyRef Name="Id_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CreditoNacionalModelStoreContainer" CdmEntityContainer="CreditoNacionalEntities">
+          <EntitySetMapping Name="Ficha">
+            <EntityTypeMapping TypeName="CreditoNacionalModel.Ficha">
+              <MappingFragment StoreEntitySet="Ficha">
+                <ScalarProperty Name="Fichas_Link" ColumnName="Fichas_Link" />
+                <ScalarProperty Name="Fichaid" ColumnName="Fichaid" />
+                <ScalarProperty Name="FICHAS" ColumnName="FICHAS" />
+                <ScalarProperty Name="Productoid" ColumnName="Productoid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GuiaComercial">
+            <EntityTypeMapping TypeName="CreditoNacionalModel.GuiaComercial">
+              <MappingFragment StoreEntitySet="GuiaComercial">
+                <ScalarProperty Name="LinkGuia" ColumnName="LinkGuia" />
+                <ScalarProperty Name="Guiaid" ColumnName="Guiaid" />
+                <ScalarProperty Name="GUIAS" ColumnName="GUIAS" />
+                <ScalarProperty Name="Fichaid" ColumnName="Fichaid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Producto">
+            <EntityTypeMapping TypeName="CreditoNacionalModel.Producto">
+              <MappingFragment StoreEntitySet="Producto">
+                <ScalarProperty Name="Productoid" ColumnName="Productoid" />
+                <ScalarProperty Name="Producto1" ColumnName="Producto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Visitas">
+            <EntityTypeMapping TypeName="CreditoNacionalModel.Visitas">
+              <MappingFragment StoreEntitySet="Visitas">
+                <ScalarProperty Name="GuiaComercial" ColumnName="GuiaComercial" />
+                <ScalarProperty Name="Garantía" ColumnName="Garantía" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Actividad" ColumnName="Actividad" />
+                <ScalarProperty Name="ProductoBuscado" ColumnName="ProductoBuscado" />
+                <ScalarProperty Name="Hora" ColumnName="Hora" />
+                <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+                <ScalarProperty Name="Consecutivo" ColumnName="Consecutivo" />
+                <ScalarProperty Name="Pic" ColumnName="Pic" />
+                <ScalarProperty Name="Oficina" ColumnName="Oficina" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Empleado" ColumnName="Empleado" />
+                <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="UsuarioWindows" ColumnName="UsuarioWindows" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Rol">
+            <EntityTypeMapping TypeName="CreditoNacionalModel.Rol">
+              <MappingFragment StoreEntitySet="Rol">
+                <ScalarProperty Name="Rol1" ColumnName="Rol" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuario">
+            <EntityTypeMapping TypeName="CreditoNacionalModel.Usuario">
+              <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="Consecutivo" ColumnName="Consecutivo" />
+                <ScalarProperty Name="Empleado" ColumnName="Empleado" />
+                <ScalarProperty Name="Oficina" ColumnName="Oficina" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="apellidos" ColumnName="apellidos" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuario_Rol">
+            <EntityTypeMapping TypeName="CreditoNacionalModel.Usuario_Rol">
+              <MappingFragment StoreEntitySet="Usuario_Rol">
+                <ScalarProperty Name="Id_Rol" ColumnName="Id_Rol" />
+                <ScalarProperty Name="Id_Usuario" ColumnName="Id_Usuario" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
