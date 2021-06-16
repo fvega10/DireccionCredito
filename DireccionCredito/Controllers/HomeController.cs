@@ -391,18 +391,23 @@ namespace DireccionCredito.Controllers
         public ActionResult Buscador()
         {
             CargaDatosUsuario();
+            
+            List<Ficha> oFicha = new List<Ficha>();
+            List<GuiaComercial> oGuiaComercial = new List<GuiaComercial>();
+
             //llenar el dropdowsList Inicial
             //enviar la lista por viewbag
             ViewBag.ListaProductos = new SelectList(ObtenerProducto(), "Productoid", "Producto1");
+
+
             //ObtenerProducto=carga inicial todo ~ Productoid= Codigo que guardará ~ "Producto"= nombre que mostrará
-
-
             using (CreditoNacionalEntities bd = new CreditoNacionalEntities())
             {
-                ViewBag.FichasCompletas = bd.Ficha.ToList();
-                ViewBag.GuiasCompletas = bd.GuiaComercial.ToList();
+                oFicha = bd.Ficha.ToList();
+                oGuiaComercial = bd.GuiaComercial.ToList();
             }
-
+            ViewBag.FichasCompletas = oFicha;
+            ViewBag.GuiasCompletas = oGuiaComercial;
 
 
             return View();
@@ -411,8 +416,19 @@ namespace DireccionCredito.Controllers
         //obtener el producto
         public List<Producto> ObtenerProducto()
         {
-            CreditoNacionalEntities bd = new CreditoNacionalEntities();//se instancia la conexion
-            List<Producto> productos = bd.Producto.ToList();
+            List<Producto> productos = new List<Producto>();
+            try
+            {
+                using (var bd = new CreditoNacionalEntities())
+                {
+                    productos = bd.Producto.ToList();
+                }
+
+            }
+            catch (Exception e)
+            {
+
+            }
             return productos;
         }
 
