@@ -427,6 +427,8 @@
     <Content Include="Content\Inicio\css\Roboto.css" />
     <Content Include="Content\Inicio\css\style.css" />
     <Content Include="Content\Inicio\css\WorkSans.css" />
+    <Content Include="Content\Inicio\img\svg\arrow_left.svg" />
+    <Content Include="Content\Inicio\img\svg\arrow_right.svg" />
     <Content Include="Content\Inicio\portafolio\cubeportfolio.min.css" />
     <Content Include="Content\Inicio\portafolio\global.css" />
     <Content Include="Content\Inicio\portafolio\stylePortafolio.css" />
@@ -731,15 +733,12 @@
     <Content Include="webfonts\fa-brands-400.svg" />
     <Content Include="webfonts\fa-regular-400.svg" />
     <Content Include="webfonts\fa-solid-900.svg" />
-    <Content Include="webfonts\fa-solid-900.woff2" />
     <Content Include="webfonts\fa-solid-900.woff" />
     <Content Include="webfonts\fa-solid-900.ttf" />
     <Content Include="webfonts\fa-solid-900.eot" />
-    <Content Include="webfonts\fa-regular-400.woff2" />
     <Content Include="webfonts\fa-regular-400.woff" />
     <Content Include="webfonts\fa-regular-400.ttf" />
     <Content Include="webfonts\fa-regular-400.eot" />
-    <Content Include="webfonts\fa-brands-400.woff2" />
     <Content Include="webfonts\fa-brands-400.woff" />
     <Content Include="webfonts\fa-brands-400.ttf" />
     <Content Include="webfonts\fa-brands-400.eot" />
