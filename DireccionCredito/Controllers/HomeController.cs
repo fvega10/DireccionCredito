@@ -16,9 +16,7 @@ using System.Data.SqlClient;
 
 namespace DireccionCredito.Controllers
 {
-
-
-
+    //PRUEBA
     public class HomeController : Controller
     {
         //inicio propiedades de usuario
