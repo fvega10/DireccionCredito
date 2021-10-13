@@ -75,7 +75,7 @@ namespace DireccionCredito.Controllers
             DateTime NOVIEMBRE = Convert.ToDateTime("2020-11-13");
             DateTime DICIEMBRE = Convert.ToDateTime("2020-12-18");
 
-            CreditoNacionalEntities bd = new CreditoNacionalEntities();
+            CreditoNacionalEntities1 bd = new CreditoNacionalEntities1();
             DateTime Actual = bd.Database.SqlQuery<DateTime>("SELECT GETDATE()").SingleOrDefault();
 
 
@@ -153,6 +153,7 @@ namespace DireccionCredito.Controllers
         {
             return View();
         }
+
 
         public ActionResult Estadisticas()
         {
@@ -399,7 +400,7 @@ namespace DireccionCredito.Controllers
 
 
             //ObtenerProducto=carga inicial todo ~ Productoid= Codigo que guardará ~ "Producto"= nombre que mostrará
-            using (CreditoNacionalEntities bd = new CreditoNacionalEntities())
+            using (CreditoNacionalEntities1 bd = new CreditoNacionalEntities1())
             {
                 oFicha = bd.Ficha.ToList();
                 oGuiaComercial = bd.GuiaComercial.ToList();
@@ -417,7 +418,7 @@ namespace DireccionCredito.Controllers
             List<Producto> productos = new List<Producto>();
             try
             {
-                using (var bd = new CreditoNacionalEntities())
+                using (var bd = new CreditoNacionalEntities1())
                 {
                     productos = bd.Producto.ToList();
                 }
@@ -433,7 +434,7 @@ namespace DireccionCredito.Controllers
         //primera dependencia Fichas
         public ActionResult ObtenerFicha(int productoid)
         {
-            CreditoNacionalEntities bd = new CreditoNacionalEntities();
+            CreditoNacionalEntities1 bd = new CreditoNacionalEntities1();
             //se crea el filtrado
             List<Ficha> FiltroFichas = bd.Ficha.Where(x => x.Productoid == productoid).OrderBy(x => x.FICHAS).ToList();
                 
@@ -447,9 +448,9 @@ namespace DireccionCredito.Controllers
         //segunda dependencia Guias
         public ActionResult ObtenerGuia(int Fichaid)
         {
-            CreditoNacionalEntities bd = new CreditoNacionalEntities();
+            CreditoNacionalEntities1 bd = new CreditoNacionalEntities1();
             //se crea el filtrado
-            List<GuiaComercial> FiltroGuia = bd.GuiaComercial.Where(x => x.Fichaid == Fichaid).OrderBy(x=> x.GUIAS).ToList();
+            List<GuiaComercial> FiltroGuia = bd.GuiaComercial.Where(x => x.Fichaid == Fichaid && x.Active==true).OrderBy(x=> x.GUIAS).ToList();
             //se guarda en la variable
             ViewBag.Guia = new SelectList(FiltroGuia, "Guiaid", "GUIAS");
             //se crea la vista parcial en shared
@@ -461,7 +462,7 @@ namespace DireccionCredito.Controllers
         {
             try
             {
-                using (CreditoNacionalEntities bd = new CreditoNacionalEntities())
+                using (CreditoNacionalEntities1 bd = new CreditoNacionalEntities1())
                 {
                     Visitas nuevoregistro = new Visitas
                     {
@@ -509,7 +510,7 @@ namespace DireccionCredito.Controllers
         //fecha y hora del servidor
         public DateTime FechayHoraServidor()
         {
-            CreditoNacionalEntities bd = new CreditoNacionalEntities();
+            CreditoNacionalEntities1 bd = new CreditoNacionalEntities1();
             DateTime dateTimeServer = bd.Database.SqlQuery<DateTime>("SELECT GETDATE() Fecha").SingleOrDefault();
             //DateTime dateTimeClient = DateTime.Now; Fecha cliente
             //TimeSpan hora = dateTimeServer.TimeOfDay; captura hora servirdor

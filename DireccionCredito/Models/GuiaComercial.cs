@@ -18,5 +18,6 @@ namespace DireccionCredito.Models
         public string GUIAS { get; set; }
         public int Guiaid { get; set; }
         public string LinkGuia { get; set; }
+        public Nullable<bool> Active { get; set; }
     }
 }

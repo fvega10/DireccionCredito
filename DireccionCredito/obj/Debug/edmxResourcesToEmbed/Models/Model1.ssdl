@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CreditoNacionalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'CreditoNacional.Buscador.Ficha' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Ficha">
+    <Key>
+      <PropertyRef Name="Fichaid" />
+    </Key>
+    <Property Name="Productoid" Type="int" />
+    <Property Name="FICHAS" Type="nvarchar" MaxLength="255" />
+    <Property Name="Fichaid" Type="int" Nullable="false" />
+    <Property Name="Fichas_Link" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'CreditoNacional.Buscador.GuiaComercial' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="GuiaComercial">
+    <Key>
+      <PropertyRef Name="Guiaid" />
+    </Key>
+    <Property Name="Fichaid" Type="int" />
+    <Property Name="GUIAS" Type="nvarchar" MaxLength="255" />
+    <Property Name="Guiaid" Type="int" Nullable="false" />
+    <Property Name="LinkGuia" Type="nvarchar" MaxLength="255" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="Productoid" />
+    </Key>
+    <Property Name="Producto" Type="nvarchar" MaxLength="255" />
+    <Property Name="Productoid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Visitas">
+    <Key>
+      <PropertyRef Name="Consecutivo" />
+    </Key>
+    <Property Name="UsuarioWindows" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="250" />
+    <Property Name="NombreCompleto" Type="varchar" MaxLength="250" />
+    <Property Name="Empleado" Type="varchar" MaxLength="50" />
+    <Property Name="Nombre" Type="varchar" MaxLength="250" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="250" />
+    <Property Name="Oficina" Type="varchar" MaxLength="250" />
+    <Property Name="Pic" Type="varchar" MaxLength="7500" />
+    <Property Name="Consecutivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FECHA" Type="date" />
+    <Property Name="Hora" Type="time" Precision="7" />
+    <Property Name="ProductoBuscado" Type="varchar" MaxLength="50" />
+    <Property Name="Actividad" Type="varchar" MaxLength="50" />
+    <Property Name="Tipo" Type="varchar" MaxLength="50" />
+    <Property Name="Garantía" Type="varchar" MaxLength="50" />
+    <Property Name="GuiaComercial" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Rol">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Rol" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="apellidos" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Oficina" Type="varchar" MaxLength="50" />
+    <Property Name="Empleado" Type="varchar" MaxLength="50" />
+    <Property Name="Consecutivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuario_Rol">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_Usuario" Type="varchar" MaxLength="50" />
+    <Property Name="Id_Rol" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Usuario_Rol_Rol">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+    <End Role="Usuario_Rol" Type="Self.Usuario_Rol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuario_Rol">
+        <PropertyRef Name="Id_Rol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuario_Rol_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="Usuario_Rol" Type="Self.Usuario_Rol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuario_Rol">
+        <PropertyRef Name="Id_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CreditoNacionalModelStoreContainer">
+    <EntitySet Name="Producto" EntityType="Self.Producto" Schema="Buscador" store:Type="Tables" />
+    <EntitySet Name="Visitas" EntityType="Self.Visitas" Schema="Buscador" store:Type="Tables" />
+    <EntitySet Name="Rol" EntityType="Self.Rol" Schema="Identity" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="Identity" store:Type="Tables" />
+    <EntitySet Name="Usuario_Rol" EntityType="Self.Usuario_Rol" Schema="Identity" store:Type="Tables" />
+    <EntitySet Name="Ficha" EntityType="Self.Ficha" store:Type="Tables" store:Schema="Buscador">
+      <DefiningQuery>SELECT 
+    [Ficha].[Productoid] AS [Productoid], 
+    [Ficha].[FICHAS] AS [FICHAS], 
+    [Ficha].[Fichaid] AS [Fichaid], 
+    [Ficha].[Fichas_Link] AS [Fichas_Link]
+    FROM [Buscador].[Ficha] AS [Ficha]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GuiaComercial" EntityType="Self.GuiaComercial" store:Type="Tables" store:Schema="Buscador">
+      <DefiningQuery>SELECT 
+    [GuiaComercial].[Fichaid] AS [Fichaid], 
+    [GuiaComercial].[GUIAS] AS [GUIAS], 
+    [GuiaComercial].[Guiaid] AS [Guiaid], 
+    [GuiaComercial].[LinkGuia] AS [LinkGuia], 
+    [GuiaComercial].[Active] AS [Active]
+    FROM [Buscador].[GuiaComercial] AS [GuiaComercial]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Usuario_Rol_Rol" Association="Self.FK_Usuario_Rol_Rol">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="Usuario_Rol" EntitySet="Usuario_Rol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuario_Rol_Usuario" Association="Self.FK_Usuario_Rol_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Usuario_Rol" EntitySet="Usuario_Rol" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

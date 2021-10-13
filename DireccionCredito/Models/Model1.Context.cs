@@ -13,10 +13,10 @@ namespace DireccionCredito.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CreditoNacionalEntities : DbContext
+    public partial class CreditoNacionalEntities1 : DbContext
     {
-        public CreditoNacionalEntities()
-            : base("name=CreditoNacionalEntities")
+        public CreditoNacionalEntities1()
+            : base("name=CreditoNacionalEntities1")
         {
         }
     
@@ -25,12 +25,12 @@ namespace DireccionCredito.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Ficha> Ficha { get; set; }
-        public virtual DbSet<GuiaComercial> GuiaComercial { get; set; }
         public virtual DbSet<Producto> Producto { get; set; }
         public virtual DbSet<Visitas> Visitas { get; set; }
         public virtual DbSet<Rol> Rol { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
         public virtual DbSet<Usuario_Rol> Usuario_Rol { get; set; }
+        public virtual DbSet<Ficha> Ficha { get; set; }
+        public virtual DbSet<GuiaComercial> GuiaComercial { get; set; }
     }
 }

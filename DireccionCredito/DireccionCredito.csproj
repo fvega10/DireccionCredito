@@ -156,21 +156,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Buscador\DependenciaProductos.cs" />
-    <Compile Include="Models\ConexionCreditoNacional.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ConexionCreditoNacional.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ConexionCreditoNacional.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ConexionCreditoNacional.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ConexionCreditoNacional.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ConexionCreditoNacional.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Models\CONTROL.cs">
       <DependentUpon>POC.tt</DependentUpon>
     </Compile>
@@ -199,12 +184,27 @@
       <DependentUpon>POC.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Ficha.cs">
-      <DependentUpon>ConexionCreditoNacional.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\GuiaComercial.cs">
-      <DependentUpon>ConexionCreditoNacional.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\MatrizSeguimiento\ResultadoMatriz.cs" />
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\POC.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -224,7 +224,7 @@
       <DependentUpon>POC.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Producto.cs">
-      <DependentUpon>ConexionCreditoNacional.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Repositorio_AgenciasBNCR.cs">
       <DependentUpon>POC.tt</DependentUpon>
@@ -233,19 +233,19 @@
       <DependentUpon>POC.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Rol.cs">
-      <DependentUpon>ConexionCreditoNacional.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TRX.cs">
       <DependentUpon>POC.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Usuario.cs">
-      <DependentUpon>ConexionCreditoNacional.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Usuario_Rol.cs">
-      <DependentUpon>ConexionCreditoNacional.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Visitas.cs">
-      <DependentUpon>ConexionCreditoNacional.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -441,6 +441,7 @@
     <Content Include="Content\Noticias\Documentos\CAPSULAS\Octubre_2020\PresupuestoConstruccion.png" />
     <Content Include="Content\Noticias\Imagenes\2.png" />
     <Content Include="Content\Calendario\Imagenes\charla.jpg" />
+    <Content Include="Content\Noticias\Imagenes\Historial\AsignacionNotarios.jpg" />
     <Content Include="Content\Noticias\Imagenes\Historial\Custom_10.JPG" />
     <Content Include="Content\Noticias\Imagenes\Historial\Custom_11.JPG" />
     <Content Include="Content\Noticias\Imagenes\Historial\Custom_12.JPG" />
@@ -448,6 +449,7 @@
     <Content Include="Content\Noticias\Imagenes\Historial\Custom_7.JPG" />
     <Content Include="Content\Noticias\Imagenes\Historial\Custom_8.JPG" />
     <Content Include="Content\Noticias\Imagenes\Historial\Custom_9.JPG" />
+    <Content Include="Content\Noticias\Imagenes\Historial\ModificacionesInteresesCorrientes.jpg" />
     <Content Include="Content\Noticias\Imagenes\Historial\New_10.JPG" />
     <Content Include="Content\Noticias\Imagenes\Historial\New_11.JPG" />
     <Content Include="Content\Noticias\Imagenes\Historial\New_12.jpg" />
@@ -515,15 +517,15 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\ConexionCreditoNacional.Context.tt">
+    <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ConexionCreditoNacional.Context.cs</LastGenOutput>
-      <DependentUpon>ConexionCreditoNacional.edmx</DependentUpon>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\ConexionCreditoNacional.tt">
+    <Content Include="Models\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ConexionCreditoNacional.edmx</DependentUpon>
-      <LastGenOutput>ConexionCreditoNacional.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Models\POC.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -563,13 +565,6 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
-    <EntityDeploy Include="Models\ConexionCreditoNacional.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ConexionCreditoNacional.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\ConexionCreditoNacional.edmx.diagram">
-      <DependentUpon>ConexionCreditoNacional.edmx</DependentUpon>
-    </Content>
     <Content Include="Content\SweetAlert2\CHANGELOG.md" />
     <Content Include="Content\SweetAlert2\LICENSE" />
     <Content Include="Content\SweetAlert2\package.json" />
@@ -605,6 +600,19 @@
     <Content Include="Models\POC.edmx.diagram">
       <DependentUpon>POC.edmx</DependentUpon>
     </Content>
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Content\Noticias\Documentos\Bitacora\CapsulasInformativas2021\GestionDocumental.pptx" />
+    <Content Include="Content\Noticias\Documentos\Bitacora\CapsulasInformativas2021\UsoProgramasTasaIrregular.pptx" />
+    <Content Include="Content\Noticias\Documentos\Bitacora\CapsulasInformativas2021\CumplirRequisitosCredito.pptx" />
+    <Content Include="Content\Noticias\Documentos\Bitacora\CapsulasInformativas2021\ModificacionesInteresesCorrientes.pptx" />
+    <Content Include="Content\Noticias\Documentos\Bitacora\CapsulasInformativas2021\AsignacionNotarios.pptx" />
+    <Content Include="Content\Noticias\Documentos\Bitacora\INFORME SNC JULIO-AGOSTO-SETIEMBRE.pptx" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />

@@ -1,0 +1,1653 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Publicar sitio web retail</_PublishTargetUrl>
+    <History>True|2021-10-13T19:51:06.6177525Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>08/30/2021 11:16:02</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>08/30/2021 11:16:02</publishTime>
+    </File>
+    <File Include="bin/DireccionCredito.dll">
+      <publishTime>10/13/2021 13:50:59</publishTime>
+    </File>
+    <File Include="bin/DireccionCredito.pdb">
+      <publishTime>10/13/2021 13:50:59</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>08/30/2021 11:16:03</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>08/30/2021 11:16:03</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Helpers.resources.dll">
+      <publishTime>08/30/2021 11:16:04</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Mvc.resources.dll">
+      <publishTime>08/30/2021 11:16:04</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Optimization.resources.dll">
+      <publishTime>08/30/2021 11:16:04</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Razor.resources.dll">
+      <publishTime>08/30/2021 11:16:04</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>08/30/2021 11:16:04</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>08/30/2021 11:16:04</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.resources.dll">
+      <publishTime>08/30/2021 11:16:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>08/30/2021 11:16:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>08/30/2021 11:16:06</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/30/2021 11:16:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>08/30/2021 11:16:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>08/30/2021 11:16:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>08/30/2021 11:16:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>08/30/2021 11:16:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>08/30/2021 11:16:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>08/30/2021 11:16:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>08/30/2021 11:16:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>08/30/2021 11:16:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>08/30/2021 11:16:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>08/30/2021 11:16:05</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>08/30/2021 11:16:06</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>08/30/2021 11:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>08/30/2021 11:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Encoding.dll">
+      <publishTime>08/30/2021 11:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Primitives.dll">
+      <publishTime>08/30/2021 11:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>08/30/2021 11:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>08/30/2021 11:16:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>08/30/2021 11:16:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>08/30/2021 11:16:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>08/30/2021 11:16:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>08/30/2021 11:16:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>08/30/2021 11:16:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>08/30/2021 11:16:04</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>08/30/2021 11:16:08</publishTime>
+    </File>
+    <File Include="Content/AnimateCSS/animate.css">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css.map">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css.map">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css.map">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css.map">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/bootstraptoggle/bootstrap4-toggle.min.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/bootstraptoggle/bootstrap4-toggle.min.js">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/BotonBuscarCSS.css">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/brands.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/brands.min.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Calendario/css/fontGoogle.css">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Calendario/css/fonts/icomoon.eot">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Calendario/css/fonts/icomoon.svg">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Calendario/css/fonts/icomoon.ttf">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Calendario/css/fonts/icomoon.woff">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Calendario/css/style.css">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Calendario/css/style_icomoon.css">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Calendario/Imagenes/11.png">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Calendario/Imagenes/charla.jpg">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Calendario/Imagenes/ICO.png">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Calendario/Imagenes/LogoBnBlancoC.png">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Calendario/Imagenes/reunion.jpg">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Calendario/Imagenes/Vigente.png">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Calendario/script/aos.js">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/ErrorAcceso/CSS/ErrorAccesocss.css">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/ErrorAcceso/JS/ErrorAccesoJS.js">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Estadisticas/Imagenes/alerta.png">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Estadisticas/Imagenes/analisis.jpg">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Estadisticas/Imagenes/banner2.jpg">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Estadisticas/Imagenes/fondo_2.jpg">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Estadisticas/Imagenes/Fotolia_90649332_S.jpg">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Estadisticas/Imagenes/idea.gif">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/EstiloMenuDropDownList.css">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/EstilosJosue.css">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/fontawesome-all.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/fontawesome-all.min.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/fontawesome.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/fontawesome.min.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/FuentesGoogle/Poppins.css">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/FuentesGoogle/Roboto.css">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Hexagono/FontGoogleapis.css">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Hexagono/hexagons.css">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/ImageHover/demo-page.css">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/ImageHover/imagehover.css">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/imagenes/ADN_2.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/ADN_H.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/bancoNew.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/business.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/compu.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/compu3.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/comunicados.gif">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/Digital.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/icoBn1.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/iconoFicha.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/iconoficha2.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/iconoficha3.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/iconoNoExiste.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/IMAGEN.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/Log.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/logobnsolo.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/Menu1.gif">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/analisis.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/analisis2.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/archivo.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/avaluo.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/avaluo2.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/documentoLegal.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/documentoLegal2.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/documentoLegal3.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/entrevista.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/entrevista2.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/entrevista3.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/entrevista4.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/Estructuracion.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/Formalizacion.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/Formalizacion2.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/Planesautoexpedibles.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/ModuloAtencion/ResolucionTramite.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/pngocean.com.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/1.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/10.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/11.jfif">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/12.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/13.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/14.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/15.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/16.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/17.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/18.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/19.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/2.jfif">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/20.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/21.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/22.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/23.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/24.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/25.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/26.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/27.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/28.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/29.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/3.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/30.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/31.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/32.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/33.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/34.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/35.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/4.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/4.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/5.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/6.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/7.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/8.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/9.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/icono1.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/icono2.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/icono3.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/icono4.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/icono5.ico">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/icono6.ico">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/icono7.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/icono8.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/software-img.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/stab1.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/prueba/user.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador/warningicon.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador_Ico_bncr.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/Buscador_Logo_bncr2.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/COP.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/EDIFICIO.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/imagenes/edificionew.png">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/GIF/1.gif">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/GIF/2.gif">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/GIF/3.gif">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/GIF/4.gif">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/GIF/5.gif">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/GIF/6.gif">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/GIF/7.gif">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/GIF/8.gif">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/icoBn1.png">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/81.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/82.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/83.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/carrucel2.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/CARRUEL11c.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/fondoinicio1.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/fondoinicio2.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/fondoinicio3.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/Gif/1.gif">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/Gif/2.gif">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/Gif/3.gif">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/Logo-azu-BN.png">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/LogoBnBlancoC.png">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/portaflio/calendario.png">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/portaflio/DashBoard.png">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/portaflio/Estadisticas.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/portaflio/Instructico.png">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/portaflio/Motor.png">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/portaflio/questions.png">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Inicio/video.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/koala.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/LogoBnBlanco.png">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Modal/13.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Modal/21.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Modal/22.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Modal/23.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Portada/1.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Portada/2.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Portada/3.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Portada/4.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/imagenes/Portada/Log.jpg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/Inicio/css/bootstrap.min.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/Inicio/css/doppioOne.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/Inicio/css/EstiloMenuDropDownList.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/Inicio/css/EstiloSeccionVideo.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/Inicio/css/mdb.min.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/Inicio/css/Roboto.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/Inicio/css/style.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/Inicio/css/WorkSans.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/Inicio/img/svg/arrow_left.svg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/Inicio/img/svg/arrow_right.svg">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/Inicio/portafolio/cubeportfolio.min.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/Inicio/portafolio/global.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/Inicio/portafolio/stylePortafolio.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/Layout/MenuLayout.css">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Layout/MenuLayout.js">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Loading2.gif">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/NavbarBuscador/b4megamenu.css">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Bitacora/CapsulasInformativas2021/AsignacionNotarios.pptx">
+      <publishTime>10/13/2021 08:35:17</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Bitacora/CapsulasInformativas2021/CumplirRequisitosCredito.pptx">
+      <publishTime>10/12/2021 16:16:41</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Bitacora/CapsulasInformativas2021/GestionDocumental.pptx">
+      <publishTime>10/12/2021 14:40:55</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Bitacora/CapsulasInformativas2021/ModificacionesInteresesCorrientes.pptx">
+      <publishTime>10/13/2021 08:14:02</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Bitacora/CapsulasInformativas2021/UsoProgramasTasaIrregular.pptx">
+      <publishTime>10/12/2021 16:14:29</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Bitacora/Informe Oficina Tipo 3 de marzo a diciembre 2019_New4.docx.pdf">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Bitacora/Informe Oficina Tipo 3 de marzo a diciembre 2019_New4.png">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Bitacora/INFORME SNC JULIO-AGOSTO-SETIEMBRE.pptx">
+      <publishTime>10/13/2021 11:30:55</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Bitacora/Octubre2020/Informe_de_Salidas_No_Conformes_Agosto_Septiembre_2020.pptx">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Bitacora/Octubre2020/Planes_de_inversión.pptx">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Bitacora/Octubre2020/Rendicion_de_Cuentas_Octubre_2020.pptx">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/CAPSULAS/Octubre_2020/CapsulaRuta.JPG">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/CAPSULAS/Octubre_2020/Presupuesto de Construcción.pptx">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/CAPSULAS/Octubre_2020/PresupuestoConstruccion.png">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/CAPSULAS/Octubre_2020/Ruta MPC cierre de planes de Inversión.pptx">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Consultas Crédito Retail y Empresarial DGC-209-2019.docx">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Documentación_digital.pptx">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Infografia formato BN.pdf">
+      <publishTime>08/30/2021 11:15:53</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Informe de Oficina Tipo 3 enero-junio 2020.pdf">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Informe_salidas_no_conformes.pptx">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Plan de Inversión conversatorio mayo 2020.pptx">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Protectora_Crédito.pptx">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/Rendicion_Julio_2020.pptx">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Documentos/TIP_ACUERDOSSOCIEDADES.pptx">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/2.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/AsignacionNotarios.jpg">
+      <publishTime>10/13/2021 08:35:42</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/Custom_1.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/Custom_10.JPG">
+      <publishTime>10/12/2021 16:27:36</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/Custom_11.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/Custom_12.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/Custom_3.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/Custom_6.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/Custom_7.JPG">
+      <publishTime>10/12/2021 15:58:28</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/Custom_8.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/Custom_9.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/ModificacionesInteresesCorrientes.jpg">
+      <publishTime>10/13/2021 08:14:35</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/New2_Pic.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/new5.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/New_1.JPG">
+      <publishTime>10/12/2021 14:43:24</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/New_10.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/New_11.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/New_12.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/New_2.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/New_3.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/New_4.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/new_5.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/new_6.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/New_9.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/RendicionCuentas_Julio.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Noticias2.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/RendicionCuentas.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/roundtables.gif">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/SalidasNoConformes.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/SeguimientoPlanesInversión.JPG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/VideoTutorial.PNG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/pattern_dot.png">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/banner.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/faq.gif">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/Imagenes/12.PNG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/Imagenes/12_1.PNG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/Imagenes/18.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/Imagenes/20.PNG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/Imagenes/21.PNG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/Imagenes/2_Ingenieria.PNG">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/Imagenes/6.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/Imagenes/7.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_1.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_12.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_13.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_16.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_22.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_23.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_4.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_5.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_6.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_6_1.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_7.jpg">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PreguntasFrecuentes/ImagenesConversatorios/preguntafrecuente_8.png">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PromiseFix/es6-promise.auto.js">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/PromiseFix/es6-promise.js">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/regular.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/regular.min.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/Selected2/select2.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Selected2/select2.full.js">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Selected2/StylosSelect2.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/solid.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/solid.min.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/svg-with-js.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/svg-with-js.min.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/SweetAlert2/CHANGELOG.md">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/SweetAlert2/LICENSE">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/SweetAlert2/package.json">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/SweetAlert2/README.md">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/SweetAlert2/sweetalert2.all.js">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/SweetAlert2/sweetalert2.all.min.js">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/SweetAlert2/sweetalert2.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/SweetAlert2/sweetalert2.js">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/SweetAlert2/sweetalert2.min.css">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/SweetAlert2/sweetalert2.min.js">
+      <publishTime>08/30/2021 11:15:54</publishTime>
+    </File>
+    <File Include="Content/v4-shims.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Content/v4-shims.min.css">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>08/30/2021 11:15:58</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Models/Model1.edmx.diagram">
+      <publishTime>09/23/2021 14:31:30</publishTime>
+    </File>
+    <File Include="Models/POC.edmx.diagram">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/Buscador/VariasJS4.js">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.js.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.min.js.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.js.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.min.js.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/fontawesome/all.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/fontawesome/all.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/fontawesome/brands.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/fontawesome/brands.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/fontawesome/conflict-detection.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/fontawesome/conflict-detection.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/fontawesome/fontawesome.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/fontawesome/fontawesome.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/fontawesome/regular.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/fontawesome/regular.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/fontawesome/solid.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/fontawesome/solid.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/fontawesome/v4-shims.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/fontawesome/v4-shims.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/index.js.flow">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/inicio/bootstrap.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/inicio/jquery.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/inicio/mdb.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/inicio/popper.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/inicio/portafolio/jquery.cubeportfolio.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/inicio/portafolio/portfolio-3-col.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.min.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.js.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.min.js.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/popper.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/popper.js.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/popper.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/popper.min.js.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/README.md">
+      <publishTime>08/30/2021 11:15:56</publishTime>
+    </File>
+    <File Include="Scripts/smooth-scroll.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/index.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/methods/defaults.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/methods/destroy.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/methods/disableEventListeners.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/methods/enableEventListeners.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/methods/placements.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/methods/update.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/applyStyle.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/arrow.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/computeStyle.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/flip.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/hide.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/index.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/inner.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/keepTogether.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/offset.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/preventOverflow.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/shift.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/clockwise.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/computeAutoPlacement.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/debounce.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/find.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/findCommonOffsetParent.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/findIndex.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getBordersSize.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getBoundaries.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getBoundingClientRect.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getClientRect.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getFixedPositionOffsetParent.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getOffsetParent.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getOffsetRect.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getOffsetRectRelativeToArbitraryNode.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getOppositePlacement.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getOppositeVariation.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getOuterSizes.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getParentNode.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getPopperOffsets.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getReferenceNode.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getReferenceOffsets.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getRoot.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getRoundedOffsets.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getScroll.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getScrollParent.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getStyleComputedProperty.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getSupportedPropertyName.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getViewportOffsetRectRelativeToArtbitraryNode.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getWindow.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getWindowSizes.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/includeScroll.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/index.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/isBrowser.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/isFixed.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/isFunction.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/isIE.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/isModifierEnabled.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/isModifierRequired.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/isNumeric.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/isOffsetContainer.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/removeEventListeners.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/runModifiers.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/setAttributes.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/setStyles.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/setupEventListeners.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.js.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.min.js.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.js.flow">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.js.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.min.js">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.min.js.map">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Home/Buscador.cshtml">
+      <publishTime>09/23/2021 17:22:48</publishTime>
+    </File>
+    <File Include="Views/Home/Calendario.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Home/ErrorAcceso.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Home/Estadisticas.cshtml">
+      <publishTime>09/24/2021 15:30:52</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Home/Inicio.cshtml">
+      <publishTime>10/13/2021 11:41:37</publishTime>
+    </File>
+    <File Include="Views/Home/MatrizSeguimiento.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Home/Noticias.cshtml">
+      <publishTime>10/13/2021 12:53:48</publishTime>
+    </File>
+    <File Include="Views/Home/Parciales/MatrizSeguimiento/_ConsultaFormularioMatriz.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Home/Parciales/MatrizSeguimiento/_GestionClienteMatrizSeguimiento.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Home/Parciales/MatrizSeguimiento/_GuardarMatrizSeguimiento.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Home/Parciales/MatrizSeguimiento/_MatrizSeguimiento_ResultadoGuardado.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Home/PreguntasFrecuentes.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Shared/MostrarFichas.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Shared/MostrarGuias.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Visitas/RegistroVisitas.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>08/30/2021 11:15:57</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/13/2021 13:51:01</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.eot">
+      <publishTime>08/30/2021 11:16:02</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.svg">
+      <publishTime>08/30/2021 11:16:02</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.ttf">
+      <publishTime>08/30/2021 11:16:02</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.woff">
+      <publishTime>08/30/2021 11:16:02</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.eot">
+      <publishTime>08/30/2021 11:16:02</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.svg">
+      <publishTime>08/30/2021 11:16:02</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.ttf">
+      <publishTime>08/30/2021 11:16:02</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.woff">
+      <publishTime>08/30/2021 11:16:02</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.eot">
+      <publishTime>08/30/2021 11:16:02</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.svg">
+      <publishTime>08/30/2021 11:16:02</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.ttf">
+      <publishTime>08/30/2021 11:16:02</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.woff">
+      <publishTime>08/30/2021 11:16:02</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
