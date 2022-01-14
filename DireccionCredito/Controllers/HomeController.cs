@@ -151,6 +151,14 @@ namespace DireccionCredito.Controllers
 
         public ActionResult Noticias()
         {
+            
+            List<VideoTutorial> listaVideoTutorial = null;
+            using (var BD= new CreditoNacionalEntities1())
+            {
+                listaVideoTutorial = BD.VideoTutorial.Where(p => p.Activo == true).ToList();
+
+            }
+            ViewBag.listaVideos = listaVideoTutorial;
             return View();
         }
 

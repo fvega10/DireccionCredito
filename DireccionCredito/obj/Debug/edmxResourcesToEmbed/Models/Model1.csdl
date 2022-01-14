@@ -118,5 +118,15 @@
       <End Role="Usuario" EntitySet="Usuario" />
       <End Role="Usuario_Rol" EntitySet="Usuario_Rol" />
     </AssociationSet>
+    <EntitySet Name="VideoTutorial" EntityType="CreditoNacionalModel.VideoTutorial" />
   </EntityContainer>
+  <EntityType Name="VideoTutorial">
+    <Key>
+      <PropertyRef Name="Indice" />
+    </Key>
+    <Property Name="Indice" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Titulo" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="Enlace" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+  </EntityType>
 </Schema>

@@ -32,5 +32,6 @@ namespace DireccionCredito.Models
         public virtual DbSet<Usuario_Rol> Usuario_Rol { get; set; }
         public virtual DbSet<Ficha> Ficha { get; set; }
         public virtual DbSet<GuiaComercial> GuiaComercial { get; set; }
+        public virtual DbSet<VideoTutorial> VideoTutorial { get; set; }
     }
 }

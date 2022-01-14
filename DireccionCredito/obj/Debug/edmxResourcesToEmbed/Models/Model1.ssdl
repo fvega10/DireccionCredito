@@ -51,6 +51,15 @@ advertencia 6002: La tabla o vista 'CreditoNacional.Buscador.GuiaComercial' no t
     <Property Name="Garantía" Type="varchar" MaxLength="50" />
     <Property Name="GuiaComercial" Type="varchar" MaxLength="150" />
   </EntityType>
+  <EntityType Name="VideoTutorial">
+    <Key>
+      <PropertyRef Name="Indice" />
+    </Key>
+    <Property Name="Indice" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Titulo" Type="varchar" MaxLength="4000" Nullable="false" />
+    <Property Name="Enlace" Type="varchar" MaxLength="4000" Nullable="false" />
+    <Property Name="Activo" Type="bit" Nullable="false" />
+  </EntityType>
   <EntityType Name="Rol">
     <Key>
       <PropertyRef Name="Id" />
@@ -105,6 +114,7 @@ advertencia 6002: La tabla o vista 'CreditoNacional.Buscador.GuiaComercial' no t
   <EntityContainer Name="CreditoNacionalModelStoreContainer">
     <EntitySet Name="Producto" EntityType="Self.Producto" Schema="Buscador" store:Type="Tables" />
     <EntitySet Name="Visitas" EntityType="Self.Visitas" Schema="Buscador" store:Type="Tables" />
+    <EntitySet Name="VideoTutorial" EntityType="Self.VideoTutorial" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Rol" EntityType="Self.Rol" Schema="Identity" store:Type="Tables" />
     <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="Identity" store:Type="Tables" />
     <EntitySet Name="Usuario_Rol" EntityType="Self.Usuario_Rol" Schema="Identity" store:Type="Tables" />

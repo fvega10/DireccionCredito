@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\DireccionCredito",
-    "\\DireccionCredito\\Views",
-    "\\DireccionCredito\\Views\\Home"
+    "\\DireccionCredito\\Models"
   ],
-  "SelectedNode": "\\DireccionCredito.sln",
+  "SelectedNode": "\\DireccionCredito\\Models",
   "PreviewInSolutionExplorer": false
 }

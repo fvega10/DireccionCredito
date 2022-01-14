@@ -82,5 +82,15 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="VideoTutorial">
+      <EntityTypeMapping TypeName="CreditoNacionalModel.VideoTutorial">
+        <MappingFragment StoreEntitySet="VideoTutorial">
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="Enlace" ColumnName="Enlace" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Indice" ColumnName="Indice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
