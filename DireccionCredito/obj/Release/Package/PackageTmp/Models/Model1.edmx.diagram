@@ -14,6 +14,7 @@
         <EntityTypeShape EntityType="CreditoNacionalModel.GuiaComercial" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
         <AssociationConnector Association="CreditoNacionalModel.FK_Usuario_Rol_Rol" ManuallyRouted="false" />
         <AssociationConnector Association="CreditoNacionalModel.FK_Usuario_Rol_Usuario" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CreditoNacionalModel.VideoTutorial" Width="1.5" PointX="7.375" PointY="6.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

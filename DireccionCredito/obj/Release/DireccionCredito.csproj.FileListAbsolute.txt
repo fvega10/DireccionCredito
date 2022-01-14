@@ -280,3 +280,46 @@ D:\Sitio\DireccionCredito\DireccionCredito\obj\Release\DireccionCredito.csproj.C
 D:\Sitio\DireccionCredito\DireccionCredito\obj\Release\DireccionCredito.csproj.CopyComplete
 D:\Sitio\DireccionCredito\DireccionCredito\obj\Release\DireccionCredito.dll
 D:\Sitio\DireccionCredito\DireccionCredito\obj\Release\DireccionCredito.pdb
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\DireccionCredito.dll.config
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\DireccionCredito.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\DireccionCredito.pdb
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\Antlr3.Runtime.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\EntityFramework.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\EntityFramework.SqlServer.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\Microsoft.Web.Infrastructure.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\Newtonsoft.Json.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\System.Web.Helpers.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\System.Web.Mvc.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\System.Web.Optimization.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\System.Web.Razor.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\System.Web.WebPages.Deployment.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\System.Web.WebPages.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\System.Web.WebPages.Razor.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\WebGrease.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\EntityFramework.xml
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\EntityFramework.SqlServer.xml
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\System.Web.Helpers.xml
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\System.Web.Mvc.xml
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\System.Web.Optimization.xml
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\System.Web.Razor.xml
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\System.Web.WebPages.xml
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\System.Web.WebPages.Deployment.xml
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\System.Web.WebPages.Razor.xml
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\Newtonsoft.Json.xml
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\Antlr3.Runtime.pdb
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\es\System.Web.Helpers.resources.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\es\System.Web.Mvc.resources.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\es\System.Web.Optimization.resources.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\es\System.Web.Razor.resources.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\es\System.Web.WebPages.resources.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\obj\Release\DireccionCredito.csproj.AssemblyReference.cache
+C:\Proyectos VS\DireccionCredito\DireccionCredito\obj\Release\DireccionCredito.csproj.CoreCompileInputs.cache
+C:\Proyectos VS\DireccionCredito\DireccionCredito\obj\Release\DireccionCredito.csproj.CopyComplete
+C:\Proyectos VS\DireccionCredito\DireccionCredito\obj\Release\DireccionCredito.dll
+C:\Proyectos VS\DireccionCredito\DireccionCredito\obj\Release\DireccionCredito.pdb
