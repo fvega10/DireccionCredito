@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\Mis documentos\16205207\Desktop\Publicacion\publicacion-direccion-credito</_PublishTargetUrl>
-    <History>True|2022-01-14T21:54:42.2010884Z;</History>
+    <History>True|2022-01-15T03:03:23.5931029Z;True|2022-01-14T20:41:56.8445183-06:00;True|2022-01-14T15:54:42.2010884-06:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Antlr3.Runtime.dll">
@@ -15,10 +15,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/14/2022 15:48:31</publishTime>
     </File>
     <File Include="bin/DireccionCredito.dll">
-      <publishTime>01/14/2022 15:54:37</publishTime>
+      <publishTime>01/14/2022 21:03:21</publishTime>
     </File>
     <File Include="bin/DireccionCredito.pdb">
-      <publishTime>01/14/2022 15:54:37</publishTime>
+      <publishTime>01/14/2022 21:03:21</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>01/14/2022 15:48:31</publishTime>
@@ -1127,6 +1127,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Global.asax">
       <publishTime>01/14/2022 15:48:27</publishTime>
     </File>
+    <File Include="Models/CreditoNacional.edmx.diagram">
+      <publishTime>01/14/2022 20:58:43</publishTime>
+    </File>
     <File Include="Models/Model1.edmx.diagram">
       <publishTime>01/14/2022 15:48:27</publishTime>
     </File>
@@ -1599,7 +1602,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/14/2022 15:48:27</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/14/2022 15:54:38</publishTime>
+      <publishTime>01/14/2022 21:03:22</publishTime>
     </File>
     <File Include="webfonts/fa-brands-400.eot">
       <publishTime>01/14/2022 15:48:31</publishTime>

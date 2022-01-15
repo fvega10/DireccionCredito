@@ -19,7 +19,7 @@ namespace DireccionCredito.Controllers
         [Autorizacion("2")]
         public ActionResult RegistroVisitas()
         {
-            using(CreditoNacionalEntities1 bd = new CreditoNacionalEntities1())
+            using(CreditoNacionalEntities2 bd = new CreditoNacionalEntities2())
             {
                 
                 return View(bd.Visitas.ToList());

@@ -4,17 +4,17 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="5fd651ffd0dc4b21a3bbf68a1ba4e099" Name="Diagram1">
+      <Diagram DiagramId="751965425f254c9181245c0c39d16414" Name="Diagram1">
         <EntityTypeShape EntityType="CreditoNacionalModel.Producto" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CreditoNacionalModel.Visitas" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CreditoNacionalModel.VideoTutorial" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CreditoNacionalModel.Rol" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="CreditoNacionalModel.Usuario" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
         <EntityTypeShape EntityType="CreditoNacionalModel.Usuario_Rol" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="CreditoNacionalModel.Ficha" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CreditoNacionalModel.GuiaComercial" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CreditoNacionalModel.Ficha" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CreditoNacionalModel.GuiaComercial" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
         <AssociationConnector Association="CreditoNacionalModel.FK_Usuario_Rol_Rol" ManuallyRouted="false" />
         <AssociationConnector Association="CreditoNacionalModel.FK_Usuario_Rol_Usuario" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="CreditoNacionalModel.VideoTutorial" Width="1.5" PointX="7.375" PointY="6.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

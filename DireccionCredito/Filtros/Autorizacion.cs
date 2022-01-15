@@ -37,7 +37,7 @@ namespace DireccionCredito.Filtros
                 UsuarioActivo = UsuarioActivo.Substring(0, corte);
             }
 
-            using (Models.CreditoNacionalEntities1 bd = new Models.CreditoNacionalEntities1())
+            using (Models.CreditoNacionalEntities2 bd = new Models.CreditoNacionalEntities2())
             {
 
                 var Acceso = (from d in bd.Usuario_Rol

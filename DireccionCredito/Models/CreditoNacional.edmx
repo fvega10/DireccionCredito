@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="CreditoNacionalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="CreditoNacionalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <!--Errores durante la generación:
 advertencia 6002: La tabla o vista 'CreditoNacional.Buscador.Ficha' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
         <EntityType Name="Ficha">
@@ -149,7 +149,8 @@ advertencia 6002: La tabla o vista 'CreditoNacional.Buscador.GuiaComercial' no t
             <End Role="Usuario_Rol" EntitySet="Usuario_Rol" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CreditoNacionalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -180,6 +181,15 @@ advertencia 6002: La tabla o vista 'CreditoNacional.Buscador.GuiaComercial' no t
           <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Garantía" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="GuiaComercial" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="VideoTutorial">
+          <Key>
+            <PropertyRef Name="Indice" />
+          </Key>
+          <Property Name="Indice" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Titulo" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Enlace" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Activo" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="Rol">
           <Key>
@@ -255,9 +265,10 @@ advertencia 6002: La tabla o vista 'CreditoNacional.Buscador.GuiaComercial' no t
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="CreditoNacionalEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CreditoNacionalEntities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Producto" EntityType="Self.Producto" />
           <EntitySet Name="Visitas" EntityType="Self.Visitas" />
+          <EntitySet Name="VideoTutorial" EntityType="Self.VideoTutorial" />
           <EntitySet Name="Rol" EntityType="Self.Rol" />
           <EntitySet Name="Usuario" EntityType="Self.Usuario" />
           <EntitySet Name="Usuario_Rol" EntityType="Self.Usuario_Rol" />
@@ -271,23 +282,13 @@ advertencia 6002: La tabla o vista 'CreditoNacional.Buscador.GuiaComercial' no t
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="Usuario_Rol" EntitySet="Usuario_Rol" />
           </AssociationSet>
-          <EntitySet Name="VideoTutorial" EntityType="CreditoNacionalModel.VideoTutorial" />
         </EntityContainer>
-        <EntityType Name="VideoTutorial">
-          <Key>
-            <PropertyRef Name="Indice" />
-          </Key>
-          <Property Name="Indice" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Titulo" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
-          <Property Name="Enlace" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
-          <Property Name="Activo" Type="Boolean" Nullable="false" />
-        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CreditoNacionalModelStoreContainer" CdmEntityContainer="CreditoNacionalEntities1">
+        <EntityContainerMapping StorageEntityContainer="CreditoNacionalModelStoreContainer" CdmEntityContainer="CreditoNacionalEntities2">
           <EntitySetMapping Name="Producto">
             <EntityTypeMapping TypeName="CreditoNacionalModel.Producto">
               <MappingFragment StoreEntitySet="Producto">
@@ -315,6 +316,16 @@ advertencia 6002: La tabla o vista 'CreditoNacional.Buscador.GuiaComercial' no t
                 <ScalarProperty Name="Tipo" ColumnName="Tipo" />
                 <ScalarProperty Name="Garantía" ColumnName="Garantía" />
                 <ScalarProperty Name="GuiaComercial" ColumnName="GuiaComercial" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VideoTutorial">
+            <EntityTypeMapping TypeName="CreditoNacionalModel.VideoTutorial">
+              <MappingFragment StoreEntitySet="VideoTutorial">
+                <ScalarProperty Name="Indice" ColumnName="Indice" />
+                <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+                <ScalarProperty Name="Enlace" ColumnName="Enlace" />
+                <ScalarProperty Name="Activo" ColumnName="Activo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -366,16 +377,6 @@ advertencia 6002: La tabla o vista 'CreditoNacional.Buscador.GuiaComercial' no t
                 <ScalarProperty Name="Guiaid" ColumnName="Guiaid" />
                 <ScalarProperty Name="LinkGuia" ColumnName="LinkGuia" />
                 <ScalarProperty Name="Active" ColumnName="Active" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="VideoTutorial">
-            <EntityTypeMapping TypeName="CreditoNacionalModel.VideoTutorial">
-              <MappingFragment StoreEntitySet="VideoTutorial">
-                <ScalarProperty Name="Activo" ColumnName="Activo" />
-                <ScalarProperty Name="Enlace" ColumnName="Enlace" />
-                <ScalarProperty Name="Titulo" ColumnName="Titulo" />
-                <ScalarProperty Name="Indice" ColumnName="Indice" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
