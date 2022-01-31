@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\Mis documentos\16205207\Desktop\Publicacion\publicacion-direccion-credito</_PublishTargetUrl>
-    <History>True|2022-01-18T21:26:55.1985186Z;True|2022-01-14T21:03:23.5931029-06:00;True|2022-01-14T20:41:56.8445183-06:00;True|2022-01-14T15:54:42.2010884-06:00;</History>
+    <History>True|2022-01-31T21:26:58.8920847Z;False|2022-01-31T15:25:32.5961544-06:00;True|2022-01-31T14:50:04.3491667-06:00;True|2022-01-27T13:01:45.5217098-06:00;True|2022-01-18T15:26:55.1985186-06:00;True|2022-01-14T21:03:23.5931029-06:00;True|2022-01-14T20:41:56.8445183-06:00;True|2022-01-14T15:54:42.2010884-06:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Antlr3.Runtime.dll">
@@ -15,10 +15,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/14/2022 15:48:31</publishTime>
     </File>
     <File Include="bin/DireccionCredito.dll">
-      <publishTime>01/18/2022 15:26:43</publishTime>
+      <publishTime>01/31/2022 15:25:31</publishTime>
     </File>
     <File Include="bin/DireccionCredito.pdb">
-      <publishTime>01/18/2022 15:26:43</publishTime>
+      <publishTime>01/31/2022 15:25:31</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>01/14/2022 15:48:31</publishTime>
@@ -358,6 +358,18 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="Content/fontawesome.min.css">
       <publishTime>01/14/2022 15:48:27</publishTime>
+    </File>
+    <File Include="Content/fonts/icomoon.eot">
+      <publishTime>01/14/2022 15:48:26</publishTime>
+    </File>
+    <File Include="Content/fonts/icomoon.svg">
+      <publishTime>01/14/2022 15:48:26</publishTime>
+    </File>
+    <File Include="Content/fonts/icomoon.ttf">
+      <publishTime>01/14/2022 15:48:26</publishTime>
+    </File>
+    <File Include="Content/fonts/icomoon.woff">
+      <publishTime>01/14/2022 15:48:26</publishTime>
     </File>
     <File Include="Content/FuentesGoogle/Poppins.css">
       <publishTime>01/14/2022 15:48:26</publishTime>
@@ -761,6 +773,12 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Content/imagenes/Portada/Log.jpg">
       <publishTime>01/14/2022 15:48:27</publishTime>
     </File>
+    <File Include="Content/imagenes/svg/arrow_left.svg">
+      <publishTime>01/14/2022 15:48:27</publishTime>
+    </File>
+    <File Include="Content/imagenes/svg/arrow_right.svg">
+      <publishTime>01/14/2022 15:48:27</publishTime>
+    </File>
     <File Include="Content/Inicio/css/bootstrap.min.css">
       <publishTime>01/14/2022 15:48:27</publishTime>
     </File>
@@ -774,7 +792,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/14/2022 15:48:27</publishTime>
     </File>
     <File Include="Content/Inicio/css/mdb.min.css">
-      <publishTime>01/14/2022 15:48:27</publishTime>
+      <publishTime>01/31/2022 15:22:07</publishTime>
     </File>
     <File Include="Content/Inicio/css/Roboto.css">
       <publishTime>01/14/2022 15:48:27</publishTime>
@@ -845,6 +863,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Content/Noticias/Documentos/Bitacora/Octubre2020/Rendicion_de_Cuentas_Octubre_2020.pptx">
       <publishTime>01/14/2022 15:48:26</publishTime>
     </File>
+    <File Include="Content/Noticias/Documentos/CAPSULAS/Autorización CIC Cliente Jurídico.ppsx">
+      <publishTime>01/31/2022 14:45:34</publishTime>
+    </File>
     <File Include="Content/Noticias/Documentos/CAPSULAS/Octubre_2020/CapsulaRuta.JPG">
       <publishTime>01/14/2022 15:48:26</publishTime>
     </File>
@@ -887,8 +908,14 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Content/Noticias/Imagenes/2.png">
       <publishTime>01/14/2022 15:48:26</publishTime>
     </File>
+    <File Include="Content/Noticias/Imagenes/Autorización CIC Cliente Jurídico.jpg">
+      <publishTime>01/31/2022 14:45:34</publishTime>
+    </File>
     <File Include="Content/Noticias/Imagenes/Historial/AsignacionNotarios.jpg">
       <publishTime>01/14/2022 15:48:26</publishTime>
+    </File>
+    <File Include="Content/Noticias/Imagenes/Historial/Atención de Requerimientos de Sipco Web.jpg">
+      <publishTime>01/27/2022 12:57:29</publishTime>
     </File>
     <File Include="Content/Noticias/Imagenes/Historial/Custom_1.JPG">
       <publishTime>01/14/2022 15:48:26</publishTime>
@@ -1244,6 +1271,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Scripts/inicio/mdb.min.js">
       <publishTime>01/14/2022 15:48:27</publishTime>
     </File>
+    <File Include="Scripts/inicio/popper.js.map">
+      <publishTime>01/31/2022 15:24:15</publishTime>
+    </File>
     <File Include="Scripts/inicio/popper.min.js">
       <publishTime>01/14/2022 15:48:27</publishTime>
     </File>
@@ -1566,7 +1596,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/14/2022 15:48:27</publishTime>
     </File>
     <File Include="Views/Home/Noticias.cshtml">
-      <publishTime>01/18/2022 15:22:24</publishTime>
+      <publishTime>01/31/2022 14:45:34</publishTime>
     </File>
     <File Include="Views/Home/Parciales/MatrizSeguimiento/_ConsultaFormularioMatriz.cshtml">
       <publishTime>01/14/2022 15:48:27</publishTime>
