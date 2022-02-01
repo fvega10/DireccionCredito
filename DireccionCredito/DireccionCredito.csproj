@@ -288,6 +288,7 @@
     <Content Include="Content\fontawesome-all.min.css" />
     <Content Include="Content\fontawesome.css" />
     <Content Include="Content\fontawesome.min.css" />
+    <Content Include="Content\fonts\icomoon.svg" />
     <Content Include="Content\FuentesGoogle\Poppins.css" />
     <Content Include="Content\FuentesGoogle\Roboto.css" />
     <Content Include="Content\Hexagono\FontGoogleapis.css" />
@@ -422,6 +423,8 @@
     <Content Include="Content\imagenes\Portada\3.jpg" />
     <Content Include="Content\imagenes\Portada\4.jpg" />
     <Content Include="Content\imagenes\Portada\Log.jpg" />
+    <Content Include="Content\imagenes\svg\arrow_left.svg" />
+    <Content Include="Content\imagenes\svg\arrow_right.svg" />
     <Content Include="Content\Inicio\css\bootstrap.min.css" />
     <Content Include="Content\Inicio\css\doppioOne.css" />
     <Content Include="Content\Inicio\css\EstiloMenuDropDownList.css" />
@@ -621,11 +624,15 @@
       <DependentUpon>CreditoNacional.edmx</DependentUpon>
     </Content>
     <Content Include="Content\Noticias\Documentos\CAPSULAS\Autorización CIC Cliente Jurídico.ppsx" />
+    <Content Include="Content\fonts\icomoon.eot" />
+    <Content Include="Content\fonts\icomoon.ttf" />
+    <Content Include="Content\fonts\icomoon.woff" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\inicio\popper.js.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\inicio\bootstrap.min.js" />
     <Content Include="Scripts\inicio\jquery.min.js" />
