@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="POCModelStoreContainer" CdmEntityContainer="POCEntities">
+    <EntitySetMapping Name="CONTROL">
+      <EntityTypeMapping TypeName="POCModel.CONTROL">
+        <MappingFragment StoreEntitySet="CONTROL">
+          <ScalarProperty Name="intCONTROL" ColumnName="intCONTROL" />
+          <ScalarProperty Name="numCLIENTE" ColumnName="numCLIENTE" />
+          <ScalarProperty Name="intQ" ColumnName="intQ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ctACCIONES">
+      <EntityTypeMapping TypeName="POCModel.ctACCIONES">
+        <MappingFragment StoreEntitySet="ctACCIONES">
+          <ScalarProperty Name="intACCIONES" ColumnName="intACCIONES" />
+          <ScalarProperty Name="strACCIONES" ColumnName="strACCIONES" />
+          <ScalarProperty Name="rlPESO" ColumnName="rlPESO" />
+          <ScalarProperty Name="btHAB" ColumnName="btHAB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ctEXPERIENCIAS">
+      <EntityTypeMapping TypeName="POCModel.ctEXPERIENCIAS">
+        <MappingFragment StoreEntitySet="ctEXPERIENCIAS">
+          <ScalarProperty Name="intEXPERIENCIA" ColumnName="intEXPERIENCIA" />
+          <ScalarProperty Name="strEXPERIENCIA" ColumnName="strEXPERIENCIA" />
+          <ScalarProperty Name="rlPESO" ColumnName="rlPESO" />
+          <ScalarProperty Name="btHAB" ColumnName="btHAB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ctFLUJOS_CAJA">
+      <EntityTypeMapping TypeName="POCModel.ctFLUJOS_CAJA">
+        <MappingFragment StoreEntitySet="ctFLUJOS_CAJA">
+          <ScalarProperty Name="intFLUJO_CAJA" ColumnName="intFLUJO_CAJA" />
+          <ScalarProperty Name="strFLUJO_CAJA" ColumnName="strFLUJO_CAJA" />
+          <ScalarProperty Name="rlPESO" ColumnName="rlPESO" />
+          <ScalarProperty Name="btHAB" ColumnName="btHAB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ctNCPS">
+      <EntityTypeMapping TypeName="POCModel.ctNCPS">
+        <MappingFragment StoreEntitySet="ctNCPS">
+          <ScalarProperty Name="intNCP" ColumnName="intNCP" />
+          <ScalarProperty Name="strNCP" ColumnName="strNCP" />
+          <ScalarProperty Name="rlPESO" ColumnName="rlPESO" />
+          <ScalarProperty Name="btHAB" ColumnName="btHAB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ctRATINGS">
+      <EntityTypeMapping TypeName="POCModel.ctRATINGS">
+        <MappingFragment StoreEntitySet="ctRATINGS">
+          <ScalarProperty Name="intRATING" ColumnName="intRATING" />
+          <ScalarProperty Name="strRATING" ColumnName="strRATING" />
+          <ScalarProperty Name="rlPESO" ColumnName="rlPESO" />
+          <ScalarProperty Name="btHAB" ColumnName="btHAB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ctRESULTADOS">
+      <EntityTypeMapping TypeName="POCModel.ctRESULTADOS">
+        <MappingFragment StoreEntitySet="ctRESULTADOS">
+          <ScalarProperty Name="intRESULTADOS" ColumnName="intRESULTADOS" />
+          <ScalarProperty Name="strRESULTADOS" ColumnName="strRESULTADOS" />
+          <ScalarProperty Name="rlPESO" ColumnName="rlPESO" />
+          <ScalarProperty Name="btHAB" ColumnName="btHAB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ctSECTORES">
+      <EntityTypeMapping TypeName="POCModel.ctSECTORES">
+        <MappingFragment StoreEntitySet="ctSECTORES">
+          <ScalarProperty Name="intSECTORES" ColumnName="intSECTORES" />
+          <ScalarProperty Name="strSECTORES" ColumnName="strSECTORES" />
+          <ScalarProperty Name="rlPESO" ColumnName="rlPESO" />
+          <ScalarProperty Name="btHAB" ColumnName="btHAB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ctVARIABLES">
+      <EntityTypeMapping TypeName="POCModel.ctVARIABLES">
+        <MappingFragment StoreEntitySet="ctVARIABLES">
+          <ScalarProperty Name="intVARIABLE" ColumnName="intVARIABLE" />
+          <ScalarProperty Name="intNCP" ColumnName="intNCP" />
+          <ScalarProperty Name="intFLUJO_CAJA" ColumnName="intFLUJO_CAJA" />
+          <ScalarProperty Name="rlPESOmin" ColumnName="rlPESOmin" />
+          <ScalarProperty Name="rlPESOmax" ColumnName="rlPESOmax" />
+          <ScalarProperty Name="intRESULTADO" ColumnName="intRESULTADO" />
+          <ScalarProperty Name="strRESULTADO" ColumnName="strRESULTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Repositorio_ClientesJuridicos">
+      <EntityTypeMapping TypeName="POCModel.Repositorio_ClientesJuridicos">
+        <MappingFragment StoreEntitySet="Repositorio_ClientesJuridicos">
+          <ScalarProperty Name="CLI_CODIGO_CLIENTE" ColumnName="CLI_CODIGO_CLIENTE" />
+          <ScalarProperty Name="TPI_CODIGO_IDENTIFICACION" ColumnName="TPI_CODIGO_IDENTIFICACION" />
+          <ScalarProperty Name="CLI_IDENTIFICACION" ColumnName="CLI_IDENTIFICACION" />
+          <ScalarProperty Name="ID_SUGEF" ColumnName="ID_SUGEF" />
+          <ScalarProperty Name="CFI_NOMBRE" ColumnName="CFI_NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRX">
+      <EntityTypeMapping TypeName="POCModel.TRX">
+        <MappingFragment StoreEntitySet="TRX">
+          <ScalarProperty Name="intTRX" ColumnName="intTRX" />
+          <ScalarProperty Name="numCLIENTE" ColumnName="numCLIENTE" />
+          <ScalarProperty Name="dtFECHA_APLICACION" ColumnName="dtFECHA_APLICACION" />
+          <ScalarProperty Name="intOFICINA" ColumnName="intOFICINA" />
+          <ScalarProperty Name="strUSUARIO" ColumnName="strUSUARIO" />
+          <ScalarProperty Name="btHAB" ColumnName="btHAB" />
+          <ScalarProperty Name="intEXPERIENCIA" ColumnName="intEXPERIENCIA" />
+          <ScalarProperty Name="intRATING" ColumnName="intRATING" />
+          <ScalarProperty Name="intACCIONES" ColumnName="intACCIONES" />
+          <ScalarProperty Name="intSECTOR" ColumnName="intSECTOR" />
+          <ScalarProperty Name="intNCP" ColumnName="intNCP" />
+          <ScalarProperty Name="intFLUJO_CAJA" ColumnName="intFLUJO_CAJA" />
+          <ScalarProperty Name="intRESULTADO" ColumnName="intRESULTADO" />
+          <ScalarProperty Name="strRESULTADO" ColumnName="strRESULTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Repositorio_AgenciasBNCR">
+      <EntityTypeMapping TypeName="POCModel.Repositorio_AgenciasBNCR">
+        <MappingFragment StoreEntitySet="Repositorio_AgenciasBNCR">
+          <ScalarProperty Name="Oficina_Codigo" ColumnName="Oficina_Codigo" />
+          <ScalarProperty Name="Oficina_Descripcion" ColumnName="Oficina_Descripcion" />
+          <ScalarProperty Name="Id_Zona" ColumnName="Id_Zona" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="PROC_PRORROGA_EMPRESAS" FunctionName="POCModel.Store.PROC_PRORROGA_EMPRESAS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="POCModel.PROC_PRORROGA_EMPRESAS_Result">
+          <ScalarProperty Name="intRESULTADO" ColumnName="intRESULTADO" />
+          <ScalarProperty Name="strRESULTADO" ColumnName="strRESULTADO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

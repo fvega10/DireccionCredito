@@ -476,6 +476,7 @@
     <Content Include="Content\Noticias\Imagenes\Historial\RendicionCuentas_Julio.JPG" />
     <Content Include="Content\Noticias\Imagenes\Historial\Tutorial Carga de Gastos de Formalización.jpg" />
     <Content Include="Content\Noticias\Imagenes\Noticias2.jpg" />
+    <Content Include="Content\Noticias\Imagenes\Portada Tutorial Autoasignación gestiones.png" />
     <Content Include="Content\Noticias\Imagenes\RendicionCuentas.JPG" />
     <Content Include="Content\Noticias\Imagenes\roundtables.gif" />
     <Content Include="Content\Calendario\Imagenes\Vigente.png" />
@@ -627,6 +628,7 @@
     <Content Include="Content\fonts\icomoon.eot" />
     <Content Include="Content\fonts\icomoon.ttf" />
     <Content Include="Content\fonts\icomoon.woff" />
+    <Content Include="Content\Noticias\Documentos\Tutorial Autoasignación gesiones SipcoWeb.pdf" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />
