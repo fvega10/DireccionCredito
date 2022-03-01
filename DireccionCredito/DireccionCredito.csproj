@@ -528,6 +528,8 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\svg\arrow_left.svg" />
+    <Content Include="img\svg\arrow_right.svg" />
     <Content Include="Models\CreditoNacional.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>CreditoNacional.edmx</DependentUpon>

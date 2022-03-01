@@ -439,6 +439,57 @@ namespace DireccionCredito.Controllers
             return productos;
         }
 
+        public JsonResult ObtenerFichas(int fichaid)
+        {
+            List<SelectListItem> lista;
+            try
+            {
+                using (var bd = new CreditoNacionalEntities2())
+                {
+                    lista = (from item in bd.Ficha
+                             where item.Fichaid == fichaid
+                             select new SelectListItem
+                             {
+                                 //Text = item.FICHAS,
+                                 Value = item.Fichas_Link
+                             }).ToList();
+                    /*lista.Insert(0, new SelectListItem { Text = "Seleccione..", Value = "", Disabled = true, Selected = true });*/
+                }
+            }
+            catch
+            {
+                lista = null;
+            }
+
+            return Json(lista, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult ObtenerGuias(int guiaid)
+        {
+            List<SelectListItem> lista;
+            try
+            {
+                using (var bd = new CreditoNacionalEntities2())
+                {
+                    lista = (from item in bd.GuiaComercial
+                             where item.Guiaid == guiaid
+                             select new SelectListItem
+                             {
+                                 //Text = item.FICHAS,
+                                 Value = item.LinkGuia
+                             }).ToList();
+                    /*lista.Insert(0, new SelectListItem { Text = "Seleccione..", Value = "", Disabled = true, Selected = true });*/
+                }
+            }
+            catch
+            {
+                lista = null;
+            }
+
+            return Json(lista, JsonRequestBehavior.AllowGet);
+        }
+
+
         //primera dependencia Fichas
         public ActionResult ObtenerFicha(int productoid)
         {
