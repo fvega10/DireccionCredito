@@ -10,3 +10,11 @@
 @media(max-width:500px){
 	.mega-menu{width: 300px;}
 }
+
+a {
+    color: black;
+}
+
+    a:hover {        
+        color: darkblue !important;
+    }

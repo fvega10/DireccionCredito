@@ -6,24 +6,24 @@
 
         //si entra al menu HERRAMIETAS CREDITO MENU muestra la pantalla
         //si entra en el titulo
-        $("#Titulo_HerramietnasCredito").mouseover(function myfunction() {
+        $("#Submenu_Herramientas_Credito").mouseover(function myfunction() {
             $("#MostrarHerramientasCredito").addClass("navbar-collapse collapse show");
         });
         //si entra en la pantalla
         $("#MostrarHerramientasCredito").mouseover(function myfunction() {
             $("#MostrarHerramientasCredito").addClass("navbar-collapse collapse show");
         });
-        //si sale del ttulo
+        //si sale del titulo
         $("#MostrarHerramientasCredito").mouseout(function myfunction() {
             $("#MostrarHerramientasCredito").removeClass("navbar-collapse collapse show");
         });
         //si sale de la pantalla
-        $("#Titulo_HerramietnasCredito").mouseout(function myfunction() {
+        $("#Submenu_Herramientas_Credito").mouseout(function myfunction() {
             $("#MostrarHerramientasCredito").removeClass("navbar-collapse collapse show");
         });
 
 
-        //si entra al menu HERRAMIETAS CREDITO MENU muestra la pantalla
+        //si entra al menu COMUNICADOS muestra la pantalla
         //si entra en el titulo
         $("#Titulo_Comunicados").mouseover(function myfunction() {
             $("#MostrarHerramientasComunicados").addClass("navbar-collapse collapse show");
